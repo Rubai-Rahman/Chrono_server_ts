@@ -2,3 +2,164 @@
 {"level":"info","message":"::1 - - [06/Jul/2025:09:00:55 +0000] \"GET / HTTP/1.1\" 404 929 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36\"","timestamp":"2025-07-06T09:00:55.079Z"}
 {"isOperational":true,"level":"error","message":"Route /favicon.ico not found Route /favicon.ico not found","status":"fail","statusCode":404,"timestamp":"2025-07-06T09:00:55.282Z"}
 {"level":"info","message":"::1 - - [06/Jul/2025:09:00:55 +0000] \"GET /favicon.ico HTTP/1.1\" 404 951 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36\"","timestamp":"2025-07-06T09:00:55.285Z"}
+{"level":"info","message":"::1 - - [29/Aug/2025:16:55:09 +0000] \"GET / HTTP/1.1\" 200 27 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36\"","timestamp":"2025-08-29T16:55:09.141Z"}
+{"isOperational":true,"level":"error","message":"Route /favicon.ico not found Route /favicon.ico not found","status":"fail","statusCode":404,"timestamp":"2025-08-29T16:55:09.365Z"}
+{"level":"info","message":"::1 - - [29/Aug/2025:16:55:09 +0000] \"GET /favicon.ico HTTP/1.1\" 404 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36\"","timestamp":"2025-08-29T16:55:09.377Z"}
+{"level":"info","message":"::1 - - [29/Aug/2025:16:57:31 +0000] \"GET /health HTTP/1.1\" 200 82 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36\"","timestamp":"2025-08-29T16:57:31.103Z"}
+{"isOperational":true,"level":"error","message":"Route //news not found Route //news not found","status":"fail","statusCode":404,"timestamp":"2025-08-29T18:27:30.375Z"}
+{"level":"info","message":"::1 - - [29/Aug/2025:18:27:30 +0000] \"GET //news HTTP/1.1\" 404 - \"-\" \"node\"","timestamp":"2025-08-29T18:27:30.428Z"}
+{"isOperational":true,"level":"error","message":"Route //review not found Route //review not found","status":"fail","statusCode":404,"timestamp":"2025-08-29T18:27:30.567Z"}
+{"level":"info","message":"::1 - - [29/Aug/2025:18:27:30 +0000] \"GET //review HTTP/1.1\" 404 - \"-\" \"node\"","timestamp":"2025-08-29T18:27:30.575Z"}
+{"isOperational":true,"level":"error","message":"Route //news not found Route //news not found","status":"fail","statusCode":404,"timestamp":"2025-08-29T18:27:31.089Z"}
+{"level":"info","message":"::1 - - [29/Aug/2025:18:27:31 +0000] \"GET //news HTTP/1.1\" 404 - \"-\" \"node\"","timestamp":"2025-08-29T18:27:31.100Z"}
+{"isOperational":true,"level":"error","message":"Route //review not found Route //review not found","status":"fail","statusCode":404,"timestamp":"2025-08-29T18:27:31.133Z"}
+{"level":"info","message":"::1 - - [29/Aug/2025:18:27:31 +0000] \"GET //review HTTP/1.1\" 404 - \"-\" \"node\"","timestamp":"2025-08-29T18:27:31.139Z"}
+{"isOperational":true,"level":"error","message":"Route //news not found Route //news not found","status":"fail","statusCode":404,"timestamp":"2025-08-29T18:27:31.449Z"}
+{"level":"info","message":"::1 - - [29/Aug/2025:18:27:31 +0000] \"GET //news HTTP/1.1\" 404 - \"-\" \"node\"","timestamp":"2025-08-29T18:27:31.453Z"}
+{"isOperational":true,"level":"error","message":"Route //review not found Route //review not found","status":"fail","statusCode":404,"timestamp":"2025-08-29T18:27:31.476Z"}
+{"level":"info","message":"::1 - - [29/Aug/2025:18:27:31 +0000] \"GET //review HTTP/1.1\" 404 - \"-\" \"node\"","timestamp":"2025-08-29T18:27:31.482Z"}
+{"isOperational":true,"level":"error","message":"Route //news not found Route //news not found","status":"fail","statusCode":404,"timestamp":"2025-08-29T18:27:31.810Z"}
+{"level":"info","message":"::1 - - [29/Aug/2025:18:27:31 +0000] \"GET //news HTTP/1.1\" 404 - \"-\" \"node\"","timestamp":"2025-08-29T18:27:31.814Z"}
+{"isOperational":true,"level":"error","message":"Route //review not found Route //review not found","status":"fail","statusCode":404,"timestamp":"2025-08-29T18:27:31.832Z"}
+{"level":"info","message":"::1 - - [29/Aug/2025:18:27:31 +0000] \"GET //review HTTP/1.1\" 404 - \"-\" \"node\"","timestamp":"2025-08-29T18:27:31.836Z"}
+{"isOperational":true,"level":"error","message":"Route //news not found Route //news not found","status":"fail","statusCode":404,"timestamp":"2025-08-29T18:27:32.249Z"}
+{"level":"info","message":"::1 - - [29/Aug/2025:18:27:32 +0000] \"GET //news HTTP/1.1\" 404 - \"-\" \"node\"","timestamp":"2025-08-29T18:27:32.255Z"}
+{"isOperational":true,"level":"error","message":"Route //review not found Route //review not found","status":"fail","statusCode":404,"timestamp":"2025-08-29T18:27:32.273Z"}
+{"level":"info","message":"::1 - - [29/Aug/2025:18:27:32 +0000] \"GET //review HTTP/1.1\" 404 - \"-\" \"node\"","timestamp":"2025-08-29T18:27:32.287Z"}
+{"isOperational":true,"level":"error","message":"Route /api/news not found Route /api/news not found","status":"fail","statusCode":404,"timestamp":"2025-08-29T18:27:33.478Z"}
+{"level":"info","message":"::1 - - [29/Aug/2025:18:27:33 +0000] \"GET /api/news HTTP/1.1\" 404 - \"-\" \"node\"","timestamp":"2025-08-29T18:27:33.483Z"}
+{"isOperational":true,"level":"error","message":"Route /api/review not found Route /api/review not found","status":"fail","statusCode":404,"timestamp":"2025-08-29T18:27:33.512Z"}
+{"level":"info","message":"::1 - - [29/Aug/2025:18:27:33 +0000] \"GET /api/review HTTP/1.1\" 404 - \"-\" \"node\"","timestamp":"2025-08-29T18:27:33.548Z"}
+{"isOperational":true,"level":"error","message":"Route /api/news not found Route /api/news not found","status":"fail","statusCode":404,"timestamp":"2025-08-29T18:27:34.109Z"}
+{"level":"info","message":"::1 - - [29/Aug/2025:18:27:34 +0000] \"GET /api/news HTTP/1.1\" 404 - \"-\" \"node\"","timestamp":"2025-08-29T18:27:34.113Z"}
+{"isOperational":true,"level":"error","message":"Route /api/review not found Route /api/review not found","status":"fail","statusCode":404,"timestamp":"2025-08-29T18:27:34.139Z"}
+{"level":"info","message":"::1 - - [29/Aug/2025:18:27:34 +0000] \"GET /api/review HTTP/1.1\" 404 - \"-\" \"node\"","timestamp":"2025-08-29T18:27:34.142Z"}
+{"isOperational":true,"level":"error","message":"Route /api/news not found Route /api/news not found","status":"fail","statusCode":404,"timestamp":"2025-08-29T18:27:34.459Z"}
+{"level":"info","message":"::1 - - [29/Aug/2025:18:27:34 +0000] \"GET /api/news HTTP/1.1\" 404 - \"-\" \"node\"","timestamp":"2025-08-29T18:27:34.463Z"}
+{"isOperational":true,"level":"error","message":"Route /api/review not found Route /api/review not found","status":"fail","statusCode":404,"timestamp":"2025-08-29T18:27:34.482Z"}
+{"level":"info","message":"::1 - - [29/Aug/2025:18:27:34 +0000] \"GET /api/review HTTP/1.1\" 404 - \"-\" \"node\"","timestamp":"2025-08-29T18:27:34.487Z"}
+{"isOperational":true,"level":"error","message":"Route /api/news not found Route /api/news not found","status":"fail","statusCode":404,"timestamp":"2025-08-29T18:27:34.836Z"}
+{"level":"info","message":"::1 - - [29/Aug/2025:18:27:34 +0000] \"GET /api/news HTTP/1.1\" 404 - \"-\" \"node\"","timestamp":"2025-08-29T18:27:34.839Z"}
+{"isOperational":true,"level":"error","message":"Route /api/review not found Route /api/review not found","status":"fail","statusCode":404,"timestamp":"2025-08-29T18:27:34.873Z"}
+{"level":"info","message":"::1 - - [29/Aug/2025:18:27:34 +0000] \"GET /api/review HTTP/1.1\" 404 - \"-\" \"node\"","timestamp":"2025-08-29T18:27:34.877Z"}
+{"isOperational":true,"level":"error","message":"Route /api/news not found Route /api/news not found","status":"fail","statusCode":404,"timestamp":"2025-08-29T18:27:35.208Z"}
+{"level":"info","message":"::1 - - [29/Aug/2025:18:27:35 +0000] \"GET /api/news HTTP/1.1\" 404 - \"-\" \"node\"","timestamp":"2025-08-29T18:27:35.212Z"}
+{"isOperational":true,"level":"error","message":"Route /api/review not found Route /api/review not found","status":"fail","statusCode":404,"timestamp":"2025-08-29T18:27:35.236Z"}
+{"level":"info","message":"::1 - - [29/Aug/2025:18:27:35 +0000] \"GET /api/review HTTP/1.1\" 404 - \"-\" \"node\"","timestamp":"2025-08-29T18:27:35.239Z"}
+{"isOperational":true,"level":"error","message":"Route /api/news not found Route /api/news not found","status":"fail","statusCode":404,"timestamp":"2025-08-29T18:27:35.591Z"}
+{"level":"info","message":"::1 - - [29/Aug/2025:18:27:35 +0000] \"GET /api/news HTTP/1.1\" 404 - \"-\" \"node\"","timestamp":"2025-08-29T18:27:35.594Z"}
+{"isOperational":true,"level":"error","message":"Route /api/review not found Route /api/review not found","status":"fail","statusCode":404,"timestamp":"2025-08-29T18:27:35.611Z"}
+{"level":"info","message":"::1 - - [29/Aug/2025:18:27:35 +0000] \"GET /api/review HTTP/1.1\" 404 - \"-\" \"node\"","timestamp":"2025-08-29T18:27:35.615Z"}
+{"isOperational":true,"level":"error","message":"Route /api/news not found Route /api/news not found","status":"fail","statusCode":404,"timestamp":"2025-08-29T18:27:35.907Z"}
+{"level":"info","message":"::1 - - [29/Aug/2025:18:27:35 +0000] \"GET /api/news HTTP/1.1\" 404 - \"-\" \"node\"","timestamp":"2025-08-29T18:27:35.910Z"}
+{"isOperational":true,"level":"error","message":"Route /api/review not found Route /api/review not found","status":"fail","statusCode":404,"timestamp":"2025-08-29T18:27:35.927Z"}
+{"level":"info","message":"::1 - - [29/Aug/2025:18:27:35 +0000] \"GET /api/review HTTP/1.1\" 404 - \"-\" \"node\"","timestamp":"2025-08-29T18:27:35.933Z"}
+{"isOperational":true,"level":"error","message":"Route /api/news not found Route /api/news not found","status":"fail","statusCode":404,"timestamp":"2025-08-29T18:27:36.228Z"}
+{"level":"info","message":"::1 - - [29/Aug/2025:18:27:36 +0000] \"GET /api/news HTTP/1.1\" 404 - \"-\" \"node\"","timestamp":"2025-08-29T18:27:36.232Z"}
+{"isOperational":true,"level":"error","message":"Route /api/review not found Route /api/review not found","status":"fail","statusCode":404,"timestamp":"2025-08-29T18:27:36.264Z"}
+{"level":"info","message":"::1 - - [29/Aug/2025:18:27:36 +0000] \"GET /api/review HTTP/1.1\" 404 - \"-\" \"node\"","timestamp":"2025-08-29T18:27:36.271Z"}
+{"isOperational":true,"level":"error","message":"Route /api/news not found Route /api/news not found","status":"fail","statusCode":404,"timestamp":"2025-08-29T18:27:37.711Z"}
+{"level":"info","message":"::1 - - [29/Aug/2025:18:27:37 +0000] \"GET /api/news HTTP/1.1\" 404 - \"-\" \"node\"","timestamp":"2025-08-29T18:27:37.716Z"}
+{"isOperational":true,"level":"error","message":"Route /api/review not found Route /api/review not found","status":"fail","statusCode":404,"timestamp":"2025-08-29T18:27:37.741Z"}
+{"level":"info","message":"::1 - - [29/Aug/2025:18:27:37 +0000] \"GET /api/review HTTP/1.1\" 404 - \"-\" \"node\"","timestamp":"2025-08-29T18:27:37.745Z"}
+{"isOperational":true,"level":"error","message":"Route /api/news not found Route /api/news not found","status":"fail","statusCode":404,"timestamp":"2025-08-29T18:27:45.702Z"}
+{"level":"info","message":"::1 - - [29/Aug/2025:18:27:45 +0000] \"GET /api/news HTTP/1.1\" 404 - \"-\" \"node\"","timestamp":"2025-08-29T18:27:45.706Z"}
+{"isOperational":true,"level":"error","message":"Route /api/review not found Route /api/review not found","status":"fail","statusCode":404,"timestamp":"2025-08-29T18:27:45.715Z"}
+{"level":"info","message":"::1 - - [29/Aug/2025:18:27:45 +0000] \"GET /api/review HTTP/1.1\" 404 - \"-\" \"node\"","timestamp":"2025-08-29T18:27:45.720Z"}
+{"level":"info","message":"::1 - - [29/Aug/2025:18:27:48 +0000] \"GET / HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36\"","timestamp":"2025-08-29T18:27:48.857Z"}
+{"isOperational":true,"level":"error","message":"Route /api/news not found Route /api/news not found","status":"fail","statusCode":404,"timestamp":"2025-08-29T18:27:56.820Z"}
+{"level":"info","message":"::1 - - [29/Aug/2025:18:27:56 +0000] \"GET /api/news HTTP/1.1\" 404 - \"-\" \"node\"","timestamp":"2025-08-29T18:27:56.824Z"}
+{"isOperational":true,"level":"error","message":"Route /api/review not found Route /api/review not found","status":"fail","statusCode":404,"timestamp":"2025-08-29T18:27:56.836Z"}
+{"level":"info","message":"::1 - - [29/Aug/2025:18:27:56 +0000] \"GET /api/review HTTP/1.1\" 404 - \"-\" \"node\"","timestamp":"2025-08-29T18:27:56.839Z"}
+{"isOperational":true,"level":"error","message":"Route /api/news not found Route /api/news not found","status":"fail","statusCode":404,"timestamp":"2025-08-29T18:29:30.053Z"}
+{"level":"info","message":"::1 - - [29/Aug/2025:18:29:30 +0000] \"GET /api/news HTTP/1.1\" 404 - \"-\" \"node\"","timestamp":"2025-08-29T18:29:30.057Z"}
+{"isOperational":true,"level":"error","message":"Route /api/review not found Route /api/review not found","status":"fail","statusCode":404,"timestamp":"2025-08-29T18:29:30.966Z"}
+{"level":"info","message":"::1 - - [29/Aug/2025:18:29:31 +0000] \"GET /api/review HTTP/1.1\" 404 - \"-\" \"node\"","timestamp":"2025-08-29T18:29:31.005Z"}
+{"isOperational":true,"level":"error","message":"Route //news not found Route //news not found","status":"fail","statusCode":404,"timestamp":"2025-08-29T18:30:36.242Z"}
+{"level":"info","message":"::1 - - [29/Aug/2025:18:30:36 +0000] \"GET //news HTTP/1.1\" 404 - \"-\" \"node\"","timestamp":"2025-08-29T18:30:36.246Z"}
+{"isOperational":true,"level":"error","message":"Route //review not found Route //review not found","status":"fail","statusCode":404,"timestamp":"2025-08-29T18:30:36.260Z"}
+{"level":"info","message":"::1 - - [29/Aug/2025:18:30:36 +0000] \"GET //review HTTP/1.1\" 404 - \"-\" \"node\"","timestamp":"2025-08-29T18:30:36.263Z"}
+{"isOperational":true,"level":"error","message":"Route /api/news not found Route /api/news not found","status":"fail","statusCode":404,"timestamp":"2025-08-29T18:30:37.928Z"}
+{"level":"info","message":"::1 - - [29/Aug/2025:18:30:37 +0000] \"GET /api/news HTTP/1.1\" 404 - \"-\" \"node\"","timestamp":"2025-08-29T18:30:37.933Z"}
+{"isOperational":true,"level":"error","message":"Route /api/review not found Route /api/review not found","status":"fail","statusCode":404,"timestamp":"2025-08-29T18:30:37.995Z"}
+{"level":"info","message":"::1 - - [29/Aug/2025:18:30:38 +0000] \"GET /api/review HTTP/1.1\" 404 - \"-\" \"node\"","timestamp":"2025-08-29T18:30:38.004Z"}
+{"isOperational":true,"level":"error","message":"Route /api/news not found Route /api/news not found","status":"fail","statusCode":404,"timestamp":"2025-08-29T18:30:38.475Z"}
+{"level":"info","message":"::1 - - [29/Aug/2025:18:30:38 +0000] \"GET /api/news HTTP/1.1\" 404 - \"-\" \"node\"","timestamp":"2025-08-29T18:30:38.478Z"}
+{"isOperational":true,"level":"error","message":"Route /api/review not found Route /api/review not found","status":"fail","statusCode":404,"timestamp":"2025-08-29T18:30:38.512Z"}
+{"level":"info","message":"::1 - - [29/Aug/2025:18:30:38 +0000] \"GET /api/review HTTP/1.1\" 404 - \"-\" \"node\"","timestamp":"2025-08-29T18:30:38.521Z"}
+{"isOperational":true,"level":"error","message":"Route /api/news not found Route /api/news not found","status":"fail","statusCode":404,"timestamp":"2025-08-29T18:30:38.917Z"}
+{"level":"info","message":"::1 - - [29/Aug/2025:18:30:38 +0000] \"GET /api/news HTTP/1.1\" 404 - \"-\" \"node\"","timestamp":"2025-08-29T18:30:38.921Z"}
+{"isOperational":true,"level":"error","message":"Route /api/review not found Route /api/review not found","status":"fail","statusCode":404,"timestamp":"2025-08-29T18:30:38.959Z"}
+{"level":"info","message":"::1 - - [29/Aug/2025:18:30:38 +0000] \"GET /api/review HTTP/1.1\" 404 - \"-\" \"node\"","timestamp":"2025-08-29T18:30:38.963Z"}
+{"isOperational":true,"level":"error","message":"Route /api/news not found Route /api/news not found","status":"fail","statusCode":404,"timestamp":"2025-08-29T18:30:39.420Z"}
+{"level":"info","message":"::1 - - [29/Aug/2025:18:30:39 +0000] \"GET /api/news HTTP/1.1\" 404 - \"-\" \"node\"","timestamp":"2025-08-29T18:30:39.424Z"}
+{"isOperational":true,"level":"error","message":"Route /api/review not found Route /api/review not found","status":"fail","statusCode":404,"timestamp":"2025-08-29T18:30:39.444Z"}
+{"level":"info","message":"::1 - - [29/Aug/2025:18:30:39 +0000] \"GET /api/review HTTP/1.1\" 404 - \"-\" \"node\"","timestamp":"2025-08-29T18:30:39.452Z"}
+{"isOperational":true,"level":"error","message":"Route /api/news not found Route /api/news not found","status":"fail","statusCode":404,"timestamp":"2025-08-29T18:30:39.862Z"}
+{"level":"info","message":"::1 - - [29/Aug/2025:18:30:39 +0000] \"GET /api/news HTTP/1.1\" 404 - \"-\" \"node\"","timestamp":"2025-08-29T18:30:39.877Z"}
+{"isOperational":true,"level":"error","message":"Route /api/review not found Route /api/review not found","status":"fail","statusCode":404,"timestamp":"2025-08-29T18:30:39.932Z"}
+{"level":"info","message":"::1 - - [29/Aug/2025:18:30:39 +0000] \"GET /api/review HTTP/1.1\" 404 - \"-\" \"node\"","timestamp":"2025-08-29T18:30:39.943Z"}
+{"isOperational":true,"level":"error","message":"Route /api/news not found Route /api/news not found","status":"fail","statusCode":404,"timestamp":"2025-08-29T18:30:40.812Z"}
+{"level":"info","message":"::1 - - [29/Aug/2025:18:30:40 +0000] \"GET /api/news HTTP/1.1\" 404 - \"-\" \"node\"","timestamp":"2025-08-29T18:30:40.819Z"}
+{"isOperational":true,"level":"error","message":"Route /api/review not found Route /api/review not found","status":"fail","statusCode":404,"timestamp":"2025-08-29T18:30:40.877Z"}
+{"level":"info","message":"::1 - - [29/Aug/2025:18:30:40 +0000] \"GET /api/review HTTP/1.1\" 404 - \"-\" \"node\"","timestamp":"2025-08-29T18:30:40.885Z"}
+{"isOperational":true,"level":"error","message":"Route /api/news not found Route /api/news not found","status":"fail","statusCode":404,"timestamp":"2025-08-29T18:30:41.478Z"}
+{"level":"info","message":"::1 - - [29/Aug/2025:18:30:41 +0000] \"GET /api/news HTTP/1.1\" 404 - \"-\" \"node\"","timestamp":"2025-08-29T18:30:41.486Z"}
+{"isOperational":true,"level":"error","message":"Route /api/review not found Route /api/review not found","status":"fail","statusCode":404,"timestamp":"2025-08-29T18:30:41.510Z"}
+{"level":"info","message":"::1 - - [29/Aug/2025:18:30:41 +0000] \"GET /api/review HTTP/1.1\" 404 - \"-\" \"node\"","timestamp":"2025-08-29T18:30:41.520Z"}
+{"isOperational":true,"level":"error","message":"Route /api/news not found Route /api/news not found","status":"fail","statusCode":404,"timestamp":"2025-08-29T18:30:42.171Z"}
+{"level":"info","message":"::1 - - [29/Aug/2025:18:30:42 +0000] \"GET /api/news HTTP/1.1\" 404 - \"-\" \"node\"","timestamp":"2025-08-29T18:30:42.175Z"}
+{"isOperational":true,"level":"error","message":"Route /api/review not found Route /api/review not found","status":"fail","statusCode":404,"timestamp":"2025-08-29T18:30:42.215Z"}
+{"level":"info","message":"::1 - - [29/Aug/2025:18:30:42 +0000] \"GET /api/review HTTP/1.1\" 404 - \"-\" \"node\"","timestamp":"2025-08-29T18:30:42.222Z"}
+{"isOperational":true,"level":"error","message":"Route /api/news not found Route /api/news not found","status":"fail","statusCode":404,"timestamp":"2025-08-29T18:30:42.911Z"}
+{"level":"info","message":"::1 - - [29/Aug/2025:18:30:42 +0000] \"GET /api/news HTTP/1.1\" 404 - \"-\" \"node\"","timestamp":"2025-08-29T18:30:42.919Z"}
+{"isOperational":true,"level":"error","message":"Route /api/review not found Route /api/review not found","status":"fail","statusCode":404,"timestamp":"2025-08-29T18:30:42.999Z"}
+{"level":"info","message":"::1 - - [29/Aug/2025:18:30:43 +0000] \"GET /api/review HTTP/1.1\" 404 - \"-\" \"node\"","timestamp":"2025-08-29T18:30:43.008Z"}
+{"isOperational":true,"level":"error","message":"Route /api/news not found Route /api/news not found","status":"fail","statusCode":404,"timestamp":"2025-08-29T18:30:43.456Z"}
+{"level":"info","message":"::1 - - [29/Aug/2025:18:30:43 +0000] \"GET /api/news HTTP/1.1\" 404 - \"-\" \"node\"","timestamp":"2025-08-29T18:30:43.460Z"}
+{"isOperational":true,"level":"error","message":"Route /api/review not found Route /api/review not found","status":"fail","statusCode":404,"timestamp":"2025-08-29T18:30:43.493Z"}
+{"level":"info","message":"::1 - - [29/Aug/2025:18:30:43 +0000] \"GET /api/review HTTP/1.1\" 404 - \"-\" \"node\"","timestamp":"2025-08-29T18:30:43.496Z"}
+{"isOperational":true,"level":"error","message":"Route /api/news not found Route /api/news not found","status":"fail","statusCode":404,"timestamp":"2025-08-29T18:30:43.993Z"}
+{"level":"info","message":"::1 - - [29/Aug/2025:18:30:43 +0000] \"GET /api/news HTTP/1.1\" 404 - \"-\" \"node\"","timestamp":"2025-08-29T18:30:43.996Z"}
+{"isOperational":true,"level":"error","message":"Route /api/review not found Route /api/review not found","status":"fail","statusCode":404,"timestamp":"2025-08-29T18:30:44.074Z"}
+{"level":"info","message":"::1 - - [29/Aug/2025:18:30:44 +0000] \"GET /api/review HTTP/1.1\" 404 - \"-\" \"node\"","timestamp":"2025-08-29T18:30:44.078Z"}
+{"isOperational":true,"level":"error","message":"Route /api/news not found Route /api/news not found","status":"fail","statusCode":404,"timestamp":"2025-08-29T18:30:44.530Z"}
+{"level":"info","message":"::1 - - [29/Aug/2025:18:30:44 +0000] \"GET /api/news HTTP/1.1\" 404 - \"-\" \"node\"","timestamp":"2025-08-29T18:30:44.541Z"}
+{"isOperational":true,"level":"error","message":"Route /api/review not found Route /api/review not found","status":"fail","statusCode":404,"timestamp":"2025-08-29T18:30:44.567Z"}
+{"level":"info","message":"::1 - - [29/Aug/2025:18:30:44 +0000] \"GET /api/review HTTP/1.1\" 404 - \"-\" \"node\"","timestamp":"2025-08-29T18:30:44.578Z"}
+{"isOperational":true,"level":"error","message":"Route /api/news not found Route /api/news not found","status":"fail","statusCode":404,"timestamp":"2025-08-29T18:30:45.095Z"}
+{"level":"info","message":"::1 - - [29/Aug/2025:18:30:45 +0000] \"GET /api/news HTTP/1.1\" 404 - \"-\" \"node\"","timestamp":"2025-08-29T18:30:45.103Z"}
+{"isOperational":true,"level":"error","message":"Route /api/review not found Route /api/review not found","status":"fail","statusCode":404,"timestamp":"2025-08-29T18:30:45.159Z"}
+{"level":"info","message":"::1 - - [29/Aug/2025:18:30:45 +0000] \"GET /api/review HTTP/1.1\" 404 - \"-\" \"node\"","timestamp":"2025-08-29T18:30:45.164Z"}
+{"isOperational":true,"level":"error","message":"Route /api/news not found Route /api/news not found","status":"fail","statusCode":404,"timestamp":"2025-08-29T18:30:45.989Z"}
+{"level":"info","message":"::1 - - [29/Aug/2025:18:30:45 +0000] \"GET /api/news HTTP/1.1\" 404 - \"-\" \"node\"","timestamp":"2025-08-29T18:30:45.992Z"}
+{"isOperational":true,"level":"error","message":"Route /api/review not found Route /api/review not found","status":"fail","statusCode":404,"timestamp":"2025-08-29T18:30:46.043Z"}
+{"level":"info","message":"::1 - - [29/Aug/2025:18:30:46 +0000] \"GET /api/review HTTP/1.1\" 404 - \"-\" \"node\"","timestamp":"2025-08-29T18:30:46.046Z"}
+{"isOperational":true,"level":"error","message":"Route /api/news not found Route /api/news not found","status":"fail","statusCode":404,"timestamp":"2025-08-29T18:30:46.502Z"}
+{"level":"info","message":"::1 - - [29/Aug/2025:18:30:46 +0000] \"GET /api/news HTTP/1.1\" 404 - \"-\" \"node\"","timestamp":"2025-08-29T18:30:46.508Z"}
+{"isOperational":true,"level":"error","message":"Route /api/review not found Route /api/review not found","status":"fail","statusCode":404,"timestamp":"2025-08-29T18:30:46.528Z"}
+{"level":"info","message":"::1 - - [29/Aug/2025:18:30:46 +0000] \"GET /api/review HTTP/1.1\" 404 - \"-\" \"node\"","timestamp":"2025-08-29T18:30:46.544Z"}
+{"isOperational":true,"level":"error","message":"Route /api/news not found Route /api/news not found","status":"fail","statusCode":404,"timestamp":"2025-08-29T18:33:10.801Z"}
+{"level":"info","message":"::1 - - [29/Aug/2025:18:33:10 +0000] \"GET /api/news HTTP/1.1\" 404 - \"-\" \"node\"","timestamp":"2025-08-29T18:33:10.808Z"}
+{"isOperational":true,"level":"error","message":"Route /api/review not found Route /api/review not found","status":"fail","statusCode":404,"timestamp":"2025-08-29T18:33:10.828Z"}
+{"level":"info","message":"::1 - - [29/Aug/2025:18:33:10 +0000] \"GET /api/review HTTP/1.1\" 404 - \"-\" \"node\"","timestamp":"2025-08-29T18:33:10.839Z"}
+{"isOperational":true,"level":"error","message":"Route /api/news not found Route /api/news not found","status":"fail","statusCode":404,"timestamp":"2025-08-29T18:33:12.593Z"}
+{"level":"info","message":"::1 - - [29/Aug/2025:18:33:12 +0000] \"GET /api/news HTTP/1.1\" 404 - \"-\" \"node\"","timestamp":"2025-08-29T18:33:12.637Z"}
+{"isOperational":true,"level":"error","message":"Route /api/review not found Route /api/review not found","status":"fail","statusCode":404,"timestamp":"2025-08-29T18:33:12.745Z"}
+{"level":"info","message":"::1 - - [29/Aug/2025:18:33:12 +0000] \"GET /api/review HTTP/1.1\" 404 - \"-\" \"node\"","timestamp":"2025-08-29T18:33:12.760Z"}
+{"isOperational":true,"level":"error","message":"Route /api/news not found Route /api/news not found","status":"fail","statusCode":404,"timestamp":"2025-08-29T18:34:01.028Z"}
+{"level":"info","message":"::1 - - [29/Aug/2025:18:34:01 +0000] \"GET /api/news HTTP/1.1\" 404 - \"-\" \"node\"","timestamp":"2025-08-29T18:34:01.030Z"}
+{"isOperational":true,"level":"error","message":"Route /api/review not found Route /api/review not found","status":"fail","statusCode":404,"timestamp":"2025-08-29T18:34:01.050Z"}
+{"level":"info","message":"::1 - - [29/Aug/2025:18:34:01 +0000] \"GET /api/review HTTP/1.1\" 404 - \"-\" \"node\"","timestamp":"2025-08-29T18:34:01.062Z"}
+{"isOperational":true,"level":"error","message":"Route /api/news not found Route /api/news not found","status":"fail","statusCode":404,"timestamp":"2025-08-29T18:34:08.147Z"}
+{"level":"info","message":"::1 - - [29/Aug/2025:18:34:08 +0000] \"GET /api/news HTTP/1.1\" 404 - \"-\" \"node\"","timestamp":"2025-08-29T18:34:08.241Z"}
+{"isOperational":true,"level":"error","message":"Route /api/review not found Route /api/review not found","status":"fail","statusCode":404,"timestamp":"2025-08-29T18:34:08.562Z"}
+{"level":"info","message":"::1 - - [29/Aug/2025:18:34:08 +0000] \"GET /api/review HTTP/1.1\" 404 - \"-\" \"node\"","timestamp":"2025-08-29T18:34:08.660Z"}
+{"isOperational":true,"level":"error","message":"Route /api/news not found Route /api/news not found","status":"fail","statusCode":404,"timestamp":"2025-08-29T18:34:11.876Z"}
+{"level":"info","message":"::1 - - [29/Aug/2025:18:34:11 +0000] \"GET /api/news HTTP/1.1\" 404 - \"-\" \"node\"","timestamp":"2025-08-29T18:34:11.879Z"}
+{"isOperational":true,"level":"error","message":"Route /api/review not found Route /api/review not found","status":"fail","statusCode":404,"timestamp":"2025-08-29T18:34:11.901Z"}
+{"level":"info","message":"::1 - - [29/Aug/2025:18:34:11 +0000] \"GET /api/review HTTP/1.1\" 404 - \"-\" \"node\"","timestamp":"2025-08-29T18:34:11.907Z"}
+{"isOperational":true,"level":"error","message":"Route /api/products?isFeatured=true&limit=4 not found Route /api/products?isFeatured=true&limit=4 not found","status":"fail","statusCode":404,"timestamp":"2025-08-29T18:34:12.019Z"}
+{"level":"info","message":"::1 - - [29/Aug/2025:18:34:12 +0000] \"GET /api/products?isFeatured=true&limit=4 HTTP/1.1\" 404 - \"-\" \"node\"","timestamp":"2025-08-29T18:34:12.023Z"}
+{"isOperational":true,"level":"error","message":"Route /api/products?sort=createdAt_desc&limit=4 not found Route /api/products?sort=createdAt_desc&limit=4 not found","status":"fail","statusCode":404,"timestamp":"2025-08-29T18:34:12.038Z"}
+{"level":"info","message":"::1 - - [29/Aug/2025:18:34:12 +0000] \"GET /api/products?sort=createdAt_desc&limit=4 HTTP/1.1\" 404 - \"-\" \"node\"","timestamp":"2025-08-29T18:34:12.042Z"}

@@ -1,21 +1,22 @@
-# Backend Template
+# Chrono Server
 
-A comprehensive TypeScript Node.js backend template with Express, MongoDB, and Mongoose following a modular architecture pattern.
+A high-performance TypeScript backend server built with Express, MongoDB, and Mongoose, designed for scalability and maintainability.
 
 ## 🚀 Features
 
 - **TypeScript**: Full TypeScript support with strict type checking
-- **Express.js**: Web framework with middleware support
-- **MongoDB & Mongoose**: Database integration with ODM
-- **Input Validation**: Request validation using Zod
-- **Error Handling**: Centralized error handling middleware
-- **Logging**: Structured logging with different levels
-- **Security**: Helmet, CORS, rate limiting, and password hashing
-- **Testing**: Jest testing framework setup
-- **Code Quality**: ESLint and Prettier configuration
-- **Development**: Hot reload with tsx
+- **Express.js**: Fast, unopinionated web framework with middleware support
+- **MongoDB & Mongoose**: Robust database integration with schema validation
+- **Zod Validation**: Type-safe request validation
+- **Error Handling**: Centralized error handling with custom error classes
+- **Logging**: Structured logging with different severity levels
+- **Security**: Helmet, CORS, rate limiting, and JWT authentication
+- **Testing**: Comprehensive test suite with Jest
+- **Code Quality**: ESLint and Prettier for consistent code style
+- **Development**: Hot reloading with ts-node-dev
+- **Environment Management**: Type-safe environment variables with Zod
 
-## 📁 Project Structure
+## 🏗️ Project Structure
 
 ```
 src/
@@ -43,11 +44,51 @@ src/
     └── response.ts     # Response utility
 ```
 
-## 🎯 Quick Start
+## 🚀 Quick Start
 
-### 1. Create from Template
+### Prerequisites
 
-**Option A: Using GitHub Template**
+- Node.js 16+
+- MongoDB 5.0+
+- Yarn (recommended) or npm
+
+### 1. Clone the Repository
+
+```bash
+git clone <repository-url>
+cd chrono-server
+```
+
+### 2. Install Dependencies
+
+```bash
+yarn install
+# or
+npm install
+```
+
+### 3. Set Up Environment Variables
+
+Create a `.env` file in the root directory and configure the following:
+
+```env
+PORT=5000
+NODE_ENV=development
+MONGO_URI=your_mongodb_connection_string
+CORS_ORIGIN=http://localhost:3000
+RATE_LIMIT_WINDOW_MS=900000
+RATE_LIMIT_MAX_REQUESTS=100
+```
+
+### 4. Start Development Server
+
+```bash
+yarn dev
+# or
+npm run dev
+```
+
+The server will be running at `http://localhost:5000`
 
 1. Go to the template repository on GitHub
 2. Click the "Use this template" button

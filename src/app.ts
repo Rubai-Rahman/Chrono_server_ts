@@ -6,6 +6,8 @@ import { config } from '@config/env';
 import rateLimit from 'express-rate-limit';
 import { logger } from '@utils/logger';
 import { UserRoutes } from '@modules/user/user.route';
+import { NewsRoutes } from '@modules/news/news.route';
+import { OrderRoutes } from '@modules/order/order.route';
 import compression from 'compression';
 import { errorHandler } from '@middleware/error.middleware';
 import { notFound } from '@middleware/notFound.middleware';
@@ -61,6 +63,8 @@ app.get('/health', (req, res) => {
 app.use(compression());
 // API Routes
 app.use('/api/users', UserRoutes);
+app.use('/api/news', NewsRoutes);
+app.use('/api/orders', OrderRoutes);
 
 // Error handling middleware
 app.use(notFound);
