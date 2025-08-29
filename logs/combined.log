@@ -1,0 +1,4 @@
+{"isOperational":true,"level":"error","message":"Route / not found Route / not found","status":"fail","statusCode":404,"timestamp":"2025-07-06T09:00:55.048Z"}
+{"level":"info","message":"::1 - - [06/Jul/2025:09:00:55 +0000] \"GET / HTTP/1.1\" 404 929 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36\"","timestamp":"2025-07-06T09:00:55.079Z"}
+{"isOperational":true,"level":"error","message":"Route /favicon.ico not found Route /favicon.ico not found","status":"fail","statusCode":404,"timestamp":"2025-07-06T09:00:55.282Z"}
+{"level":"info","message":"::1 - - [06/Jul/2025:09:00:55 +0000] \"GET /favicon.ico HTTP/1.1\" 404 951 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36\"","timestamp":"2025-07-06T09:00:55.285Z"}
