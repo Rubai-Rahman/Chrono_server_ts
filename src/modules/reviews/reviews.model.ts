@@ -1,7 +1,7 @@
 import { Schema, model } from 'mongoose';
-import { ReviewType, ReviewModel } from './review.interface';
+import { IReviewType, ReviewModel } from './reviews.interface';
 
-const ReviewSchema = new Schema<ReviewType, ReviewModel>(
+const ReviewSchema = new Schema<IReviewType>(
   {
     name: { type: String, required: true },
     comment: { type: String, required: true },
@@ -11,15 +11,11 @@ const ReviewSchema = new Schema<ReviewType, ReviewModel>(
     rating: { type: Number, min: 1, max: 5 }, // optional rating 1–5
   },
   {
+    collection: 'review', // Using 'review' collection instead of 'reviews'
     timestamps: true, // adds createdAt & updatedAt
     toJSON: { virtuals: true },
     toObject: { virtuals: true },
   },
 );
 
-// Example virtual: firstName extracted from name
-ReviewSchema.virtual('firstName').get(function (this: ReviewType) {
-  return this.name?.split(' ')[0] ?? '';
-});
-
-export const Review = model<ReviewType, ReviewModel>('Review', ReviewSchema);
+export const Review = model<IReviewType, ReviewModel>('Review', ReviewSchema);

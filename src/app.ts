@@ -12,6 +12,7 @@ import compression from 'compression';
 import { errorHandler } from '@middleware/error.middleware';
 import { notFound } from '@middleware/notFound.middleware';
 import { ProductRoutes } from '@modules/product/product.route';
+import { ReviewRoutes } from '@modules/reviews/reviews.route';
 
 const app = express();
 
@@ -67,6 +68,7 @@ app.use('/api/users', UserRoutes);
 app.use('/api/news', NewsRoutes);
 app.use('/api/orders', OrderRoutes);
 app.use('/api/products', ProductRoutes);
+app.use('/api/review', ReviewRoutes);
 
 // Error handling middleware
 app.use(notFound);

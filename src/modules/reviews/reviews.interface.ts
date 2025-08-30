@@ -1,6 +1,6 @@
 import { Model } from 'mongoose';
 
-export interface ReviewType {
+export interface IReviewType {
   _id: string;
   name: string;
   comment: string;
@@ -10,4 +10,4 @@ export interface ReviewType {
   rating?: number;
 }
 
-export interface ReviewModel extends Model<ReviewType> {}
+export interface ReviewModel extends Model<IReviewType> {}

@@ -14,6 +14,8 @@ export interface IProduct {
   inStock?: boolean;
   isFeatured?: boolean;
   quantity?: number;
+  createdAt?: Date;
+  updatedAt?: Date;
 }
 
 export interface ProductModel extends Model<IProduct> {}
