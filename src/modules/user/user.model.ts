@@ -30,4 +30,4 @@ userSchema.statics.isEmailUserNameExists = async function (
   return existingUser as TUser | null;
 };
 
-export const User = model<TUser, userModel>('User', userSchema);
+export const User = model<TUser, userModel>('users', userSchema);

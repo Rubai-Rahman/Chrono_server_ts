@@ -16,7 +16,7 @@ const newsBaseSchema = {
   title: z.string().min(5).max(200),
   content: z.string().min(10),
   excerpt: z.string().max(500).optional(),
-  image: z.string().url('Image must be a valid URL'),
+  img: z.string().url('Image must be a valid URL'),
   categories: z.array(z.string().min(1)).default([]),
   tags: z.array(z.string().min(1)).default([]),
   isPublished: z.boolean().default(false),
@@ -29,7 +29,7 @@ export const createNewsSchema = z.object({
     ...newsBaseSchema,
     title: newsBaseSchema.title.refine(
       (val) => val.trim().length > 0,
-      'Title cannot be empty'
+      'Title cannot be empty',
     ),
   }),
 });
@@ -54,7 +54,10 @@ export const commentSchema = z.object({
     text: z.string().min(1, 'Comment text is required'),
     parentCommentId: z
       .string()
-      .refine((val) => !val || ObjectId.isValid(val), 'Invalid parent comment ID')
+      .refine(
+        (val) => !val || ObjectId.isValid(val),
+        'Invalid parent comment ID',
+      )
       .optional(),
   }),
 });

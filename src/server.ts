@@ -4,7 +4,7 @@ import app from './app';
 import { connectDB } from './config/database';
 import { config } from './config/env';
 
-const PORT = config.PORT || 3000;
+const PORT = config.PORT || 5000;
 
 // Connect to database
 connectDB();
