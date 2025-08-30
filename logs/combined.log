@@ -555,3 +555,75 @@
 {"level":"info","message":"::1 - - [30/Aug/2025:07:00:26 +0000] \"GET /api/products?isFeatured=true&limit=4 HTTP/1.1\" 404 - \"-\" \"node\"","timestamp":"2025-08-30T07:00:26.026Z"}
 {"isOperational":true,"level":"error","message":"Route /api/products?sort=createdAt_desc&limit=4 not found Route /api/products?sort=createdAt_desc&limit=4 not found","status":"fail","statusCode":404,"timestamp":"2025-08-30T07:00:26.044Z"}
 {"level":"info","message":"::1 - - [30/Aug/2025:07:00:26 +0000] \"GET /api/products?sort=createdAt_desc&limit=4 HTTP/1.1\" 404 - \"-\" \"node\"","timestamp":"2025-08-30T07:00:26.048Z"}
+{"isOperational":true,"level":"error","message":"Route /api/review not found Route /api/review not found","status":"fail","statusCode":404,"timestamp":"2025-08-30T07:02:37.940Z"}
+{"level":"info","message":"::1 - - [30/Aug/2025:07:02:38 +0000] \"GET /api/review HTTP/1.1\" 404 - \"-\" \"node\"","timestamp":"2025-08-30T07:02:38.044Z"}
+{"level":"info","message":"::1 - - [30/Aug/2025:07:02:38 +0000] \"GET /api/news HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-08-30T07:02:38.118Z"}
+{"isOperational":true,"level":"error","message":"Route /api/products?isFeatured=true&limit=4 not found Route /api/products?isFeatured=true&limit=4 not found","status":"fail","statusCode":404,"timestamp":"2025-08-30T07:02:38.152Z"}
+{"level":"info","message":"::1 - - [30/Aug/2025:07:02:38 +0000] \"GET /api/products?isFeatured=true&limit=4 HTTP/1.1\" 404 - \"-\" \"node\"","timestamp":"2025-08-30T07:02:38.166Z"}
+{"isOperational":true,"level":"error","message":"Route /api/products?sort=createdAt_desc&limit=4 not found Route /api/products?sort=createdAt_desc&limit=4 not found","status":"fail","statusCode":404,"timestamp":"2025-08-30T07:02:38.221Z"}
+{"level":"info","message":"::1 - - [30/Aug/2025:07:02:38 +0000] \"GET /api/products?sort=createdAt_desc&limit=4 HTTP/1.1\" 404 - \"-\" \"node\"","timestamp":"2025-08-30T07:02:38.232Z"}
+{"isOperational":true,"level":"error","message":"Route /api/review not found Route /api/review not found","status":"fail","statusCode":404,"timestamp":"2025-08-30T07:02:40.628Z"}
+{"level":"info","message":"::1 - - [30/Aug/2025:07:02:40 +0000] \"GET /api/review HTTP/1.1\" 404 - \"-\" \"node\"","timestamp":"2025-08-30T07:02:40.635Z"}
+{"isOperational":true,"level":"error","message":"Route /api/products?isFeatured=true&limit=4 not found Route /api/products?isFeatured=true&limit=4 not found","status":"fail","statusCode":404,"timestamp":"2025-08-30T07:02:41.932Z"}
+{"level":"info","message":"::1 - - [30/Aug/2025:07:02:41 +0000] \"GET /api/products?isFeatured=true&limit=4 HTTP/1.1\" 404 - \"-\" \"node\"","timestamp":"2025-08-30T07:02:41.948Z"}
+{"isOperational":true,"level":"error","message":"Route /api/products?sort=createdAt_desc&limit=4 not found Route /api/products?sort=createdAt_desc&limit=4 not found","status":"fail","statusCode":404,"timestamp":"2025-08-30T07:02:42.118Z"}
+{"level":"info","message":"::1 - - [30/Aug/2025:07:02:42 +0000] \"GET /api/products?sort=createdAt_desc&limit=4 HTTP/1.1\" 404 - \"-\" \"node\"","timestamp":"2025-08-30T07:02:42.152Z"}
+{"isOperational":true,"level":"error","message":"Route /api/review not found Route /api/review not found","status":"fail","statusCode":404,"timestamp":"2025-08-30T07:05:33.484Z"}
+{"level":"info","message":"::1 - - [30/Aug/2025:07:05:33 +0000] \"GET /api/review HTTP/1.1\" 404 - \"-\" \"node\"","timestamp":"2025-08-30T07:05:33.554Z"}
+{"isOperational":true,"level":"error","message":"Route /api/products?isFeatured=true&limit=4 not found Route /api/products?isFeatured=true&limit=4 not found","status":"fail","statusCode":404,"timestamp":"2025-08-30T07:05:34.289Z"}
+{"level":"info","message":"::1 - - [30/Aug/2025:07:05:34 +0000] \"GET /api/products?isFeatured=true&limit=4 HTTP/1.1\" 404 - \"-\" \"node\"","timestamp":"2025-08-30T07:05:34.300Z"}
+{"isOperational":true,"level":"error","message":"Route /api/products?sort=createdAt_desc&limit=4 not found Route /api/products?sort=createdAt_desc&limit=4 not found","status":"fail","statusCode":404,"timestamp":"2025-08-30T07:05:34.375Z"}
+{"level":"info","message":"::1 - - [30/Aug/2025:07:05:34 +0000] \"GET /api/products?sort=createdAt_desc&limit=4 HTTP/1.1\" 404 - \"-\" \"node\"","timestamp":"2025-08-30T07:05:34.405Z"}
+{"isOperational":true,"level":"error","message":"Route /api/reviews not found Route /api/reviews not found","status":"fail","statusCode":404,"timestamp":"2025-08-30T07:05:41.434Z"}
+{"level":"info","message":"::1 - - [30/Aug/2025:07:05:41 +0000] \"GET /api/reviews HTTP/1.1\" 404 - \"-\" \"node\"","timestamp":"2025-08-30T07:05:41.440Z"}
+{"isOperational":true,"level":"error","message":"Route /api/products?isFeatured=true&limit=4 not found Route /api/products?isFeatured=true&limit=4 not found","status":"fail","statusCode":404,"timestamp":"2025-08-30T07:05:41.703Z"}
+{"level":"info","message":"::1 - - [30/Aug/2025:07:05:41 +0000] \"GET /api/products?isFeatured=true&limit=4 HTTP/1.1\" 404 - \"-\" \"node\"","timestamp":"2025-08-30T07:05:41.712Z"}
+{"isOperational":true,"level":"error","message":"Route /api/products?sort=createdAt_desc&limit=4 not found Route /api/products?sort=createdAt_desc&limit=4 not found","status":"fail","statusCode":404,"timestamp":"2025-08-30T07:05:41.744Z"}
+{"level":"info","message":"::1 - - [30/Aug/2025:07:05:41 +0000] \"GET /api/products?sort=createdAt_desc&limit=4 HTTP/1.1\" 404 - \"-\" \"node\"","timestamp":"2025-08-30T07:05:41.751Z"}
+{"isOperational":true,"level":"error","message":"Route /api/reviews not found Route /api/reviews not found","status":"fail","statusCode":404,"timestamp":"2025-08-30T07:05:42.247Z"}
+{"level":"info","message":"::1 - - [30/Aug/2025:07:05:42 +0000] \"GET /api/reviews HTTP/1.1\" 404 - \"-\" \"node\"","timestamp":"2025-08-30T07:05:42.252Z"}
+{"isOperational":true,"level":"error","message":"Route /api/products?isFeatured=true&limit=4 not found Route /api/products?isFeatured=true&limit=4 not found","status":"fail","statusCode":404,"timestamp":"2025-08-30T07:05:42.536Z"}
+{"isOperational":true,"level":"error","message":"Route /api/products?sort=createdAt_desc&limit=4 not found Route /api/products?sort=createdAt_desc&limit=4 not found","status":"fail","statusCode":404,"timestamp":"2025-08-30T07:05:42.541Z"}
+{"level":"info","message":"::1 - - [30/Aug/2025:07:05:42 +0000] \"GET /api/products?isFeatured=true&limit=4 HTTP/1.1\" 404 - \"-\" \"node\"","timestamp":"2025-08-30T07:05:42.550Z"}
+{"level":"info","message":"::1 - - [30/Aug/2025:07:05:42 +0000] \"GET /api/products?sort=createdAt_desc&limit=4 HTTP/1.1\" 404 - \"-\" \"node\"","timestamp":"2025-08-30T07:05:42.553Z"}
+{"isOperational":true,"level":"error","message":"Route /api/products not found Route /api/products not found","status":"fail","statusCode":404,"timestamp":"2025-08-30T07:28:06.477Z"}
+{"level":"info","message":"::1 - - [30/Aug/2025:07:28:06 +0000] \"GET /api/products HTTP/1.1\" 404 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36\"","timestamp":"2025-08-30T07:28:06.484Z"}
+{"level":"info","message":"::1 - - [30/Aug/2025:07:29:01 +0000] \"GET /api/products HTTP/1.1\" 200 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36\"","timestamp":"2025-08-30T07:29:01.864Z"}
+{"isOperational":true,"level":"error","message":"Route /api/reviews not found Route /api/reviews not found","status":"fail","statusCode":404,"timestamp":"2025-08-30T07:29:33.342Z"}
+{"level":"info","message":"::1 - - [30/Aug/2025:07:29:33 +0000] \"GET /api/reviews HTTP/1.1\" 404 - \"-\" \"node\"","timestamp":"2025-08-30T07:29:33.352Z"}
+{"level":"info","message":"::1 - - [30/Aug/2025:07:29:33 +0000] \"GET /api/news HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-08-30T07:29:33.424Z"}
+{"level":"info","message":"::1 - - [30/Aug/2025:07:29:34 +0000] \"GET /api/products?isFeatured=true&limit=4 HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-08-30T07:29:34.274Z"}
+{"level":"info","message":"::1 - - [30/Aug/2025:07:29:34 +0000] \"GET /api/products?sort=createdAt_desc&limit=4 HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-08-30T07:29:34.551Z"}
+{"isOperational":true,"level":"error","message":"Route /api/reviews not found Route /api/reviews not found","status":"fail","statusCode":404,"timestamp":"2025-08-30T07:30:00.375Z"}
+{"level":"info","message":"::1 - - [30/Aug/2025:07:30:00 +0000] \"GET /api/reviews HTTP/1.1\" 404 - \"-\" \"node\"","timestamp":"2025-08-30T07:30:00.408Z"}
+{"isOperational":true,"level":"error","message":"Route /api/reviews not found Route /api/reviews not found","status":"fail","statusCode":404,"timestamp":"2025-08-30T07:30:02.740Z"}
+{"level":"info","message":"::1 - - [30/Aug/2025:07:30:02 +0000] \"GET /api/reviews HTTP/1.1\" 404 - \"-\" \"node\"","timestamp":"2025-08-30T07:30:02.745Z"}
+{"isOperational":true,"level":"error","message":"Route /api/reviews not found Route /api/reviews not found","status":"fail","statusCode":404,"timestamp":"2025-08-30T07:30:07.535Z"}
+{"level":"info","message":"::1 - - [30/Aug/2025:07:30:07 +0000] \"GET /api/reviews HTTP/1.1\" 404 - \"-\" \"node\"","timestamp":"2025-08-30T07:30:07.540Z"}
+{"isOperational":true,"level":"error","message":"Route /api/reviews not found Route /api/reviews not found","status":"fail","statusCode":404,"timestamp":"2025-08-30T07:30:15.060Z"}
+{"level":"info","message":"::1 - - [30/Aug/2025:07:30:15 +0000] \"GET /api/reviews HTTP/1.1\" 404 - \"-\" \"node\"","timestamp":"2025-08-30T07:30:15.109Z"}
+{"isOperational":true,"level":"error","message":"Route /api/reviews not found Route /api/reviews not found","status":"fail","statusCode":404,"timestamp":"2025-08-30T07:30:19.011Z"}
+{"level":"info","message":"::1 - - [30/Aug/2025:07:30:19 +0000] \"GET /api/reviews HTTP/1.1\" 404 - \"-\" \"node\"","timestamp":"2025-08-30T07:30:19.033Z"}
+{"isOperational":true,"level":"error","message":"Route /api/reviews not found Route /api/reviews not found","status":"fail","statusCode":404,"timestamp":"2025-08-30T07:30:42.591Z"}
+{"level":"info","message":"::1 - - [30/Aug/2025:07:30:42 +0000] \"GET /api/reviews HTTP/1.1\" 404 - \"-\" \"node\"","timestamp":"2025-08-30T07:30:42.597Z"}
+{"isOperational":true,"level":"error","message":"Route /api/reviews not found Route /api/reviews not found","status":"fail","statusCode":404,"timestamp":"2025-08-30T07:30:56.755Z"}
+{"level":"info","message":"::1 - - [30/Aug/2025:07:30:56 +0000] \"GET /api/reviews HTTP/1.1\" 404 - \"-\" \"node\"","timestamp":"2025-08-30T07:30:56.761Z"}
+{"isOperational":true,"level":"error","message":"Route /api/reviews not found Route /api/reviews not found","status":"fail","statusCode":404,"timestamp":"2025-08-30T07:31:16.322Z"}
+{"level":"info","message":"::1 - - [30/Aug/2025:07:31:16 +0000] \"GET /api/reviews HTTP/1.1\" 404 - \"-\" \"node\"","timestamp":"2025-08-30T07:31:16.350Z"}
+{"isOperational":true,"level":"error","message":"Route /api/reviews not found Route /api/reviews not found","status":"fail","statusCode":404,"timestamp":"2025-08-30T07:31:21.646Z"}
+{"level":"info","message":"::1 - - [30/Aug/2025:07:31:21 +0000] \"GET /api/reviews HTTP/1.1\" 404 - \"-\" \"node\"","timestamp":"2025-08-30T07:31:21.654Z"}
+{"isOperational":true,"level":"error","message":"Route /api/reviews not found Route /api/reviews not found","status":"fail","statusCode":404,"timestamp":"2025-08-30T07:31:23.890Z"}
+{"level":"info","message":"::1 - - [30/Aug/2025:07:31:23 +0000] \"GET /api/reviews HTTP/1.1\" 404 - \"-\" \"node\"","timestamp":"2025-08-30T07:31:23.895Z"}
+{"isOperational":true,"level":"error","message":"Route /api/reviews not found Route /api/reviews not found","status":"fail","statusCode":404,"timestamp":"2025-08-30T07:31:32.750Z"}
+{"level":"info","message":"::1 - - [30/Aug/2025:07:31:32 +0000] \"GET /api/reviews HTTP/1.1\" 404 - \"-\" \"node\"","timestamp":"2025-08-30T07:31:32.771Z"}
+{"isOperational":true,"level":"error","message":"Route /api/reviews not found Route /api/reviews not found","status":"fail","statusCode":404,"timestamp":"2025-08-30T07:31:36.335Z"}
+{"level":"info","message":"::1 - - [30/Aug/2025:07:31:36 +0000] \"GET /api/reviews HTTP/1.1\" 404 - \"-\" \"node\"","timestamp":"2025-08-30T07:31:36.339Z"}
+{"isOperational":true,"level":"error","message":"Route /api/reviews not found Route /api/reviews not found","status":"fail","statusCode":404,"timestamp":"2025-08-30T07:34:04.740Z"}
+{"level":"info","message":"::1 - - [30/Aug/2025:07:34:04 +0000] \"GET /api/reviews HTTP/1.1\" 404 - \"-\" \"node\"","timestamp":"2025-08-30T07:34:04.788Z"}
+{"level":"info","message":"::1 - - [30/Aug/2025:07:34:05 +0000] \"GET /api/products?isFeatured=true&limit=4 HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-08-30T07:34:05.011Z"}
+{"level":"info","message":"::1 - - [30/Aug/2025:07:34:05 +0000] \"GET /api/products?sort=createdAt_desc&limit=4 HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-08-30T07:34:05.338Z"}
+{"isOperational":true,"level":"error","message":"Route /api/reviews not found Route /api/reviews not found","status":"fail","statusCode":404,"timestamp":"2025-08-30T07:34:07.839Z"}
+{"level":"info","message":"::1 - - [30/Aug/2025:07:34:07 +0000] \"GET /api/reviews HTTP/1.1\" 404 - \"-\" \"node\"","timestamp":"2025-08-30T07:34:07.845Z"}
+{"level":"info","message":"::1 - - [30/Aug/2025:07:34:34 +0000] \"GET /api/products?page=1&size=12&category=gents&sort=createdAt_desc HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-08-30T07:34:34.227Z"}
+{"level":"info","message":"::1 - - [30/Aug/2025:07:34:58 +0000] \"GET /api/products?page=2&size=12&category=gents&sort=createdAt_desc HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-08-30T07:34:58.768Z"}
+{"level":"info","message":"::1 - - [30/Aug/2025:07:35:21 +0000] \"GET /api/products/6298db3f984c6985f9d77f09 HTTP/1.1\" 200 276 \"-\" \"node\"","timestamp":"2025-08-30T07:35:21.756Z"}

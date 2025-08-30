@@ -11,6 +11,7 @@ import { OrderRoutes } from '@modules/order/order.route';
 import compression from 'compression';
 import { errorHandler } from '@middleware/error.middleware';
 import { notFound } from '@middleware/notFound.middleware';
+import { ProductRoutes } from '@modules/product/product.route';
 
 const app = express();
 
@@ -65,6 +66,7 @@ app.use(compression());
 app.use('/api/users', UserRoutes);
 app.use('/api/news', NewsRoutes);
 app.use('/api/orders', OrderRoutes);
+app.use('/api/products', ProductRoutes);
 
 // Error handling middleware
 app.use(notFound);

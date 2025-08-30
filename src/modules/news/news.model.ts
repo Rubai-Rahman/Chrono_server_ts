@@ -8,7 +8,7 @@ const NewsSchema = new Schema<INews>(
     name: { type: String, required: true },
     excerpt: { type: String, required: true },
     details: { type: String, required: true },
-    image: { type: String, required: true },
+    img: { type: String, required: true },
     date: { type: Date, default: Date.now },
     updatedAt: { type: Date, default: Date.now },
     author: { type: String, required: true },
@@ -30,6 +30,3 @@ const collectionName = 'news';
 
 // Create the model with the explicit collection name
 export const News = model<INews, newsModel>('News', NewsSchema, collectionName);
-
-// Log the collection name for debugging
-console.log('News model initialized with collection:', collectionName);
