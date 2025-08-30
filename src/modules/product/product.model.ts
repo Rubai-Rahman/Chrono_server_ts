@@ -7,7 +7,7 @@ const ProductSchema = new Schema<IProduct>(
     name: { type: String, required: true },
     description: { type: String },
     price: { type: Number, required: true },
-    img: { type: [String], required: true }, // array of image URLs
+    img: { type: String, required: true }, // array of image URLs
     brand: { type: String },
     category: { type: String },
     rating: { type: Number, default: 0 },

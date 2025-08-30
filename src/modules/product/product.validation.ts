@@ -34,14 +34,11 @@ export const ProductValidationSchema = z.object({
   }),
 
   images: z
-    .array(
-      z
-        .string({
-          required_error: 'Image URL is required',
-          invalid_type_error: 'Image URL must be a string',
-        })
-        .url({ message: 'Image must be a valid URL' }),
-    )
+    .string({
+      required_error: 'Image URL is required',
+      invalid_type_error: 'Image URL must be a string',
+    })
+    .url({ message: 'Image must be a valid URL' })
     .min(1, { message: 'At least one image is required' }),
 
   stock: z

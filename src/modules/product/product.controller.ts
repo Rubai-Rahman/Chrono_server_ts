@@ -1,6 +1,7 @@
 import { NextFunction, Request, Response } from 'express';
 import { ProductServices } from './product.service';
 import httpStatus from 'http-status';
+
 export const getProducts = async (
   req: Request,
   res: Response,

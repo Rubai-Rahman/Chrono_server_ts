@@ -1,21 +1,24 @@
-import { Document, Model, Types } from 'mongoose';
+import { Model, Document } from 'mongoose';
 
 // Define the order item interface
 export interface IOrderItem {
-  product: Types.ObjectId;
-  name: string;
-  image: string;
-  price: number;
+  productId: string;
   quantity: number;
+  price: number;
 }
 
 // Define the shipping address interface
 export interface IShippingAddress {
+  firstName: string;
+  lastName: string;
+  email: string;
+  phone: string;
   address: string;
   city: string;
   postalCode: string;
   country: string;
-  phone: string;
+  paymentMethod: string;
+  shippingMethod: string;
 }
 
 // Define the payment result interface
@@ -27,37 +30,35 @@ export interface IPaymentResult {
 }
 
 // Define the order status type
-export type OrderStatus = 'pending' | 'processing' | 'shipped' | 'delivered' | 'cancelled';
+export type OrderStatus =
+  | 'pending'
+  | 'processing'
+  | 'shipped'
+  | 'delivered'
+  | 'cancelled';
 export type PaymentStatus = 'pending' | 'completed' | 'failed' | 'refunded';
 export type PaymentMethod = 'credit_card' | 'paypal' | 'cash_on_delivery';
 
-// Define the order interface
-export interface IOrder extends Document {
-  user: Types.ObjectId;
+// Define the main order interface
+export interface IOrder {
   orderItems: IOrderItem[];
   shippingAddress: IShippingAddress;
+  orderSummary: {
+    subtotal: number;
+    shipping: number;
+    tax: number;
+    total: number;
+  };
   paymentMethod: PaymentMethod;
   paymentResult?: IPaymentResult;
-  itemsPrice: number;
-  taxPrice: number;
-  shippingPrice: number;
-  totalPrice: number;
-  isPaid: boolean;
-  paidAt?: Date;
-  isDelivered: boolean;
-  deliveredAt?: Date;
   status: OrderStatus;
   paymentStatus: PaymentStatus;
-  createdAt: Date;
-  updatedAt: Date;
+  createdAt?: Date;
+  updatedAt?: Date;
 }
 
-// Add custom methods to the model
-export interface IOrderMethods {
-  // Add any custom methods here if needed
-}
+// Extend Mongoose Document
+export interface IOrderDocument extends IOrder, Document {}
 
-// Create the model type that includes the custom methods
-export interface IOrderModel extends Model<IOrder, {}, IOrderMethods> {
-  // Add any static methods here if needed
-}
+// Create the model type
+export interface IOrderModel extends Model<IOrderDocument> {}
