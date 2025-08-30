@@ -1,6 +1,6 @@
 # Dependencies
+/coverage
 /node_modules
-
 # Production
 /dist
 
