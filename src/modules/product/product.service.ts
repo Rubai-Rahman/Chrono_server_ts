@@ -36,6 +36,8 @@ export const getProductsFromDB = async (params: GetProductsParams) => {
     sortOptions = { price: -1 };
   } else if (sort === 'createdAt_asc') {
     sortOptions = { createdAt: 1 };
+  } else if (sort === 'createdAt_desc') {
+    sortOptions = { createdAt: -1 };
   }
 
   // Build query options

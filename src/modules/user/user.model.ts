@@ -14,18 +14,12 @@ const userSchema = new Schema<TUser>({
 });
 
 //custom static methods
-userSchema.statics.isUserExists = async function (
-  userId: number,
-): Promise<TUser | null> {
-  const existingUser = await this.findOne({ userId });
-  return existingUser;
-};
 
 userSchema.statics.isEmailUserNameExists = async function (
-  username: string,
+  name: string,
   email: string,
 ): Promise<TUser | null> {
-  const filter = { $or: [{ username }, { email }] };
+  const filter = { $or: [{ name }, { email }] };
   const existingUser = await this.findOne(filter);
   return existingUser as TUser | null;
 };

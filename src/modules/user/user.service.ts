@@ -2,7 +2,11 @@ import { User } from './user.model';
 import { TUser } from './user.interface';
 
 const createUserIntoDB = async (userData: TUser) => {
-  const userExist = await User.isUserExists(userData.name);
+  const userExist = await User.isEmailUserNameExists(
+    userData.name,
+    userData.email,
+  );
+  console.log('userExist', userExist);
   if (userExist) {
     return userExist;
   }
