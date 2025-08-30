@@ -68,7 +68,7 @@ app.use('/api/users', UserRoutes);
 app.use('/api/news', NewsRoutes);
 app.use('/api/orders', OrderRoutes);
 app.use('/api/products', ProductRoutes);
-app.use('/api/review', ReviewRoutes);
+app.use('/api/reviews', ReviewRoutes);
 
 // Error handling middleware
 app.use(notFound);

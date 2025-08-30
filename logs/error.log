@@ -267,3 +267,4 @@
 {"isOperational":true,"level":"error","message":"Route /api/reviews not found Route /api/reviews not found","status":"fail","statusCode":404,"timestamp":"2025-08-30T08:12:37.935Z"}
 {"isOperational":true,"level":"error","message":"Route /api/reviews not found Route /api/reviews not found","status":"fail","statusCode":404,"timestamp":"2025-08-30T08:13:42.634Z"}
 {"isOperational":true,"level":"error","message":"Route /api/reviews not found Route /api/reviews not found","status":"fail","statusCode":404,"timestamp":"2025-08-30T08:19:48.066Z"}
+{"isOperational":true,"level":"error","message":"Route /api/reviews not found Route /api/reviews not found","status":"fail","statusCode":404,"timestamp":"2025-08-30T08:28:16.029Z"}

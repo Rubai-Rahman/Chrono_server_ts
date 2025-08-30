@@ -11,11 +11,10 @@ const ReviewSchema = new Schema<IReviewType>(
     rating: { type: Number, min: 1, max: 5 }, // optional rating 1–5
   },
   {
-    collection: 'review', // Using 'review' collection instead of 'reviews'
     timestamps: true, // adds createdAt & updatedAt
     toJSON: { virtuals: true },
     toObject: { virtuals: true },
   },
 );
 
-export const Review = model<IReviewType, ReviewModel>('Review', ReviewSchema);
+export const Review = model<IReviewType, ReviewModel>('reviews', ReviewSchema);
