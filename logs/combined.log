@@ -800,3 +800,13 @@
 {"level":"info","message":"::1 - - [31/Aug/2025:05:28:49 +0000] \"GET /api/products?page=1&size=12&category=gents&sort=createdAt_desc HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-08-31T05:28:49.315Z"}
 {"level":"info","message":"::1 - - [31/Aug/2025:05:29:12 +0000] \"PUT /api/users HTTP/1.1\" 201 190 \"-\" \"node\"","timestamp":"2025-08-31T05:29:12.792Z"}
 {"level":"info","message":"::1 - - [31/Aug/2025:05:29:13 +0000] \"GET /api/products?page=1&size=12&category=gents&sort=createdAt_desc HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-08-31T05:29:13.820Z"}
+{"level":"info","message":"::1 - - [31/Aug/2025:05:32:00 +0000] \"GET /api/reviews HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-08-31T05:32:00.127Z"}
+{"level":"info","message":"::1 - - [31/Aug/2025:05:32:00 +0000] \"GET /api/products?isFeatured=true&limit=4 HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-08-31T05:32:00.157Z"}
+{"level":"info","message":"::1 - - [31/Aug/2025:05:32:00 +0000] \"GET /api/news HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-08-31T05:32:00.165Z"}
+{"level":"info","message":"::1 - - [31/Aug/2025:05:32:00 +0000] \"GET /api/products?sort=createdAt_desc&limit=4 HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-08-31T05:32:00.479Z"}
+{"level":"info","message":"::1 - - [31/Aug/2025:05:32:03 +0000] \"GET /api/news HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-08-31T05:32:03.167Z"}
+{"level":"info","message":"::1 - - [31/Aug/2025:05:32:03 +0000] \"GET /api/reviews HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-08-31T05:32:03.328Z"}
+{"level":"info","message":"::1 - - [31/Aug/2025:05:32:03 +0000] \"GET /api/products?isFeatured=true&limit=4 HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-08-31T05:32:03.465Z"}
+{"level":"info","message":"::1 - - [31/Aug/2025:05:32:03 +0000] \"GET /api/products?sort=createdAt_desc&limit=4 HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-08-31T05:32:03.507Z"}
+{"level":"info","message":"::1 - - [31/Aug/2025:05:32:22 +0000] \"PUT /api/users HTTP/1.1\" 200 127 \"-\" \"node\"","timestamp":"2025-08-31T05:32:22.692Z"}
+{"level":"info","message":"::1 - - [31/Aug/2025:05:32:23 +0000] \"GET /api/products?page=1&size=12&category=gents&sort=createdAt_desc HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-08-31T05:32:23.481Z"}
