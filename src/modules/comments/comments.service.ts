@@ -87,7 +87,24 @@ export const getCommentsWithReactions = async (
         _id: commentId,
         newsId: comment.newsId.toString(),
         parentId: comment.parentId ? comment.parentId.toString() : null,
-        user: comment.user._id ? { _id: comment.user._id.toString(), ...comment.user.toObject() } : comment.user.toString(),
+        user: ((user: any) => {
+          if (!user) return 'unknown';
+          
+          if (typeof user === 'object' && user !== null && '_id' in user) {
+            return { 
+              _id: user._id.toString(),
+              ...(typeof (user as any).toObject === 'function' 
+                ? (user as any).toObject() 
+                : {})
+            };
+          }
+          
+          if (typeof user.toString === 'function') {
+            return user.toString();
+          }
+          
+          return 'unknown';
+        })(comment.user),
         userReaction: reactionMap.get(commentId) || null,
         replies: [],
         date: comment.date
