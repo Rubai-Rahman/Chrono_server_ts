@@ -7,7 +7,6 @@ export type TUser = {
   role: 'admin' | 'user';
   photoUrl?: string;
   isActive?: boolean;
-  rememberMe?: boolean;
 };
 
 interface UserMethods {

@@ -34,7 +34,6 @@ export const authMiddleware = async (
   }
 
   try {
-    // ✅ Verify with Firebase Admin
     const decoded = await admin.auth().verifyIdToken(idToken);
 
     // Find or create user in your DB

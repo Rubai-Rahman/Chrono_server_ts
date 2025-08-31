@@ -1,12 +1,19 @@
-import { NextFunction, Request, Response } from 'express';
+import { NextFunction, Response } from 'express';
+import { AuthRequest } from '../../middleware/auth.middleware';
 import { UserServices } from './user.service';
 
-const createUser = async (req: Request, res: Response, next: NextFunction) => {
+const getUserProfile = async (
+  req: AuthRequest,
+  res: Response,
+  next: NextFunction,
+) => {
+  const user = req.user;
+  const userId = user.id;
   try {
-    const result = await UserServices.createUserIntoDB(req.body);
+    const result = await UserServices.getUserProfile(userId);
     res.status(201).json({
       success: true,
-      message: 'User is created successfully',
+      message: 'User is found successfully',
       data: result,
     });
   } catch (error) {
@@ -15,5 +22,5 @@ const createUser = async (req: Request, res: Response, next: NextFunction) => {
 };
 
 export const UserController = {
-  createUser,
+  getUserProfile,
 };

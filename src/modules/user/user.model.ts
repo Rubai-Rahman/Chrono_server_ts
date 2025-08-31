@@ -9,7 +9,6 @@ const userSchema = new Schema<TUser>({
   email: { type: String, required: [true, 'Email is required'], unique: true },
   isActive: { type: Boolean, default: true },
   photoUrl: { type: String, required: [false, 'Photo URL is required'] },
-  rememberMe: { type: Boolean, default: false },
   role: { type: String, enum: ['admin', 'user'], default: 'user' },
 });
 
