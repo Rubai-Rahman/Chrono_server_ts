@@ -8,31 +8,37 @@ export interface AuthRequest extends Request {
   token?: string;
 }
 
-export const authMiddleware: RequestHandler = async (req: Request, res: Response, next: NextFunction) => {
+export const authMiddleware = async (
+  req: Request,
+  res: Response,
+  next: NextFunction,
+): Promise<void> => {
   const authReq = req as AuthRequest;
   const jwtSecret = process.env.JWT_SECRET || 'your_jwt_secret';
+
+  // Get token from header
+  const token = req.header('Authorization')?.replace('Bearer ', '');
+  console.log('token', token);
+  if (!token) {
+    res
+      .status(401)
+      .json({ success: false, error: 'No token, authorization denied' });
+    return;
+  }
+
   try {
-    // Get token from header
-    const token = req.header('Authorization')?.replace('Bearer ', '');
-
-    if (!token) {
-      return res.status(401).json({
-        success: false,
-        error: 'No token, authorization denied',
-      });
-    }
-
     // Verify token
     const decoded = jwt.verify(token, jwtSecret) as { id: string };
-    
+
     // Get user from the token
     const user = await User.findById(decoded.id).select('-password');
 
     if (!user) {
-      return res.status(401).json({
+      res.status(401).json({
         success: false,
         error: 'User not found',
       });
+      return;
     }
 
     // Add user to request object
@@ -41,7 +47,7 @@ export const authMiddleware: RequestHandler = async (req: Request, res: Response
     next();
   } catch (error) {
     console.error('Authentication error:', error);
-    return res.status(401).json({
+    res.status(401).json({
       success: false,
       error: 'Token is not valid',
     });
@@ -49,7 +55,11 @@ export const authMiddleware: RequestHandler = async (req: Request, res: Response
 };
 
 // Admin middleware
-export const adminMiddleware = (req: AuthRequest, res: Response, next: NextFunction) => {
+export const adminMiddleware = (
+  req: AuthRequest,
+  res: Response,
+  next: NextFunction,
+) => {
   if (req.user && req.user.role === 'admin') {
     next();
   } else {
