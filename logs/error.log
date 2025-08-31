@@ -304,3 +304,10 @@
 {"isOperational":true,"level":"error","message":"Route /api/api/news/689aae1fb02f90182e42955c/comments not found Route /api/api/news/689aae1fb02f90182e42955c/comments not found","status":"fail","statusCode":404,"timestamp":"2025-08-31T13:18:51.168Z"}
 {"isOperational":true,"level":"error","message":"Route /api/api/news/689aae1fb02f90182e42955c/comments not found Route /api/api/news/689aae1fb02f90182e42955c/comments not found","status":"fail","statusCode":404,"timestamp":"2025-08-31T13:18:58.924Z"}
 {"isOperational":true,"level":"error","message":"Route /api/api/news/689aae1fb02f90182e42955c/comments not found Route /api/api/news/689aae1fb02f90182e42955c/comments not found","status":"fail","statusCode":404,"timestamp":"2025-08-31T13:19:05.738Z"}
+{"level":"error","message":"userId is not defined userId is not defined","timestamp":"2025-08-31T16:32:02.512Z"}
+{"level":"error","message":"userId is not defined userId is not defined","timestamp":"2025-08-31T16:32:03.927Z"}
+{"level":"error","message":"userId is not defined userId is not defined","timestamp":"2025-08-31T16:32:05.971Z"}
+{"level":"error","message":"userId is not defined userId is not defined","timestamp":"2025-08-31T16:32:10.003Z"}
+{"level":"error","message":"input must be a 24 character hex string, 12 byte Uint8Array, or an integer input must be a 24 character hex string, 12 byte Uint8Array, or an integer","timestamp":"2025-08-31T17:05:38.002Z"}
+{"level":"error","message":"input must be a 24 character hex string, 12 byte Uint8Array, or an integer input must be a 24 character hex string, 12 byte Uint8Array, or an integer","timestamp":"2025-08-31T17:06:28.839Z"}
+{"level":"error","message":"input must be a 24 character hex string, 12 byte Uint8Array, or an integer input must be a 24 character hex string, 12 byte Uint8Array, or an integer","timestamp":"2025-08-31T17:06:53.489Z"}

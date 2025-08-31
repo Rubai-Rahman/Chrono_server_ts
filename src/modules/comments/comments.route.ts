@@ -1,9 +1,8 @@
 import express from 'express';
+import { CommentController } from './comments.controller';
 
 const router = express.Router();
 
-// // Public routes - no authentication required
-// router.get('/', getAllComments);
-// router.get('/:id', getCommentById);
+router.get('/:id', CommentController.getCommentsByNewsId);
 
 export const CommentRoutes = router;
