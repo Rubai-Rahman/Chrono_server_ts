@@ -11,11 +11,7 @@ const getUserProfile = async (
   const userId = user.id;
   try {
     const result = await UserServices.getUserProfile(userId);
-    res.status(201).json({
-      success: true,
-      message: 'User is found successfully',
-      data: result,
-    });
+    res.status(200).json(result);
   } catch (error) {
     next(error);
   }
