@@ -1,12 +1,12 @@
 import { z } from 'zod';
 import { ObjectId } from 'mongodb';
 import httpStatus from 'http-status';
-import { ApiError } from '../../utils/ApiError';
+import AppError from '../../utils/AppError';
 
 // Helper function to validate MongoDB ObjectId
 const objectId = (value: string, msg: string) => {
   if (!ObjectId.isValid(value)) {
-    throw new ApiError(httpStatus.BAD_REQUEST, msg);
+    throw new AppError(msg, httpStatus.BAD_REQUEST);
   }
   return value;
 };

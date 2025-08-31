@@ -1,5 +1,4 @@
-import validate from './validation';
+import { validateRequest } from './validateRequest';
+import { authMiddleware } from './auth.middleware';
 
-export {
-  validate,
-};
+export { validateRequest, authMiddleware };

@@ -61,14 +61,41 @@ export const errorHandler = (
     error = new AppError(message.join(', '), 400);
   }
 
-  // JWT errors
-  if (err.name === 'JsonWebTokenError') {
-    const message = 'Invalid token';
-    error = new AppError(message, 401);
-  }
+  // Firebase Auth errors
+  if (err.name === 'FirebaseAuthError') {
+    const firebaseError = err as any;
+    let message = 'Authentication error';
+    let statusCode = 401;
 
-  if (err.name === 'TokenExpiredError') {
-    const message = 'Token expired';
+    switch (firebaseError.code) {
+      case 'auth/id-token-expired':
+        message = 'Firebase ID token has expired';
+        statusCode = 401;
+        break;
+      case 'auth/id-token-revoked':
+        message = 'Firebase ID token has been revoked';
+        statusCode = 401;
+        break;
+      case 'auth/argument-error':
+      case 'auth/invalid-id-token':
+        message = 'Invalid Firebase ID token';
+        statusCode = 401;
+        break;
+      case 'auth/insufficient-permission':
+        message = 'Insufficient permissions';
+        statusCode = 403;
+        break;
+      // Add more Firebase error codes as needed
+      default:
+        message = firebaseError.message || 'Authentication failed';
+    }
+    
+    error = new AppError(message, statusCode);
+  }
+  
+  // Handle other authentication errors
+  if (err.name === 'JsonWebTokenError' || err.name === 'TokenExpiredError') {
+    const message = 'Invalid or expired authentication token';
     error = new AppError(message, 401);
   }
 
