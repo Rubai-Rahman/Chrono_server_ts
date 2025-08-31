@@ -14,9 +14,19 @@ export const authMiddleware = async (
 ): Promise<void> => {
   const authReq = req as AuthRequest;
 
-  const token = req.header('Authorization')?.replace('Bearer ', '');
-  console.log('token', token);
-  if (!token) {
+  let idToken: string | null = null;
+  const rawToken = req.header('Authorization')?.replace('Bearer ', '') ?? null;
+
+  try {
+    // if it's JSON, parse it
+    const parsed = JSON.parse(rawToken ?? '{}');
+    idToken = parsed.idToken || rawToken;
+  } catch {
+    // if it's already just a string, use as is
+    idToken = rawToken;
+  }
+  console.log('token', idToken);
+  if (!idToken) {
     res
       .status(401)
       .json({ success: false, error: 'No token, authorization denied' });
@@ -25,7 +35,7 @@ export const authMiddleware = async (
 
   try {
     // ✅ Verify with Firebase Admin
-    const decoded = await admin.auth().verifyIdToken(token);
+    const decoded = await admin.auth().verifyIdToken(idToken);
 
     // Find or create user in your DB
     let user = await User.findOne({ email: decoded.email });
@@ -38,7 +48,7 @@ export const authMiddleware = async (
     }
 
     authReq.user = user;
-    authReq.token = token;
+    authReq.token = idToken;
     next();
   } catch (error) {
     console.error('Firebase Auth error:', error);
