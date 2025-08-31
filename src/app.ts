@@ -13,6 +13,7 @@ import { errorHandler } from '@middleware/error.middleware';
 import { notFound } from '@middleware/notFound.middleware';
 import { ProductRoutes } from '@modules/product/product.route';
 import { ReviewRoutes } from '@modules/reviews/reviews.route';
+import { CommentRoutes } from '@modules/comments/comments.route';
 
 const app = express();
 
@@ -69,6 +70,7 @@ app.use('/api/news', NewsRoutes);
 app.use('/api/orders', OrderRoutes);
 app.use('/api/products', ProductRoutes);
 app.use('/api/reviews', ReviewRoutes);
+app.use('/api/comments', CommentRoutes);
 
 // Error handling middleware
 app.use(notFound);

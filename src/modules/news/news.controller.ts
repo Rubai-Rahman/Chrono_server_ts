@@ -39,7 +39,6 @@ export const getNewsById = async (
   try {
     const { id } = req.params;
     const result = await NewsServices.getNewsById(id);
-
     res.status(httpStatus.OK).json(result);
   } catch (error) {
     next(error);

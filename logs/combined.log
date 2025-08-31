@@ -854,3 +854,39 @@
 {"level":"info","message":"::1 - - [31/Aug/2025:11:52:35 +0000] \"GET /api/news/689aae1fb02f90182e429562 HTTP/1.1\" 200 723 \"-\" \"node\"","timestamp":"2025-08-31T11:52:35.233Z"}
 {"level":"info","message":"::1 - - [31/Aug/2025:11:53:43 +0000] \"GET /api/news/689aae1fb02f90182e429562 HTTP/1.1\" 200 723 \"-\" \"node\"","timestamp":"2025-08-31T11:53:43.677Z"}
 {"level":"info","message":"::1 - - [31/Aug/2025:11:55:09 +0000] \"GET /api/news/689aae1fb02f90182e429562 HTTP/1.1\" 200 723 \"-\" \"node\"","timestamp":"2025-08-31T11:55:09.132Z"}
+{"level":"info","message":"::1 - - [31/Aug/2025:11:58:51 +0000] \"GET /api/news/689aae1fb02f90182e429562 HTTP/1.1\" 200 723 \"-\" \"node\"","timestamp":"2025-08-31T11:58:51.197Z"}
+{"level":"info","message":"::1 - - [31/Aug/2025:11:58:54 +0000] \"GET /api/news/689aae1fb02f90182e429562 HTTP/1.1\" 200 723 \"-\" \"node\"","timestamp":"2025-08-31T11:58:54.097Z"}
+{"level":"info","message":"::1 - - [31/Aug/2025:11:58:57 +0000] \"GET /api/news/689aae1fb02f90182e429562 HTTP/1.1\" 200 723 \"-\" \"node\"","timestamp":"2025-08-31T11:58:57.394Z"}
+{"level":"info","message":"::1 - - [31/Aug/2025:11:59:16 +0000] \"GET /api/news/689aae1fb02f90182e429562 HTTP/1.1\" 200 723 \"-\" \"node\"","timestamp":"2025-08-31T11:59:16.228Z"}
+{"level":"info","message":"::1 - - [31/Aug/2025:12:01:03 +0000] \"GET /api/news/689aae1fb02f90182e429562 HTTP/1.1\" 200 723 \"-\" \"node\"","timestamp":"2025-08-31T12:01:03.488Z"}
+{"level":"info","message":"::1 - - [31/Aug/2025:12:06:32 +0000] \"GET /api/news/689aae1fb02f90182e429562 HTTP/1.1\" 200 723 \"-\" \"node\"","timestamp":"2025-08-31T12:06:32.139Z"}
+{"level":"info","message":"::1 - - [31/Aug/2025:12:08:10 +0000] \"GET /api/news/689aae1fb02f90182e429562 HTTP/1.1\" 200 723 \"-\" \"node\"","timestamp":"2025-08-31T12:08:10.940Z"}
+{"level":"info","message":"::1 - - [31/Aug/2025:12:13:08 +0000] \"GET /api/news/689aae1fb02f90182e429562 HTTP/1.1\" 200 723 \"-\" \"node\"","timestamp":"2025-08-31T12:13:08.782Z"}
+{"level":"info","message":"::1 - - [31/Aug/2025:12:14:14 +0000] \"GET /api/news/689aae1fb02f90182e429562 HTTP/1.1\" 200 723 \"-\" \"node\"","timestamp":"2025-08-31T12:14:14.852Z"}
+{"level":"info","message":"::1 - - [31/Aug/2025:12:18:17 +0000] \"GET /api/news/689aae1fb02f90182e429562 HTTP/1.1\" 200 723 \"-\" \"node\"","timestamp":"2025-08-31T12:18:17.580Z"}
+{"level":"info","message":"::1 - - [31/Aug/2025:12:19:05 +0000] \"GET /api/news?page=1&size=12&sort=createdAt_desc HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-08-31T12:19:05.849Z"}
+{"level":"info","message":"::1 - - [31/Aug/2025:12:19:23 +0000] \"GET /api/news/689aae1fb02f90182e429562 HTTP/1.1\" 200 723 \"-\" \"node\"","timestamp":"2025-08-31T12:19:23.469Z"}
+{"level":"info","message":"::1 - - [31/Aug/2025:12:19:23 +0000] \"GET /api/news/689aae1fb02f90182e429562 HTTP/1.1\" 200 723 \"-\" \"node\"","timestamp":"2025-08-31T12:19:23.779Z"}
+{"level":"info","message":"::1 - - [31/Aug/2025:12:19:25 +0000] \"GET /api/news/63664496becd6154ebb9f09c HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-08-31T12:19:25.558Z"}
+{"level":"info","message":"::1 - - [31/Aug/2025:12:19:25 +0000] \"GET /api/news/63664496becd6154ebb9f09c HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-08-31T12:19:25.764Z"}
+{"level":"info","message":"::1 - - [31/Aug/2025:12:31:30 +0000] \"GET /api/news/63664496becd6154ebb9f09c HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-08-31T12:31:30.290Z"}
+{"level":"info","message":"::1 - - [31/Aug/2025:12:31:43 +0000] \"GET /api/news?page=1&size=12&sort=createdAt_desc HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-08-31T12:31:43.365Z"}
+{"level":"info","message":"::1 - - [31/Aug/2025:12:31:45 +0000] \"GET /api/news?page=1&size=12&sort=createdAt_desc HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-08-31T12:31:45.989Z"}
+{"level":"info","message":"::1 - - [31/Aug/2025:12:31:56 +0000] \"GET /api/news/63664496becd6154ebb9f09c HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-08-31T12:31:56.739Z"}
+{"level":"info","message":"::1 - - [31/Aug/2025:12:32:00 +0000] \"GET /api/news/6366214c887e8d928d03f2f3 HTTP/1.1\" 200 1017 \"-\" \"node\"","timestamp":"2025-08-31T12:32:00.678Z"}
+{"level":"info","message":"::1 - - [31/Aug/2025:12:32:17 +0000] \"GET /api/news/689aae1fb02f90182e42955f HTTP/1.1\" 200 721 \"-\" \"node\"","timestamp":"2025-08-31T12:32:17.077Z"}
+{"level":"info","message":"::1 - - [31/Aug/2025:13:05:52 +0000] \"GET /api/news/689aae1fb02f90182e429560 HTTP/1.1\" 200 713 \"-\" \"node\"","timestamp":"2025-08-31T13:05:52.362Z"}
+{"level":"info","message":"::1 - - [31/Aug/2025:13:13:15 +0000] \"GET /api/news/689aae1fb02f90182e42955c HTTP/1.1\" 200 761 \"-\" \"node\"","timestamp":"2025-08-31T13:13:15.487Z"}
+{"level":"info","message":"::1 - - [31/Aug/2025:13:14:46 +0000] \"GET /api/news/689aae1fb02f90182e42955c HTTP/1.1\" 200 761 \"-\" \"node\"","timestamp":"2025-08-31T13:14:46.122Z"}
+{"level":"info","message":"::1 - - [31/Aug/2025:13:16:04 +0000] \"GET /api/news/689aae1fb02f90182e42955c HTTP/1.1\" 200 761 \"-\" \"node\"","timestamp":"2025-08-31T13:16:04.450Z"}
+{"level":"info","message":"::1 - - [31/Aug/2025:13:16:59 +0000] \"GET /api/news/689aae1fb02f90182e42955c HTTP/1.1\" 200 761 \"-\" \"node\"","timestamp":"2025-08-31T13:16:59.033Z"}
+{"level":"info","message":"::1 - - [31/Aug/2025:13:17:33 +0000] \"GET /api/news/689aae1fb02f90182e42955c HTTP/1.1\" 200 761 \"-\" \"node\"","timestamp":"2025-08-31T13:17:33.863Z"}
+{"level":"info","message":"::1 - - [31/Aug/2025:13:18:41 +0000] \"GET /api/news/689aae1fb02f90182e42955c HTTP/1.1\" 200 761 \"-\" \"node\"","timestamp":"2025-08-31T13:18:41.324Z"}
+{"isOperational":true,"level":"error","message":"Route /api/api/news/689aae1fb02f90182e42955c/comments not found Route /api/api/news/689aae1fb02f90182e42955c/comments not found","status":"fail","statusCode":404,"timestamp":"2025-08-31T13:18:49.408Z"}
+{"level":"info","message":"::1 - - [31/Aug/2025:13:18:49 +0000] \"GET /api/api/news/689aae1fb02f90182e42955c/comments HTTP/1.1\" 404 - \"http://localhost:3000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36\"","timestamp":"2025-08-31T13:18:49.552Z"}
+{"isOperational":true,"level":"error","message":"Route /api/api/news/689aae1fb02f90182e42955c/comments not found Route /api/api/news/689aae1fb02f90182e42955c/comments not found","status":"fail","statusCode":404,"timestamp":"2025-08-31T13:18:51.168Z"}
+{"level":"info","message":"::1 - - [31/Aug/2025:13:18:51 +0000] \"GET /api/api/news/689aae1fb02f90182e42955c/comments HTTP/1.1\" 404 - \"http://localhost:3000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36\"","timestamp":"2025-08-31T13:18:51.253Z"}
+{"isOperational":true,"level":"error","message":"Route /api/api/news/689aae1fb02f90182e42955c/comments not found Route /api/api/news/689aae1fb02f90182e42955c/comments not found","status":"fail","statusCode":404,"timestamp":"2025-08-31T13:18:58.924Z"}
+{"level":"info","message":"::1 - - [31/Aug/2025:13:18:58 +0000] \"GET /api/api/news/689aae1fb02f90182e42955c/comments HTTP/1.1\" 404 - \"http://localhost:3000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36\"","timestamp":"2025-08-31T13:18:58.961Z"}
+{"isOperational":true,"level":"error","message":"Route /api/api/news/689aae1fb02f90182e42955c/comments not found Route /api/api/news/689aae1fb02f90182e42955c/comments not found","status":"fail","statusCode":404,"timestamp":"2025-08-31T13:19:05.738Z"}
+{"level":"info","message":"::1 - - [31/Aug/2025:13:19:05 +0000] \"GET /api/api/news/689aae1fb02f90182e42955c/comments HTTP/1.1\" 404 - \"http://localhost:3000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36\"","timestamp":"2025-08-31T13:19:05.781Z"}

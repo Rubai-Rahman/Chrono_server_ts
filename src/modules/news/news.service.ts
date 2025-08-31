@@ -40,7 +40,6 @@ export const getNewsById = async (id: string) => {
   if (!news) {
     throw new Error('News not found');
   }
-
   return news;
 };
 export const NewsServices = {
