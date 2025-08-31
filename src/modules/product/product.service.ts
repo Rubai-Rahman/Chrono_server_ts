@@ -1,11 +1,17 @@
 import { Product } from './product.model';
 import { IProduct } from './product.interface';
 
+export type SortOption =
+  | 'price_asc'
+  | 'price_desc'
+  | 'createdAt_asc'
+  | 'createdAt_desc';
+
 interface GetProductsParams {
   page?: string;
   size?: string;
   isFeatured?: string;
-  sort?: string;
+  sort?: SortOption;
   limit?: string;
   category?: string;
   brand?: string;
@@ -13,52 +19,53 @@ interface GetProductsParams {
 
 export const getProductsFromDB = async (params: GetProductsParams) => {
   const { page, size, isFeatured, sort, limit, category, brand } = params;
-  const query: any = {};
 
-  if (isFeatured === 'true') {
-    query.isFeatured = true;
-  }
-
-  if (category) {
-    query.category = category;
-  }
-
-  if (brand) {
-    query.brand = brand;
-  }
+  // Build filter query
+  const query: Record<string, unknown> = {};
+  if (isFeatured === 'true') query.isFeatured = true;
+  if (category) query.category = category;
+  if (brand) query.brand = brand;
 
   // Build sort options
-  let sortOptions: any = { createdAt: -1 }; // Default sort
-
-  if (sort === 'price_asc') {
-    sortOptions = { price: 1 };
-  } else if (sort === 'price_desc') {
-    sortOptions = { price: -1 };
-  } else if (sort === 'createdAt_asc') {
-    sortOptions = { createdAt: 1 };
-  } else if (sort === 'createdAt_desc') {
-    sortOptions = { createdAt: -1 };
+  let sortOptions: Record<string, 1 | -1> = { createdAt: -1 }; // default
+  switch (sort) {
+    case 'price_asc':
+      sortOptions = { price: 1 };
+      break;
+    case 'price_desc':
+      sortOptions = { price: -1 };
+      break;
+    case 'createdAt_asc':
+      sortOptions = { createdAt: 1 };
+      break;
+    case 'createdAt_desc':
+      sortOptions = { createdAt: -1 };
+      break;
   }
 
   // Build query options
-  let queryOptions: any = { sort: sortOptions };
+  const queryOptions: {
+    sort: Record<string, 1 | -1>;
+    skip?: number;
+    limit?: number;
+  } = { sort: sortOptions };
 
-  // Apply limit if provided
-  if (limit) {
-    queryOptions.limit = parseInt(limit, 10);
-  }
-
-  // Apply pagination if both page and size are provided
+  // Pagination
   if (page && size) {
-    const pageNum = parseInt(page, 10);
-    const sizeNum = parseInt(size, 10);
+    const pageNum = Math.max(1, parseInt(page, 10));
+    const sizeNum = Math.max(1, parseInt(size, 10));
     queryOptions.skip = (pageNum - 1) * sizeNum;
     queryOptions.limit = sizeNum;
   }
 
+  // Limit (overrides pagination if provided)
+  if (limit) {
+    queryOptions.limit = parseInt(limit, 10);
+  }
+
   // Execute query
   const [products, total] = await Promise.all([
-    Product.find(query, null, queryOptions).lean(),
+    Product.find(query, undefined, queryOptions).lean<IProduct[]>(),
     Product.countDocuments(query),
   ]);
 

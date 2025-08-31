@@ -810,3 +810,40 @@
 {"level":"info","message":"::1 - - [31/Aug/2025:05:32:03 +0000] \"GET /api/products?sort=createdAt_desc&limit=4 HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-08-31T05:32:03.507Z"}
 {"level":"info","message":"::1 - - [31/Aug/2025:05:32:22 +0000] \"PUT /api/users HTTP/1.1\" 200 127 \"-\" \"node\"","timestamp":"2025-08-31T05:32:22.692Z"}
 {"level":"info","message":"::1 - - [31/Aug/2025:05:32:23 +0000] \"GET /api/products?page=1&size=12&category=gents&sort=createdAt_desc HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-08-31T05:32:23.481Z"}
+{"level":"info","message":"::1 - - [31/Aug/2025:05:43:09 +0000] \"GET /api/news HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-08-31T05:43:09.444Z"}
+{"level":"info","message":"::1 - - [31/Aug/2025:05:43:09 +0000] \"GET /api/news?page=0&size=4 HTTP/1.1\" 304 - \"http://localhost:3000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36\"","timestamp":"2025-08-31T05:43:09.905Z"}
+{"isOperational":true,"level":"error","message":"Route /api/news/689aae1fb02f90182e42955c not found Route /api/news/689aae1fb02f90182e42955c not found","status":"fail","statusCode":404,"timestamp":"2025-08-31T05:43:28.258Z"}
+{"level":"info","message":"::1 - - [31/Aug/2025:05:43:28 +0000] \"GET /api/news/689aae1fb02f90182e42955c HTTP/1.1\" 404 - \"http://localhost:3000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36\"","timestamp":"2025-08-31T05:43:28.288Z"}
+{"isOperational":true,"level":"error","message":"Route /api/news/689aae1fb02f90182e42955c not found Route /api/news/689aae1fb02f90182e42955c not found","status":"fail","statusCode":404,"timestamp":"2025-08-31T05:43:29.346Z"}
+{"level":"info","message":"::1 - - [31/Aug/2025:05:43:29 +0000] \"GET /api/news/689aae1fb02f90182e42955c HTTP/1.1\" 404 - \"http://localhost:3000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36\"","timestamp":"2025-08-31T05:43:29.352Z"}
+{"isOperational":true,"level":"error","message":"Route /api/news/689aae1fb02f90182e42955c not found Route /api/news/689aae1fb02f90182e42955c not found","status":"fail","statusCode":404,"timestamp":"2025-08-31T05:43:31.369Z"}
+{"level":"info","message":"::1 - - [31/Aug/2025:05:43:31 +0000] \"GET /api/news/689aae1fb02f90182e42955c HTTP/1.1\" 404 - \"http://localhost:3000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36\"","timestamp":"2025-08-31T05:43:31.382Z"}
+{"isOperational":true,"level":"error","message":"Route /api/news/689aae1fb02f90182e42955c not found Route /api/news/689aae1fb02f90182e42955c not found","status":"fail","statusCode":404,"timestamp":"2025-08-31T05:43:35.399Z"}
+{"level":"info","message":"::1 - - [31/Aug/2025:05:43:35 +0000] \"GET /api/news/689aae1fb02f90182e42955c HTTP/1.1\" 404 - \"http://localhost:3000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36\"","timestamp":"2025-08-31T05:43:35.406Z"}
+{"level":"info","message":"::1 - - [31/Aug/2025:05:43:43 +0000] \"GET /api/reviews HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-08-31T05:43:43.236Z"}
+{"level":"info","message":"::1 - - [31/Aug/2025:05:43:43 +0000] \"GET /api/products?isFeatured=true&limit=4 HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-08-31T05:43:43.373Z"}
+{"level":"info","message":"::1 - - [31/Aug/2025:05:43:43 +0000] \"GET /api/products?sort=createdAt_desc&limit=4 HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-08-31T05:43:43.687Z"}
+{"level":"info","message":"::1 - - [31/Aug/2025:10:07:42 +0000] \"GET / HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36\"","timestamp":"2025-08-31T10:07:42.843Z"}
+{"isOperational":true,"level":"error","message":"Route /favicon.ico not found Route /favicon.ico not found","status":"fail","statusCode":404,"timestamp":"2025-08-31T10:07:43.176Z"}
+{"level":"info","message":"::1 - - [31/Aug/2025:10:07:43 +0000] \"GET /favicon.ico HTTP/1.1\" 404 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36\"","timestamp":"2025-08-31T10:07:43.201Z"}
+{"level":"info","message":"::1 - - [31/Aug/2025:10:07:48 +0000] \"PUT /api/users HTTP/1.1\" 200 127 \"-\" \"node\"","timestamp":"2025-08-31T10:07:48.597Z"}
+{"level":"info","message":"::1 - - [31/Aug/2025:10:08:18 +0000] \"GET /api/news?page=1&size=12&sort=createdAt_desc HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-08-31T10:08:18.674Z"}
+{"level":"info","message":"::1 - - [31/Aug/2025:10:28:08 +0000] \"GET /api/news?page=1&size=12&sort=createdAt_desc HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-08-31T10:28:08.289Z"}
+{"level":"info","message":"::1 - - [31/Aug/2025:10:29:45 +0000] \"GET /api/news HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-08-31T10:29:45.383Z"}
+{"level":"info","message":"::1 - - [31/Aug/2025:10:29:45 +0000] \"GET /api/reviews HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-08-31T10:29:45.754Z"}
+{"level":"info","message":"::1 - - [31/Aug/2025:10:29:46 +0000] \"GET /api/products?isFeatured=true&limit=4 HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-08-31T10:29:46.700Z"}
+{"level":"info","message":"::1 - - [31/Aug/2025:10:29:46 +0000] \"GET /api/products?sort=createdAt_desc&limit=4 HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-08-31T10:29:46.967Z"}
+{"level":"info","message":"::1 - - [31/Aug/2025:10:41:30 +0000] \"GET /api/news HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-08-31T10:41:30.954Z"}
+{"level":"info","message":"::1 - - [31/Aug/2025:10:41:32 +0000] \"GET /api/reviews HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-08-31T10:41:32.827Z"}
+{"level":"info","message":"::1 - - [31/Aug/2025:10:41:32 +0000] \"GET /api/products?isFeatured=true&limit=4 HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-08-31T10:41:32.940Z"}
+{"level":"info","message":"::1 - - [31/Aug/2025:10:41:33 +0000] \"GET /api/products?sort=createdAt_desc&limit=4 HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-08-31T10:41:33.059Z"}
+{"level":"info","message":"::1 - - [31/Aug/2025:10:42:01 +0000] \"GET /api/news?page=1&size=12&sort=createdAt_desc HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-08-31T10:42:01.757Z"}
+{"level":"info","message":"::1 - - [31/Aug/2025:10:42:36 +0000] \"GET /api/news?page=1&size=12&sort=createdAt_desc HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-08-31T10:42:36.759Z"}
+{"level":"info","message":"::1 - - [31/Aug/2025:10:42:51 +0000] \"GET /api/news?page=0&size=12&sort=createdAt_desc HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-08-31T10:42:51.216Z"}
+{"level":"info","message":"::1 - - [31/Aug/2025:10:45:41 +0000] \"GET /api/news?page=0&size=12&sort=createdAt_desc HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-08-31T10:45:41.061Z"}
+{"level":"info","message":"::1 - - [31/Aug/2025:10:45:43 +0000] \"GET /api/news?page=0&size=12&sort=createdAt_desc HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-08-31T10:45:43.074Z"}
+{"level":"info","message":"::1 - - [31/Aug/2025:10:45:48 +0000] \"GET /api/news?page=0&size=12&sort=createdAt_desc HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-08-31T10:45:48.964Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [31/Aug/2025:11:07:15 +0000] \"GET /api/news?page=0&size=12&sort=createdAt_desc HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-08-31T11:07:15.215Z"}
+{"level":"info","message":"::1 - - [31/Aug/2025:11:07:19 +0000] \"GET /api/news?page=1&size=12&sort=createdAt_desc HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-08-31T11:07:19.688Z"}
+{"level":"info","message":"::1 - - [31/Aug/2025:11:07:55 +0000] \"GET /api/news?page=2&size=12&sort=createdAt_desc HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-08-31T11:07:55.164Z"}
+{"level":"info","message":"::1 - - [31/Aug/2025:11:08:03 +0000] \"GET /api/news?page=1&size=12&sort=createdAt_desc HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-08-31T11:08:03.734Z"}

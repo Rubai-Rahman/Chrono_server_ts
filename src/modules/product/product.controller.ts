@@ -1,5 +1,5 @@
 import { NextFunction, Request, Response } from 'express';
-import { ProductServices } from './product.service';
+import { ProductServices, SortOption } from './product.service';
 import httpStatus from 'http-status';
 
 export const getProducts = async (
@@ -8,14 +8,13 @@ export const getProducts = async (
   next: NextFunction,
 ) => {
   try {
-    const { page, size, isFeatured, sort, limit, category, brand } = req.query;
+    const { page, size, isFeatured, sort, category, brand } = req.query;
 
     const result = await ProductServices.getProductsFromDB({
       page: page as string,
       size: size as string,
       isFeatured: isFeatured as string,
-      sort: sort as string,
-      limit: limit as string,
+      sort: sort as SortOption,
       category: category as string,
       brand: brand as string,
     });
