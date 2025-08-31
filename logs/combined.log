@@ -847,3 +847,10 @@
 {"level":"info","message":"::1 - - [31/Aug/2025:11:07:19 +0000] \"GET /api/news?page=1&size=12&sort=createdAt_desc HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-08-31T11:07:19.688Z"}
 {"level":"info","message":"::1 - - [31/Aug/2025:11:07:55 +0000] \"GET /api/news?page=2&size=12&sort=createdAt_desc HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-08-31T11:07:55.164Z"}
 {"level":"info","message":"::1 - - [31/Aug/2025:11:08:03 +0000] \"GET /api/news?page=1&size=12&sort=createdAt_desc HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-08-31T11:08:03.734Z"}
+{"level":"info","message":"::1 - - [31/Aug/2025:11:28:03 +0000] \"GET /api/products?page=1&size=12&category=gents&sort=createdAt_desc HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-08-31T11:28:03.632Z"}
+{"level":"info","message":"::1 - - [31/Aug/2025:11:49:42 +0000] \"GET /api/news/689aae1fb02f90182e429562 HTTP/1.1\" 200 723 \"-\" \"node\"","timestamp":"2025-08-31T11:49:42.910Z"}
+{"level":"info","message":"::1 - - [31/Aug/2025:11:49:57 +0000] \"GET /api/news/689aae1fb02f90182e429562 HTTP/1.1\" 200 723 \"-\" \"node\"","timestamp":"2025-08-31T11:49:57.706Z"}
+{"level":"info","message":"::1 - - [31/Aug/2025:11:50:27 +0000] \"GET /api/news/689aae1fb02f90182e429562 HTTP/1.1\" 200 723 \"-\" \"node\"","timestamp":"2025-08-31T11:50:27.622Z"}
+{"level":"info","message":"::1 - - [31/Aug/2025:11:52:35 +0000] \"GET /api/news/689aae1fb02f90182e429562 HTTP/1.1\" 200 723 \"-\" \"node\"","timestamp":"2025-08-31T11:52:35.233Z"}
+{"level":"info","message":"::1 - - [31/Aug/2025:11:53:43 +0000] \"GET /api/news/689aae1fb02f90182e429562 HTTP/1.1\" 200 723 \"-\" \"node\"","timestamp":"2025-08-31T11:53:43.677Z"}
+{"level":"info","message":"::1 - - [31/Aug/2025:11:55:09 +0000] \"GET /api/news/689aae1fb02f90182e429562 HTTP/1.1\" 200 723 \"-\" \"node\"","timestamp":"2025-08-31T11:55:09.132Z"}

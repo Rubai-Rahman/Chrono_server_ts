@@ -34,6 +34,16 @@ export const getAllNews = async (params: GetNewsParams) => {
   };
 };
 
+export const getNewsById = async (id: string) => {
+  const news = await News.findById(id).lean();
+
+  if (!news) {
+    throw new Error('News not found');
+  }
+
+  return news;
+};
 export const NewsServices = {
   getAllNews,
+  getNewsById,
 };
