@@ -11,7 +11,7 @@ export interface TCommentType {
   replies?: Types.ObjectId[] | TCommentType[];
   likes?: number;
   dislikes?: number;
-  userReaction?: 'like' | 'dislike' | null;
+  userReaction?: 'like' | 'dislike' | 'remove' | null;
   isDeleted?: boolean;
   updatedAt?: Date;
   isEdited?: boolean;

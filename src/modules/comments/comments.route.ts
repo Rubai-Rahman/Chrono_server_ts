@@ -1,7 +1,11 @@
 import express from 'express';
 import { CommentController } from './comments.controller';
 import { authMiddleware } from '@middleware/auth.middleware';
-import { commentMutationSchema, commentUpdateSchema } from './comments.validation';
+import {
+  commentMutationSchema,
+  commentReactionSchema,
+  commentUpdateSchema,
+} from './comments.validation';
 import { validateRequest } from '@middleware/validateRequest';
 
 const router = express.Router();
@@ -25,8 +29,13 @@ router.put(
 router.delete(
   '/:commentId',
   authMiddleware as express.RequestHandler,
-  validateRequest(commentUpdateSchema) as express.RequestHandler,
   CommentController.deleteComment as unknown as express.RequestHandler,
+);
+router.post(
+  '/:commentId/react',
+  authMiddleware as express.RequestHandler,
+  validateRequest(commentReactionSchema) as express.RequestHandler,
+  CommentController.commentReaction as unknown as express.RequestHandler,
 );
 
 export const CommentRoutes = router;

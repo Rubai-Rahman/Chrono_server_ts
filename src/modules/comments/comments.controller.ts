@@ -28,6 +28,15 @@ interface AuthenticatedRequest extends Request {
     parentId?: string;
   };
 }
+interface reactAuthenticatedRequest extends Request {
+  user?: {
+    _id: string;
+    [key: string]: any;
+  };
+  body: {
+    reaction: 'like' | 'dislike' | 'remove';
+  };
+}
 
 export const postComment = async (
   req: AuthenticatedRequest,
@@ -96,9 +105,35 @@ export const deleteComment = async (
   }
 };
 
+export const commentReaction = async (
+  req: reactAuthenticatedRequest,
+  res: Response,
+  next: NextFunction,
+): Promise<void> => {
+  try {
+    const { commentId } = req.params;
+    const { reaction } = req.body;
+    
+    if (!req.user?._id) {
+      res.status(httpStatus.UNAUTHORIZED).json({ error: 'User not authenticated' });
+      return;
+    }
+
+    const result = await CommentServices.commentReaction(commentId, {
+      reaction,
+      userId: req.user._id
+    });
+
+    res.status(httpStatus.OK).json(result);
+  } catch (error) {
+    next(error);
+  }
+};
+
 export const CommentController = {
   getCommentsByNewsId,
   postComment,
   updateComment,
   deleteComment,
+  commentReaction,
 };

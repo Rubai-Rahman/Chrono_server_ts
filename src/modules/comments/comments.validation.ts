@@ -11,7 +11,7 @@ const BaseCommentSchema = z.object({
   replyCount: z.number().optional(),
   likes: z.number().optional(),
   dislikes: z.number().optional(),
-  userReaction: z.enum(['like', 'dislike']).optional(),
+  userReaction: z.enum(['like', 'dislike', 'remove']).optional(),
   isDeleted: z.boolean().optional(),
   updatedAt: z.string().optional(),
   isEdited: z.boolean().optional(),
@@ -34,4 +34,8 @@ export const commentMutationSchema = z.object({
 
 export const commentUpdateSchema = z.object({
   message: z.string().min(1, 'Message is required'),
+});
+
+export const commentReactionSchema = z.object({
+  reaction: z.enum(['like', 'dislike', 'remove']),
 });

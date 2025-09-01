@@ -1,4 +1,4 @@
-import { Types } from 'mongoose';
+import mongoose, { Types } from 'mongoose';
 import { Comment } from './comments.model';
 import { CommentReaction } from './commentReaction.model';
 
@@ -271,10 +271,86 @@ export const deleteComment = async (
   }
 };
 
+export const commentReaction = async (
+  commentId: string,
+  data: { reaction: 'like' | 'dislike' | 'remove'; userId: string },
+): Promise<{
+  likes: number;
+  dislikes: number;
+  userReaction: string | null;
+}> => {
+  const session = await mongoose.startSession();
+  session.startTransaction();
+
+  try {
+    // First, remove any existing reaction from this user for this comment
+    await CommentReaction.deleteOne({
+      commentId: new Types.ObjectId(commentId),
+      userId: new Types.ObjectId(data.userId),
+    }).session(session);
+
+    let userReaction: string | null = null;
+
+    // If not removing, add the new reaction
+    if (data.reaction !== 'remove') {
+      await CommentReaction.create(
+        [
+          {
+            commentId: new Types.ObjectId(commentId),
+            userId: new Types.ObjectId(data.userId),
+            reaction: data.reaction,
+          },
+        ],
+        { session },
+      );
+      userReaction = data.reaction;
+    }
+
+    // Get updated counts
+    const [likes, dislikes] = await Promise.all([
+      CommentReaction.countDocuments({
+        commentId: new Types.ObjectId(commentId),
+        reaction: 'like',
+      }).session(session),
+      CommentReaction.countDocuments({
+        commentId: new Types.ObjectId(commentId),
+        reaction: 'dislike',
+      }).session(session),
+    ]);
+
+    // Update the comment with new counts
+    await Comment.findByIdAndUpdate(
+      commentId,
+      {
+        $set: {
+          likes,
+          dislikes,
+        },
+      },
+      { session, new: true },
+    );
+
+    await session.commitTransaction();
+    session.endSession();
+
+    return {
+      likes,
+      dislikes,
+      userReaction,
+    };
+  } catch (error) {
+    await session.abortTransaction();
+    session.endSession();
+    console.error('Error in commentReaction:', error);
+    throw error;
+  }
+};
+
 export const CommentServices = {
   getCommentsWithReactions,
   postComment: (newsId: string, data: CreateCommentData) =>
     postComment(newsId, data),
   updateComment,
   deleteComment,
+  commentReaction,
 };
