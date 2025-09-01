@@ -15,17 +15,24 @@ export const authMiddleware = async (
   const authReq = req as AuthRequest;
 
   let idToken: string | null = null;
-  const rawToken = req.header('Authorization')?.replace('Bearer ', '') ?? null;
+  const authHeader = req.header('Authorization');
 
-  try {
-    // if it's JSON, parse it
-    const parsed = JSON.parse(rawToken ?? '{}');
-    idToken = parsed.idToken || rawToken;
-  } catch {
-    // if it's already just a string, use as is
-    idToken = rawToken;
+  if (!authHeader) {
+    res.status(401).json({ success: false, error: 'No token provided' });
+    return;
   }
-  console.log('token', idToken);
+
+  // Check if the header starts with 'Bearer '
+  if (authHeader.startsWith('Bearer ')) {
+    idToken = authHeader.split(' ')[1];
+  } else {
+    // If not in Bearer format, try to use the header as is
+    idToken = authHeader;
+  }
+
+  // Remove any surrounding quotes if present
+  idToken = idToken.replace(/^"|"$/g, '');
+
   if (!idToken) {
     res
       .status(401)

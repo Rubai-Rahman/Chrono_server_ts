@@ -14,6 +14,10 @@ const CommentSchema = new Schema<TCommentType>({
     ref: 'User',
     required: true,
   },
+  username: {
+    type: String,
+    required: true,
+  },
   message: {
     type: String,
     required: true,

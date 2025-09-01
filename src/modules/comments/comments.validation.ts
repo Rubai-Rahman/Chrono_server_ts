@@ -26,3 +26,8 @@ type CommentType = z.infer<typeof BaseCommentSchema> & {
 export const CommentSchema: z.ZodType<CommentType> = BaseCommentSchema.extend({
   replies: z.lazy(() => z.array(CommentSchema)).optional(),
 });
+
+export const commentMutationSchema = z.object({
+  message: z.string().min(1, 'Message is required'),
+  parentId: z.string().nullable().optional(),
+});

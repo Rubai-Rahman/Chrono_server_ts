@@ -4,6 +4,7 @@ export interface TCommentType {
   _id: Types.ObjectId;
   newsId: Types.ObjectId;
   user: Types.ObjectId;
+  username: string;
   message: string;
   date: Date;
   parentId?: Types.ObjectId | null;

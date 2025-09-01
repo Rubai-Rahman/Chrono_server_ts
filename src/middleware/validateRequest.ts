@@ -4,12 +4,19 @@ import { AnyZodObject, ZodError } from 'zod';
 export const validateRequest = (schema: AnyZodObject) => {
   return async (req: Request, res: Response, next: NextFunction) => {
     try {
-      // Validate request against the provided schema
-      await schema.parseAsync({
-        body: req.body,
-        query: req.query,
-        params: req.params,
-      });
+      // Validate only the request body against the schema
+      const result = await schema.safeParseAsync(req.body);
+      console.log('result', result);
+      if (!result.success) {
+        console.log(
+          'Validation error details:',
+          JSON.stringify(result.error.issues, null, 2),
+        );
+        throw result.error;
+      }
+
+      // Replace the body with the validated data
+      req.body = result.data;
       next();
     } catch (error) {
       if (error instanceof ZodError) {
@@ -25,7 +32,7 @@ export const validateRequest = (schema: AnyZodObject) => {
           errors,
         });
       }
-      
+
       // For other errors, pass to the default error handler
       next(error);
     }
