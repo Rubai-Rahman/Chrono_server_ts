@@ -61,7 +61,27 @@ export const postComment = async (
   }
 };
 
+export const updateComment = async (
+  req: AuthenticatedRequest,
+  res: Response,
+  next: NextFunction,
+): Promise<void> => {
+  try {
+    const { commentId } = req.params;
+    const { message } = req.body;
+
+    const updatedComment = await CommentServices.updateComment(commentId, {
+      message,
+    });
+
+    res.status(httpStatus.OK).json(updatedComment);
+  } catch (error) {
+    next(error);
+  }
+};
+
 export const CommentController = {
   getCommentsByNewsId,
   postComment,
+  updateComment,
 };

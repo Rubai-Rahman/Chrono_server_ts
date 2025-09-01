@@ -31,3 +31,7 @@ export const commentMutationSchema = z.object({
   message: z.string().min(1, 'Message is required'),
   parentId: z.string().nullable().optional(),
 });
+
+export const commentUpdateSchema = z.object({
+  message: z.string().min(1, 'Message is required'),
+});

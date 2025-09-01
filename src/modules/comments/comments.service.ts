@@ -214,8 +214,40 @@ export const postComment = async (
   }
 };
 
+export const updateComment = async (
+  commentId: string,
+  data: { message: string },
+): Promise<CommentWithReplies> => {
+  try {
+    const updatedComment = await Comment.findByIdAndUpdate(
+      commentId,
+      { message: data.message },
+      { new: true },
+    );
+
+    if (!updatedComment) {
+      throw new Error('Comment not found');
+    }
+
+    return {
+      ...updatedComment.toObject(),
+      _id: updatedComment._id.toString(),
+      newsId: updatedComment.newsId.toString(),
+      user: updatedComment.user.toString(), // Convert user ObjectId to string
+      parentId: updatedComment.parentId
+        ? updatedComment.parentId.toString()
+        : null,
+      replies: [],
+    };
+  } catch (error) {
+    console.error('Error in updateComment:', error);
+    throw error;
+  }
+};
+
 export const CommentServices = {
   getCommentsWithReactions,
   postComment: (newsId: string, data: CreateCommentData) =>
     postComment(newsId, data),
+  updateComment,
 };
