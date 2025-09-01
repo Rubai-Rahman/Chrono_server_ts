@@ -245,9 +245,36 @@ export const updateComment = async (
   }
 };
 
+export const deleteComment = async (
+  commentId: string,
+): Promise<CommentWithReplies> => {
+  try {
+    const deletedComment = await Comment.findByIdAndDelete(commentId);
+
+    if (!deletedComment) {
+      throw new Error('Comment not found');
+    }
+
+    return {
+      ...deletedComment.toObject(),
+      _id: deletedComment._id.toString(),
+      newsId: deletedComment.newsId.toString(),
+      user: deletedComment.user.toString(), // Convert user ObjectId to string
+      parentId: deletedComment.parentId
+        ? deletedComment.parentId.toString()
+        : null,
+      replies: [],
+    };
+  } catch (error) {
+    console.error('Error in deleteComment:', error);
+    throw error;
+  }
+};
+
 export const CommentServices = {
   getCommentsWithReactions,
   postComment: (newsId: string, data: CreateCommentData) =>
     postComment(newsId, data),
   updateComment,
+  deleteComment,
 };

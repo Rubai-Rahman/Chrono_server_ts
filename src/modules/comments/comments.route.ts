@@ -22,11 +22,11 @@ router.put(
   CommentController.updateComment as unknown as express.RequestHandler,
 );
 
-// router.delete(
-//   '/:commentId',
-//   authMiddleware as express.RequestHandler,
-//   validateRequest(commentUpdateSchema) as express.RequestHandler,
-//   CommentController.deleteComment as unknown as express.RequestHandler,
-// );
+router.delete(
+  '/:commentId',
+  authMiddleware as express.RequestHandler,
+  validateRequest(commentUpdateSchema) as express.RequestHandler,
+  CommentController.deleteComment as unknown as express.RequestHandler,
+);
 
 export const CommentRoutes = router;

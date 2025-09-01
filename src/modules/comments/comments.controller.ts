@@ -80,8 +80,25 @@ export const updateComment = async (
   }
 };
 
+export const deleteComment = async (
+  req: AuthenticatedRequest,
+  res: Response,
+  next: NextFunction,
+): Promise<void> => {
+  try {
+    const { commentId } = req.params;
+
+    const deletedComment = await CommentServices.deleteComment(commentId);
+
+    res.status(httpStatus.OK).json(deletedComment);
+  } catch (error) {
+    next(error);
+  }
+};
+
 export const CommentController = {
   getCommentsByNewsId,
   postComment,
   updateComment,
+  deleteComment,
 };
