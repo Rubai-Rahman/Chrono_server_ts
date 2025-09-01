@@ -161,7 +161,7 @@ export const getCommentsWithReactions = async (
 
 interface CreateCommentData {
   userId: string;
-  username: string;
+  username?: string; // Make username optional
   message: string;
   parentId?: string;
 }
@@ -173,15 +173,15 @@ export const postComment = async (
   try {
     const { userId, username, message, parentId } = data;
 
-    if (!userId || !username || !message) {
-      throw new Error('User ID, username, and message are required');
+    if (!userId || !message) {
+      throw new Error('User ID and message are required');
     }
 
-    // Create the new comment
+    // Create the new comment with a fallback for username
     const newComment = new Comment({
       newsId: new Types.ObjectId(newsId),
-      user: new Types.ObjectId(userId),
-      username,
+      // user: new Types.ObjectId(userId),
+      user: username || `user_${userId.toString().substring(0, 8)}`, // Use a fallback if username is not provided
       message,
       date: new Date(),
       parentId: parentId ? new Types.ObjectId(parentId) : null,
@@ -216,5 +216,6 @@ export const postComment = async (
 
 export const CommentServices = {
   getCommentsWithReactions,
-  postComment: (newsId: string, data: CreateCommentData) => postComment(newsId, data),
+  postComment: (newsId: string, data: CreateCommentData) =>
+    postComment(newsId, data),
 };

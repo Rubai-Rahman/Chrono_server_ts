@@ -44,19 +44,12 @@ export const postComment = async (
       return;
     }
 
-    // The validated body is directly available at req.body
     const { message, parentId } = req.body;
 
-    if (!req.user.username) {
-      res
-        .status(httpStatus.BAD_REQUEST)
-        .json({ error: 'Username is required' });
-      return;
-    }
-
+    // Use the user's name as the username
     const comment = await CommentServices.postComment(newsId, {
       userId: req.user._id,
-      username: req.user.username,
+      username: req.user.name,
       message,
       parentId,
     });

@@ -10,12 +10,8 @@ const CommentSchema = new Schema<TCommentType>({
     required: true,
   },
   user: {
-    type: MongooseSchema.Types.ObjectId,
-    ref: 'User',
-    required: true,
-  },
-  username: {
     type: String,
+    ref: 'User',
     required: true,
   },
   message: {

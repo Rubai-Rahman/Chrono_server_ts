@@ -46,10 +46,15 @@ export const authMiddleware = async (
     // Find or create user in your DB
     let user = await User.findOne({ email: decoded.email });
     if (!user) {
+      // Create a username from email if name is not available
+      const username = decoded.name.toLowerCase().replace(/\s+/g, '_');
+
       user = await User.create({
         email: decoded.email,
-        name: decoded.name || 'No Name',
-        role: 'user', // default role
+        name: decoded.name || 'User',
+        displayName: decoded.name || 'User',
+        role: 'user',
+        photoUrl: decoded.picture || '',
       });
     }
 
