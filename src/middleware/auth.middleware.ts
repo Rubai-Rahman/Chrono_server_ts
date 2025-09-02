@@ -1,6 +1,7 @@
 import { Request, Response, NextFunction } from 'express';
 import { User } from '../modules/user/user.model';
 import admin from '@config/firebase';
+import * as cookie from 'cookie';
 
 export interface AuthRequest extends Request {
   user?: any;
@@ -13,25 +14,19 @@ export const authMiddleware = async (
   next: NextFunction,
 ): Promise<void> => {
   const authReq = req as AuthRequest;
-
   let idToken: string | null = null;
   const authHeader = req.header('Authorization');
-
-  if (!authHeader) {
-    res.status(401).json({ success: false, error: 'No token provided' });
-    return;
-  }
-
-  // Check if the header starts with 'Bearer '
-  if (authHeader.startsWith('Bearer ')) {
+  if (authHeader?.startsWith('Bearer ')) {
     idToken = authHeader.split(' ')[1];
-  } else {
-    // If not in Bearer format, try to use the header as is
-    idToken = authHeader;
   }
 
-  // Remove any surrounding quotes if present
-  idToken = idToken.replace(/^"|"$/g, '');
+  // If no header, try cookie
+  if (!idToken && req.headers.cookie) {
+    const cookies = cookie.parse(req.headers.cookie);
+    if (cookies.token) {
+      idToken = cookies.token;
+    }
+  }
 
   if (!idToken) {
     res
