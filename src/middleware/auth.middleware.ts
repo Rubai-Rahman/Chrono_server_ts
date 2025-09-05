@@ -38,11 +38,12 @@ export const authMiddleware = async (
   try {
     const decoded = await admin.auth().verifyIdToken(idToken);
 
+    const username = decoded.name.toLowerCase().replace(/\s+/g, '_');
+    console.log('email', decoded.email, 'name', username);
     // Find or create user in your DB
     let user = await User.findOne({ email: decoded.email });
     if (!user) {
       // Create a username from email if name is not available
-      const username = decoded.name.toLowerCase().replace(/\s+/g, '_');
 
       user = await User.create({
         email: decoded.email,

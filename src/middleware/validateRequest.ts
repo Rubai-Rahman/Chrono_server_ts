@@ -6,7 +6,6 @@ export const validateRequest = (schema: AnyZodObject) => {
     try {
       // Validate only the request body against the schema
       const result = await schema.safeParseAsync(req.body);
-      console.log('result', result);
       if (!result.success) {
         console.log(
           'Validation error details:',

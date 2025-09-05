@@ -1,17 +1,24 @@
-import { Model } from 'mongoose';
+import { Model, Document } from 'mongoose';
 
 export type TUser = {
   name: string;
   displayName?: string;
+  password: string;
   email: string;
   role: 'admin' | 'user';
   photoUrl?: string;
   isActive?: boolean;
+  resetToken?: string | null;
+  resetTokenExpiry?: Date | null;
 };
 
 interface UserMethods {
-  // eslint-disable-next-line no-unused-vars
+  comparePassword(candidatePassword: string): Promise<boolean>;
   isEmailUserNameExists(name: string, email: string): Promise<TUser | null>;
 }
 
-export interface userModel extends Model<TUser>, UserMethods {}
+export type UserDocument = Document<unknown, {}, TUser> & TUser & UserMethods;
+
+export interface userModel extends Model<TUser, {}, UserMethods> {
+  isEmailUserNameExists(name: string, email: string): Promise<TUser | null>;
+}

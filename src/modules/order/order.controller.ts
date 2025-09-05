@@ -9,7 +9,6 @@ export const postOrder = async (
   try {
     const orderData = req.body;
     const newOrder = await OrderServices.createOrderIntoDB(orderData);
-    console.log('newOrder', newOrder);
     res.status(201).json({
       success: true,
       order: newOrder,

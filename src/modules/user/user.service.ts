@@ -1,10 +1,9 @@
 import { User } from './user.model';
 
-// user.service.ts
-const getUserProfile = async (userId: string) => {
-  return await User.findById(userId).select('-__v -createdAt -updatedAt');
+const signUpUser = async (userData: any) => {
+  return await User.create(userData);
 };
 
 export const UserServices = {
-  getUserProfile,
+  signUpUser,
 };

@@ -15,6 +15,11 @@ const envVarsSchema = z.object({
   RATE_LIMIT_WINDOW_MS: z.coerce.number().default(15 * 60 * 1000), // 15 minutes
   RATE_LIMIT_MAX_REQUESTS: z.coerce.number().default(100),
   BCRYPT_SALT_ROUNDS: z.coerce.number().optional(),
+  ACCESS_TOKEN_SECRET: z.string(),
+  ACCESS_TOKEN_EXPIRES: z.string(),
+  REFRESH_TOKEN_SECRET: z.string(),
+  REFRESH_TOKEN_EXPIRES: z.string(),
+  REMEMBER_ME_REFRESH_EXPIRES: z.string().default('30d'),
 });
 
 // Parse and validate environment variables
@@ -30,4 +35,9 @@ export const config = {
   RATE_LIMIT_WINDOW_MS: envVars.RATE_LIMIT_WINDOW_MS,
   RATE_LIMIT_MAX_REQUESTS: envVars.RATE_LIMIT_MAX_REQUESTS,
   bcrypt_salt_rounds: envVars.BCRYPT_SALT_ROUNDS ?? 10, // default 10
+  ACCESS_TOKEN_SECRET: envVars.ACCESS_TOKEN_SECRET,
+  ACCESS_TOKEN_EXPIRES: envVars.ACCESS_TOKEN_EXPIRES,
+  REFRESH_TOKEN_SECRET: envVars.REFRESH_TOKEN_SECRET,
+  REFRESH_TOKEN_EXPIRES: envVars.REFRESH_TOKEN_EXPIRES,
+  REMEMBER_ME_REFRESH_EXPIRES: envVars.REMEMBER_ME_REFRESH_EXPIRES,
 };
