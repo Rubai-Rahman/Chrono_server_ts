@@ -10,6 +10,7 @@ export type TUser = {
   isActive?: boolean;
   resetToken?: string | null;
   resetTokenExpiry?: Date | null;
+  rememberMe?: boolean;
 };
 
 interface UserMethods {
