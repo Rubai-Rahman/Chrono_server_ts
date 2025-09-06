@@ -386,3 +386,9 @@
 {"isOperational":true,"level":"error","message":"Route /api/auth/signup not found Route /api/auth/signup not found","status":"fail","statusCode":404,"timestamp":"2025-09-06T06:13:02.686Z"}
 {"level":"error","message":"User already exists User already exists","timestamp":"2025-09-06T07:39:23.055Z"}
 {"isOperational":true,"level":"error","message":"Route /favicon.ico not found Route /favicon.ico not found","status":"fail","statusCode":404,"timestamp":"2025-09-06T10:56:56.930Z"}
+{"level":"error","message":"No token No token","timestamp":"2025-09-06T16:59:53.820Z"}
+{"level":"error","message":"No token No token","timestamp":"2025-09-06T17:01:15.746Z"}
+{"level":"error","message":"No token No token","timestamp":"2025-09-06T17:05:05.764Z"}
+{"level":"error","message":"No token No token","timestamp":"2025-09-06T17:38:05.402Z"}
+{"level":"error","message":"No token No token","timestamp":"2025-09-06T17:40:30.449Z"}
+{"level":"error","message":"No token No token","timestamp":"2025-09-06T17:41:42.031Z"}

@@ -45,7 +45,12 @@ const logIn = async (req: Request, res: Response) => {
     message: 'User logged in successfully',
     payload: {
       accessToken: payload.accessToken,
-      user: payload.user,
+      user: {
+        name: payload.user.name,
+        email: payload.user.email,
+        role: payload.user.role,
+        userId: payload.user._id,
+      },
     },
   });
 };
