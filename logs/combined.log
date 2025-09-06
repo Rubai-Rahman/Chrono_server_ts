@@ -2003,3 +2003,18 @@
 {"level":"info","message":"::ffff:127.0.0.1 - - [04/Sep/2025:01:57:36 +0000] \"GET /api/products?page=1&size=12&category=gents&sort=createdAt_desc HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-09-04T01:57:36.147Z"}
 {"level":"info","message":"::1 - - [04/Sep/2025:01:58:02 +0000] \"GET /api/products?page=1&size=12&category=gents&sort=createdAt_desc HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-09-04T01:58:02.231Z"}
 {"level":"info","message":"::1 - - [04/Sep/2025:01:58:50 +0000] \"GET /api/products?page=1&size=12&category=gents&sort=createdAt_desc HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-09-04T01:58:50.876Z"}
+{"level":"info","message":"::1 - - [06/Sep/2025:02:04:23 +0000] \"GET / HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\"","timestamp":"2025-09-06T02:04:23.681Z"}
+{"isOperational":true,"level":"error","message":"Route /favicon.ico not found Route /favicon.ico not found","status":"fail","statusCode":404,"timestamp":"2025-09-06T02:04:24.056Z"}
+{"level":"info","message":"::1 - - [06/Sep/2025:02:04:24 +0000] \"GET /favicon.ico HTTP/1.1\" 404 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\"","timestamp":"2025-09-06T02:04:24.094Z"}
+{"level":"info","message":"::1 - - [06/Sep/2025:02:09:22 +0000] \"GET /api/news HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-09-06T02:09:22.353Z"}
+{"level":"info","message":"::1 - - [06/Sep/2025:02:09:23 +0000] \"GET /api/reviews HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-09-06T02:09:23.910Z"}
+{"level":"info","message":"::1 - - [06/Sep/2025:02:09:24 +0000] \"GET /api/products?isFeatured=true&limit=4 HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-09-06T02:09:24.079Z"}
+{"level":"info","message":"::1 - - [06/Sep/2025:02:09:24 +0000] \"GET /api/products?sort=createdAt_desc&limit=4 HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-09-06T02:09:24.157Z"}
+{"level":"info","message":"::1 - - [06/Sep/2025:03:01:01 +0000] \"GET /api/products?page=1&size=12&category=gents&sort=createdAt_desc HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-09-06T03:01:01.247Z"}
+{"level":"info","message":"::1 - - [06/Sep/2025:03:01:02 +0000] \"GET /api/products?page=1&size=12&category=gents&sort=createdAt_desc HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-09-06T03:01:02.358Z"}
+{"isOperational":true,"level":"error","message":"Route /api/signup not found Route /api/signup not found","status":"fail","statusCode":404,"timestamp":"2025-09-06T03:22:55.584Z"}
+{"level":"info","message":"::1 - - [06/Sep/2025:03:22:55 +0000] \"POST /api/signup HTTP/1.1\" 404 - \"-\" \"node\"","timestamp":"2025-09-06T03:22:55.618Z"}
+{"isOperational":true,"level":"error","message":"Route /api/signup not found Route /api/signup not found","status":"fail","statusCode":404,"timestamp":"2025-09-06T03:23:11.269Z"}
+{"level":"info","message":"::1 - - [06/Sep/2025:03:23:11 +0000] \"POST /api/signup HTTP/1.1\" 404 - \"-\" \"node\"","timestamp":"2025-09-06T03:23:11.276Z"}
+{"isOperational":true,"level":"error","message":"Route /api/signup not found Route /api/signup not found","status":"fail","statusCode":404,"timestamp":"2025-09-06T03:24:55.110Z"}
+{"level":"info","message":"::1 - - [06/Sep/2025:03:24:55 +0000] \"GET /api/signup HTTP/1.1\" 404 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\"","timestamp":"2025-09-06T03:24:55.133Z"}

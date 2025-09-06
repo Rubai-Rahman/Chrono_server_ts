@@ -366,3 +366,7 @@
 {"isOperational":true,"level":"error","message":"Route /favicon.ico not found Route /favicon.ico not found","status":"fail","statusCode":404,"timestamp":"2025-09-03T06:10:21.048Z"}
 {"isOperational":true,"level":"error","message":"Route /favicon.ico not found Route /favicon.ico not found","status":"fail","statusCode":404,"timestamp":"2025-09-03T06:40:21.678Z"}
 {"isOperational":true,"level":"error","message":"Route /favicon.ico not found Route /favicon.ico not found","status":"fail","statusCode":404,"timestamp":"2025-09-04T01:06:46.885Z"}
+{"isOperational":true,"level":"error","message":"Route /favicon.ico not found Route /favicon.ico not found","status":"fail","statusCode":404,"timestamp":"2025-09-06T02:04:24.056Z"}
+{"isOperational":true,"level":"error","message":"Route /api/signup not found Route /api/signup not found","status":"fail","statusCode":404,"timestamp":"2025-09-06T03:22:55.584Z"}
+{"isOperational":true,"level":"error","message":"Route /api/signup not found Route /api/signup not found","status":"fail","statusCode":404,"timestamp":"2025-09-06T03:23:11.269Z"}
+{"isOperational":true,"level":"error","message":"Route /api/signup not found Route /api/signup not found","status":"fail","statusCode":404,"timestamp":"2025-09-06T03:24:55.110Z"}

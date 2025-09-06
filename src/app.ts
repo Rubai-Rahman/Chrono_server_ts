@@ -65,7 +65,7 @@ app.get('/health', (req, res) => {
 // Compression middleware
 app.use(compression());
 // API Routes
-app.use('/api/users', UserRoutes);
+app.use('/api/auth', UserRoutes);
 app.use('/api/news', NewsRoutes);
 app.use('/api/orders', OrderRoutes);
 app.use('/api/products', ProductRoutes);
