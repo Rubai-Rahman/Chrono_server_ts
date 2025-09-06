@@ -1,21 +1,45 @@
 import { Request, Response } from 'express';
 import { UserServices } from './user.service';
 import httpStatus from 'http-status';
+import ms from 'ms';
 
 const signUp = async (req: Request, res: Response) => {
   const payload = await UserServices.signUp(req.body);
+  const maxAge = process.env.REFRESH_TOKEN_EXPIRES
+    ? ms(process.env.REFRESH_TOKEN_EXPIRES as ms.StringValue)
+    : 7 * 24 * 60 * 60 * 1000;
+  res.cookie('refreshToken', payload.refreshToken, {
+    httpOnly: true,
+    secure: process.env.NODE_ENV === 'production',
+    sameSite: 'lax',
+    maxAge: maxAge,
+  });
   res.status(httpStatus.CREATED).json({
     success: true,
     message: 'User created successfully',
     payload: {
       accessToken: payload.accessToken,
-      user: payload.user,
+      user: {
+        name: payload.user.name,
+        email: payload.user.email,
+        role: payload.user.role,
+        userId: payload.user._id,
+      },
     },
   });
 };
 
 const logIn = async (req: Request, res: Response) => {
   const payload = await UserServices.logIn(req.body);
+  const maxAge = process.env.REFRESH_TOKEN_EXPIRES
+    ? ms(process.env.REFRESH_TOKEN_EXPIRES as ms.StringValue)
+    : 7 * 24 * 60 * 60 * 1000;
+  res.cookie('refreshToken', payload.refreshToken, {
+    httpOnly: true,
+    secure: process.env.NODE_ENV === 'production',
+    sameSite: 'lax',
+    maxAge: maxAge,
+  });
   res.status(httpStatus.CREATED).json({
     success: true,
     message: 'User logged in successfully',

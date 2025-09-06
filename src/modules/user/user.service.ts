@@ -4,6 +4,7 @@ import ms from 'ms';
 import { RefreshToken } from './refreshToken';
 import crypto from 'crypto';
 import { TUser } from './user.interface';
+import mongoose from 'mongoose';
 
 async function createRefreshToken(
   userId: string,
@@ -47,7 +48,7 @@ const refresh = async (rawToken: string) => {
   );
 
   existing.revoked = true;
-  existing.replacedBy = doc._id;
+  existing.replacedBy = doc._id as mongoose.Types.ObjectId;
   await existing.save();
 
   const accessToken = signAccessToken({ userId: existing.user.toString() });
@@ -55,16 +56,21 @@ const refresh = async (rawToken: string) => {
 };
 
 const signUp = async (userData: TUser) => {
-  const { email, password, role, name } = userData;
+  const { email, name } = userData;
 
   if (await User.isEmailUserNameExists(name, email)) {
     throw new Error('User already exists');
   }
-console.log("userData",userData);
+  console.log('userData', userData);
   const user = await User.create(userData);
   const accessToken = signAccessToken({ userId: user._id.toString() });
-
-  return { user, accessToken };
+  const { raw, ttl } = await createRefreshToken(
+    user._id.toString(),
+    false,
+    undefined,
+    undefined,
+  );
+  return { user, accessToken, refreshToken: raw, refreshTtl: ttl };
 };
 
 const logIn = async (dto: TUser, ip?: string, ua?: string) => {
@@ -114,12 +120,12 @@ const forgotPassword = async (email: string) => {
   const message = `<p>Click <a href="${resetUrl}">here</a> to reset your password</p>`;
 
   // Ensure transporter is configured elsewhere and imported
-  await transporter.sendMail({
-    from: process.env.EMAIL_USER,
-    to: user.email,
-    subject: 'Reset Password',
-    html: message,
-  });
+  // await transporter.sendMail({
+  //   from: process.env.EMAIL_USER,
+  //   to: user.email,
+  //   subject: 'Reset Password',
+  //   html: message,
+  // });
 };
 
 const resetPassword = async (data: {

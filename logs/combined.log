@@ -2018,3 +2018,62 @@
 {"level":"info","message":"::1 - - [06/Sep/2025:03:23:11 +0000] \"POST /api/signup HTTP/1.1\" 404 - \"-\" \"node\"","timestamp":"2025-09-06T03:23:11.276Z"}
 {"isOperational":true,"level":"error","message":"Route /api/signup not found Route /api/signup not found","status":"fail","statusCode":404,"timestamp":"2025-09-06T03:24:55.110Z"}
 {"level":"info","message":"::1 - - [06/Sep/2025:03:24:55 +0000] \"GET /api/signup HTTP/1.1\" 404 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\"","timestamp":"2025-09-06T03:24:55.133Z"}
+{"level":"error","message":"User already exists User already exists","timestamp":"2025-09-06T03:28:16.353Z"}
+{"level":"info","message":"::1 - - [06/Sep/2025:03:28:16 +0000] \"POST /api/auth/signup HTTP/1.1\" 500 401 \"-\" \"node\"","timestamp":"2025-09-06T03:28:16.418Z"}
+{"level":"error","message":"User already exists User already exists","timestamp":"2025-09-06T03:28:42.718Z"}
+{"level":"info","message":"::1 - - [06/Sep/2025:03:28:42 +0000] \"POST /api/auth/signup HTTP/1.1\" 500 401 \"-\" \"node\"","timestamp":"2025-09-06T03:28:42.720Z"}
+{"level":"error","message":"User already exists User already exists","timestamp":"2025-09-06T03:29:05.945Z"}
+{"level":"info","message":"::1 - - [06/Sep/2025:03:29:05 +0000] \"POST /api/auth/signup HTTP/1.1\" 500 401 \"-\" \"node\"","timestamp":"2025-09-06T03:29:05.948Z"}
+{"level":"error","message":"User already exists User already exists","timestamp":"2025-09-06T03:30:07.103Z"}
+{"level":"info","message":"::1 - - [06/Sep/2025:03:30:07 +0000] \"POST /api/auth/signup HTTP/1.1\" 500 401 \"-\" \"node\"","timestamp":"2025-09-06T03:30:07.135Z"}
+{"level":"error","message":"User already exists User already exists","timestamp":"2025-09-06T03:31:10.496Z"}
+{"level":"info","message":"::1 - - [06/Sep/2025:03:31:10 +0000] \"POST /api/auth/signup HTTP/1.1\" 500 401 \"-\" \"node\"","timestamp":"2025-09-06T03:31:10.502Z"}
+{"level":"error","message":"User already exists User already exists","timestamp":"2025-09-06T03:32:05.546Z"}
+{"level":"info","message":"::1 - - [06/Sep/2025:03:32:05 +0000] \"POST /api/auth/signup HTTP/1.1\" 500 401 \"-\" \"node\"","timestamp":"2025-09-06T03:32:05.550Z"}
+{"level":"error","message":"User already exists User already exists","timestamp":"2025-09-06T03:34:17.786Z"}
+{"level":"info","message":"::1 - - [06/Sep/2025:03:34:17 +0000] \"POST /api/auth/signup HTTP/1.1\" 500 401 \"-\" \"node\"","timestamp":"2025-09-06T03:34:17.803Z"}
+{"level":"error","message":"User already exists User already exists","timestamp":"2025-09-06T03:35:02.271Z"}
+{"level":"info","message":"::1 - - [06/Sep/2025:03:35:02 +0000] \"POST /api/auth/signup HTTP/1.1\" 500 401 \"-\" \"node\"","timestamp":"2025-09-06T03:35:02.288Z"}
+{"level":"error","message":"secretOrPrivateKey must have a value secretOrPrivateKey must have a value","timestamp":"2025-09-06T03:39:17.486Z"}
+{"level":"info","message":"::1 - - [06/Sep/2025:03:39:17 +0000] \"POST /api/auth/signup HTTP/1.1\" 500 663 \"-\" \"node\"","timestamp":"2025-09-06T03:39:17.491Z"}
+{"level":"error","message":"secretOrPrivateKey must have a value secretOrPrivateKey must have a value","timestamp":"2025-09-06T03:43:09.855Z"}
+{"level":"info","message":"::1 - - [06/Sep/2025:03:43:09 +0000] \"POST /api/auth/signup HTTP/1.1\" 500 663 \"-\" \"node\"","timestamp":"2025-09-06T03:43:09.886Z"}
+{"level":"error","message":"User already exists User already exists","timestamp":"2025-09-06T03:44:34.580Z"}
+{"level":"info","message":"::1 - - [06/Sep/2025:03:44:34 +0000] \"POST /api/auth/signup HTTP/1.1\" 500 401 \"-\" \"node\"","timestamp":"2025-09-06T03:44:34.606Z"}
+{"level":"info","message":"::1 - - [06/Sep/2025:03:45:05 +0000] \"POST /api/auth/signup HTTP/1.1\" 201 577 \"-\" \"node\"","timestamp":"2025-09-06T03:45:05.670Z"}
+{"level":"info","message":"::1 - - [06/Sep/2025:03:45:07 +0000] \"GET /api/products?page=1&size=12&category=gents&sort=createdAt_desc HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-09-06T03:45:07.275Z"}
+{"level":"info","message":"::1 - - [06/Sep/2025:03:45:09 +0000] \"GET /api/products?page=1&size=12&category=gents&sort=createdAt_desc HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-09-06T03:45:09.671Z"}
+{"isOperational":true,"level":"error","message":"Route /api/signup not found Route /api/signup not found","status":"fail","statusCode":404,"timestamp":"2025-09-06T06:12:49.039Z"}
+{"level":"info","message":"::1 - - [06/Sep/2025:06:12:49 +0000] \"GET /api/signup HTTP/1.1\" 404 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\"","timestamp":"2025-09-06T06:12:49.061Z"}
+{"isOperational":true,"level":"error","message":"Route /api/signup not found Route /api/signup not found","status":"fail","statusCode":404,"timestamp":"2025-09-06T06:12:52.912Z"}
+{"level":"info","message":"::1 - - [06/Sep/2025:06:12:52 +0000] \"GET /api/signup HTTP/1.1\" 404 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\"","timestamp":"2025-09-06T06:12:52.916Z"}
+{"isOperational":true,"level":"error","message":"Route /api/auth/signup not found Route /api/auth/signup not found","status":"fail","statusCode":404,"timestamp":"2025-09-06T06:13:02.686Z"}
+{"level":"info","message":"::1 - - [06/Sep/2025:06:13:02 +0000] \"GET /api/auth/signup HTTP/1.1\" 404 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\"","timestamp":"2025-09-06T06:13:02.689Z"}
+{"level":"info","message":"::1 - - [06/Sep/2025:07:38:45 +0000] \"POST /api/auth/signup HTTP/1.1\" 201 577 \"-\" \"node\"","timestamp":"2025-09-06T07:38:45.525Z"}
+{"level":"error","message":"User already exists User already exists","timestamp":"2025-09-06T07:39:23.055Z"}
+{"level":"info","message":"::1 - - [06/Sep/2025:07:39:23 +0000] \"POST /api/auth/signup HTTP/1.1\" 500 401 \"-\" \"node\"","timestamp":"2025-09-06T07:39:23.068Z"}
+{"level":"info","message":"::1 - - [06/Sep/2025:07:40:54 +0000] \"POST /api/auth/signup HTTP/1.1\" 201 577 \"-\" \"node\"","timestamp":"2025-09-06T07:40:54.535Z"}
+{"level":"info","message":"::1 - - [06/Sep/2025:07:47:12 +0000] \"POST /api/auth/signup HTTP/1.1\" 201 577 \"-\" \"node\"","timestamp":"2025-09-06T07:47:12.299Z"}
+{"level":"info","message":"::1 - - [06/Sep/2025:07:47:19 +0000] \"GET /api/products?page=1&size=12&category=gents&sort=createdAt_desc HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-09-06T07:47:19.918Z"}
+{"level":"info","message":"::1 - - [06/Sep/2025:07:47:22 +0000] \"GET /api/products?page=1&size=12&category=gents&sort=createdAt_desc HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-09-06T07:47:22.193Z"}
+{"level":"info","message":"::1 - - [06/Sep/2025:07:48:47 +0000] \"GET /api/products?page=1&size=12&category=gents&sort=createdAt_desc HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-09-06T07:48:47.767Z"}
+{"level":"info","message":"::1 - - [06/Sep/2025:07:48:47 +0000] \"GET /api/products?page=1&size=12&category=gents&sort=createdAt_desc HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-09-06T07:48:47.812Z"}
+{"level":"info","message":"::1 - - [06/Sep/2025:07:49:07 +0000] \"GET /api/products?page=1&size=12&category=gents&sort=createdAt_desc HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-09-06T07:49:07.285Z"}
+{"level":"info","message":"::1 - - [06/Sep/2025:07:49:08 +0000] \"GET /api/products?page=1&size=12&category=gents&sort=createdAt_desc HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-09-06T07:49:08.822Z"}
+{"level":"info","message":"::1 - - [06/Sep/2025:07:49:49 +0000] \"GET /api/products?page=1&size=12&category=gents&sort=createdAt_desc HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-09-06T07:49:49.176Z"}
+{"level":"info","message":"::1 - - [06/Sep/2025:07:49:52 +0000] \"GET /api/products?page=1&size=12&category=gents&sort=createdAt_desc HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-09-06T07:49:52.867Z"}
+{"level":"info","message":"::1 - - [06/Sep/2025:07:51:42 +0000] \"GET /api/products?page=1&size=12&category=gents&sort=createdAt_desc HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-09-06T07:51:42.341Z"}
+{"level":"info","message":"::1 - - [06/Sep/2025:07:51:47 +0000] \"GET /api/products?page=1&size=12&category=gents&sort=createdAt_desc HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-09-06T07:51:47.994Z"}
+{"level":"info","message":"::1 - - [06/Sep/2025:10:56:56 +0000] \"GET / HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\"","timestamp":"2025-09-06T10:56:56.570Z"}
+{"isOperational":true,"level":"error","message":"Route /favicon.ico not found Route /favicon.ico not found","status":"fail","statusCode":404,"timestamp":"2025-09-06T10:56:56.930Z"}
+{"level":"info","message":"::1 - - [06/Sep/2025:10:56:56 +0000] \"GET /favicon.ico HTTP/1.1\" 404 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\"","timestamp":"2025-09-06T10:56:56.962Z"}
+{"level":"info","message":"::1 - - [06/Sep/2025:10:58:05 +0000] \"GET /api/products?page=1&size=12&category=gents&sort=createdAt_desc HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-09-06T10:58:05.790Z"}
+{"level":"info","message":"::1 - - [06/Sep/2025:11:00:15 +0000] \"POST /api/auth/signup HTTP/1.1\" 201 577 \"-\" \"node\"","timestamp":"2025-09-06T11:00:15.031Z"}
+{"level":"info","message":"::1 - - [06/Sep/2025:11:00:16 +0000] \"GET /api/products?page=1&size=12&category=gents&sort=createdAt_desc HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-09-06T11:00:16.488Z"}
+{"level":"info","message":"::1 - - [06/Sep/2025:11:00:17 +0000] \"GET /api/products?page=1&size=12&category=gents&sort=createdAt_desc HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-09-06T11:00:17.548Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [06/Sep/2025:11:02:42 +0000] \"GET /api/products?page=1&size=12&category=gents&sort=createdAt_desc HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-09-06T11:02:42.696Z"}
+{"level":"info","message":"::1 - - [06/Sep/2025:11:04:41 +0000] \"GET /api/products?page=1&size=12&category=gents&sort=createdAt_desc HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-09-06T11:04:41.098Z"}
+{"level":"info","message":"::1 - - [06/Sep/2025:11:05:06 +0000] \"POST /api/auth/signup HTTP/1.1\" 201 577 \"-\" \"node\"","timestamp":"2025-09-06T11:05:06.655Z"}
+{"level":"info","message":"::1 - - [06/Sep/2025:11:05:07 +0000] \"GET /api/products?page=1&size=12&category=gents&sort=createdAt_desc HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-09-06T11:05:07.364Z"}
+{"level":"info","message":"::1 - - [06/Sep/2025:11:05:09 +0000] \"GET /api/products?page=1&size=12&category=gents&sort=createdAt_desc HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-09-06T11:05:09.232Z"}
+{"level":"info","message":"::1 - - [06/Sep/2025:11:12:08 +0000] \"GET /api/products?page=1&size=12&category=gents&sort=createdAt_desc HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-09-06T11:12:08.748Z"}
