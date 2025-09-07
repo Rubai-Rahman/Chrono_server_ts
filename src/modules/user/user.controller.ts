@@ -68,7 +68,12 @@ const forgotPassword = async (req: Request, res: Response) => {
 };
 
 const logout = async (req: Request, res: Response) => {
-  const payload = await UserServices.logout(req.body);
+  const refreshToken = req.cookies?.refreshToken;
+  if (!refreshToken) {
+    res.status(400).json({ success: false, message: 'No refresh token' });
+    return;
+  }
+  const payload = await UserServices.logout(refreshToken);
   res.status(httpStatus.CREATED).json({
     success: true,
     message: 'User logged out successfully',

@@ -2357,3 +2357,23 @@
 {"level":"info","message":"::1 - - [07/Sep/2025:02:56:36 +0000] \"GET /favicon.ico HTTP/1.1\" 404 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0\"","timestamp":"2025-09-07T02:56:36.525Z"}
 {"level":"info","message":"::1 - - [07/Sep/2025:02:58:26 +0000] \"POST /api/auth/login HTTP/1.1\" 201 383 \"-\" \"node\"","timestamp":"2025-09-07T02:58:26.177Z"}
 {"level":"info","message":"::1 - - [07/Sep/2025:02:58:26 +0000] \"GET /api/products?page=1&size=12&category=gents&sort=createdAt_desc HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-09-07T02:58:26.526Z"}
+{"level":"info","message":"::1 - - [07/Sep/2025:10:14:42 +0000] \"GET / HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\"","timestamp":"2025-09-07T10:14:42.948Z"}
+{"isOperational":true,"level":"error","message":"Route /favicon.ico not found Route /favicon.ico not found","status":"fail","statusCode":404,"timestamp":"2025-09-07T10:14:44.088Z"}
+{"level":"info","message":"::1 - - [07/Sep/2025:10:14:44 +0000] \"GET /favicon.ico HTTP/1.1\" 404 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\"","timestamp":"2025-09-07T10:14:44.174Z"}
+{"level":"info","message":"::1 - - [07/Sep/2025:10:15:09 +0000] \"GET /api/reviews HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-09-07T10:15:09.313Z"}
+{"level":"info","message":"::1 - - [07/Sep/2025:10:15:09 +0000] \"GET /api/products?isFeatured=true&limit=4 HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-09-07T10:15:09.557Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [07/Sep/2025:10:15:10 +0000] \"GET /api/products?sort=createdAt_desc&limit=4 HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-09-07T10:15:10.272Z"}
+{"level":"info","message":"::1 - - [07/Sep/2025:10:17:22 +0000] \"POST /api/auth/login HTTP/1.1\" 201 512 \"-\" \"node\"","timestamp":"2025-09-07T10:17:22.201Z"}
+{"level":"info","message":"::1 - - [07/Sep/2025:10:17:33 +0000] \"GET /api/products?page=1&size=12&category=gents&sort=createdAt_desc HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-09-07T10:17:33.825Z"}
+{"level":"info","message":"::1 - - [07/Sep/2025:10:18:26 +0000] \"POST /api/orders HTTP/1.1\" 201 812 \"-\" \"node\"","timestamp":"2025-09-07T10:18:26.776Z"}
+{"level":"info","message":"::1 - - [07/Sep/2025:10:18:50 +0000] \"GET /api/reviews HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-09-07T10:18:50.197Z"}
+{"level":"info","message":"::1 - - [07/Sep/2025:10:18:50 +0000] \"GET /api/products?sort=createdAt_desc&limit=4 HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-09-07T10:18:50.241Z"}
+{"level":"info","message":"::1 - - [07/Sep/2025:10:18:50 +0000] \"GET /api/products?isFeatured=true&limit=4 HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-09-07T10:18:50.245Z"}
+{"level":"info","message":"::1 - - [07/Sep/2025:10:18:51 +0000] \"GET /api/news HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-09-07T10:18:51.972Z"}
+{"level":"info","message":"::1 - - [07/Sep/2025:10:18:52 +0000] \"GET /api/reviews HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-09-07T10:18:52.099Z"}
+{"level":"info","message":"::1 - - [07/Sep/2025:10:18:52 +0000] \"GET /api/products?isFeatured=true&limit=4 HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-09-07T10:18:52.451Z"}
+{"level":"info","message":"::1 - - [07/Sep/2025:10:18:52 +0000] \"GET /api/products?sort=createdAt_desc&limit=4 HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-09-07T10:18:52.461Z"}
+{"level":"info","message":"::1 - - [07/Sep/2025:10:18:54 +0000] \"GET /api/news HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-09-07T10:18:54.050Z"}
+{"level":"info","message":"::1 - - [07/Sep/2025:10:18:54 +0000] \"GET /api/reviews HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-09-07T10:18:54.174Z"}
+{"level":"info","message":"::1 - - [07/Sep/2025:10:18:54 +0000] \"GET /api/products?isFeatured=true&limit=4 HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-09-07T10:18:54.444Z"}
+{"level":"info","message":"::1 - - [07/Sep/2025:10:18:54 +0000] \"GET /api/products?sort=createdAt_desc&limit=4 HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-09-07T10:18:54.455Z"}
