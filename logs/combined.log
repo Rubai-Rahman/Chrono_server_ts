@@ -2181,3 +2181,179 @@
 {"level":"info","message":"::1 - - [06/Sep/2025:17:49:55 +0000] \"POST /api/auth/login HTTP/1.1\" 201 383 \"-\" \"node\"","timestamp":"2025-09-06T17:49:55.566Z"}
 {"level":"info","message":"::1 - - [06/Sep/2025:17:49:57 +0000] \"GET /api/products?page=1&size=12&category=gents&sort=createdAt_desc HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-09-06T17:49:57.243Z"}
 {"level":"info","message":"::1 - - [06/Sep/2025:17:50:39 +0000] \"POST /api/orders HTTP/1.1\" 201 746 \"-\" \"node\"","timestamp":"2025-09-06T17:50:39.469Z"}
+{"level":"info","message":"::1 - - [06/Sep/2025:18:08:41 +0000] \"GET /api/products?page=1&size=12&category=gents&sort=createdAt_desc HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-09-06T18:08:41.737Z"}
+{"level":"info","message":"::1 - - [06/Sep/2025:18:10:25 +0000] \"POST /api/orders HTTP/1.1\" 403 38 \"-\" \"node\"","timestamp":"2025-09-06T18:10:25.876Z"}
+{"level":"info","message":"::1 - - [06/Sep/2025:18:11:07 +0000] \"POST /api/orders HTTP/1.1\" 403 38 \"-\" \"node\"","timestamp":"2025-09-06T18:11:07.637Z"}
+{"level":"info","message":"::1 - - [06/Sep/2025:18:12:53 +0000] \"POST /api/orders HTTP/1.1\" 403 38 \"-\" \"node\"","timestamp":"2025-09-06T18:12:53.387Z"}
+{"level":"info","message":"::1 - - [06/Sep/2025:18:14:16 +0000] \"POST /api/orders HTTP/1.1\" 403 38 \"-\" \"node\"","timestamp":"2025-09-06T18:14:16.610Z"}
+{"level":"info","message":"::1 - - [06/Sep/2025:18:17:13 +0000] \"POST /api/orders HTTP/1.1\" 403 38 \"-\" \"node\"","timestamp":"2025-09-06T18:17:13.216Z"}
+{"level":"info","message":"::1 - - [06/Sep/2025:18:21:14 +0000] \"POST /api/orders HTTP/1.1\" 403 38 \"-\" \"node\"","timestamp":"2025-09-06T18:21:14.507Z"}
+{"level":"error","message":"No token No token","timestamp":"2025-09-06T18:21:15.445Z"}
+{"level":"info","message":"::1 - - [06/Sep/2025:18:21:15 +0000] \"POST /api/auth/refresh HTTP/1.1\" 500 809 \"-\" \"node\"","timestamp":"2025-09-06T18:21:15.468Z"}
+{"level":"info","message":"::1 - - [06/Sep/2025:18:36:40 +0000] \"POST /api/orders HTTP/1.1\" 403 38 \"-\" \"node\"","timestamp":"2025-09-06T18:36:40.189Z"}
+{"level":"info","message":"::1 - - [06/Sep/2025:18:36:41 +0000] \"POST /api/auth/refresh HTTP/1.1\" 401 55 \"-\" \"node\"","timestamp":"2025-09-06T18:36:41.380Z"}
+{"level":"info","message":"::1 - - [06/Sep/2025:18:38:08 +0000] \"POST /api/orders HTTP/1.1\" 403 38 \"-\" \"node\"","timestamp":"2025-09-06T18:38:08.315Z"}
+{"level":"info","message":"::1 - - [06/Sep/2025:18:38:09 +0000] \"POST /api/auth/refresh HTTP/1.1\" 401 55 \"-\" \"node\"","timestamp":"2025-09-06T18:38:09.056Z"}
+{"level":"info","message":"::1 - - [06/Sep/2025:18:43:13 +0000] \"POST /api/orders HTTP/1.1\" 403 38 \"-\" \"node\"","timestamp":"2025-09-06T18:43:13.560Z"}
+{"level":"info","message":"::1 - - [06/Sep/2025:18:43:14 +0000] \"POST /api/auth/refresh HTTP/1.1\" 401 55 \"-\" \"node\"","timestamp":"2025-09-06T18:43:14.097Z"}
+{"level":"info","message":"::1 - - [06/Sep/2025:18:49:01 +0000] \"POST /api/orders HTTP/1.1\" 403 38 \"-\" \"node\"","timestamp":"2025-09-06T18:49:01.666Z"}
+{"level":"info","message":"::1 - - [06/Sep/2025:18:49:02 +0000] \"POST /api/auth/refresh HTTP/1.1\" 401 46 \"-\" \"node\"","timestamp":"2025-09-06T18:49:02.508Z"}
+{"level":"info","message":"::1 - - [06/Sep/2025:18:49:14 +0000] \"POST /api/orders HTTP/1.1\" 403 38 \"-\" \"node\"","timestamp":"2025-09-06T18:49:14.779Z"}
+{"level":"info","message":"::1 - - [06/Sep/2025:18:49:15 +0000] \"POST /api/auth/refresh HTTP/1.1\" 401 46 \"-\" \"node\"","timestamp":"2025-09-06T18:49:15.507Z"}
+{"level":"info","message":"::1 - - [06/Sep/2025:18:49:48 +0000] \"POST /api/orders HTTP/1.1\" 403 38 \"-\" \"node\"","timestamp":"2025-09-06T18:49:48.794Z"}
+{"level":"info","message":"::1 - - [06/Sep/2025:18:49:49 +0000] \"POST /api/auth/refresh HTTP/1.1\" 401 46 \"-\" \"node\"","timestamp":"2025-09-06T18:49:49.681Z"}
+{"level":"info","message":"::1 - - [06/Sep/2025:18:50:32 +0000] \"POST /api/orders HTTP/1.1\" 403 38 \"-\" \"node\"","timestamp":"2025-09-06T18:50:32.830Z"}
+{"level":"info","message":"::1 - - [06/Sep/2025:18:50:33 +0000] \"POST /api/auth/refresh HTTP/1.1\" 401 46 \"-\" \"node\"","timestamp":"2025-09-06T18:50:33.751Z"}
+{"level":"info","message":"::1 - - [06/Sep/2025:18:50:52 +0000] \"POST /api/orders HTTP/1.1\" 403 38 \"-\" \"node\"","timestamp":"2025-09-06T18:50:52.297Z"}
+{"level":"info","message":"::1 - - [06/Sep/2025:18:50:55 +0000] \"POST /api/auth/refresh HTTP/1.1\" 401 46 \"-\" \"node\"","timestamp":"2025-09-06T18:50:55.795Z"}
+{"level":"info","message":"::1 - - [06/Sep/2025:18:56:21 +0000] \"GET / HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\"","timestamp":"2025-09-06T18:56:21.217Z"}
+{"isOperational":true,"level":"error","message":"Route /.well-known/appspecific/com.chrome.devtools.json not found Route /.well-known/appspecific/com.chrome.devtools.json not found","status":"fail","statusCode":404,"timestamp":"2025-09-06T18:56:21.250Z"}
+{"level":"info","message":"::1 - - [06/Sep/2025:18:56:21 +0000] \"GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1\" 404 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\"","timestamp":"2025-09-06T18:56:21.275Z"}
+{"level":"info","message":"::1 - - [07/Sep/2025:02:03:22 +0000] \"GET / HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\"","timestamp":"2025-09-07T02:03:22.743Z"}
+{"isOperational":true,"level":"error","message":"Route /favicon.ico not found Route /favicon.ico not found","status":"fail","statusCode":404,"timestamp":"2025-09-07T02:03:22.840Z"}
+{"level":"info","message":"::1 - - [07/Sep/2025:02:03:22 +0000] \"GET /favicon.ico HTTP/1.1\" 404 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\"","timestamp":"2025-09-07T02:03:22.862Z"}
+{"level":"info","message":"::1 - - [07/Sep/2025:02:06:36 +0000] \"GET /api/reviews HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-09-07T02:06:36.572Z"}
+{"level":"info","message":"::1 - - [07/Sep/2025:02:06:36 +0000] \"GET /api/products?sort=createdAt_desc&limit=4 HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-09-07T02:06:36.595Z"}
+{"level":"info","message":"::1 - - [07/Sep/2025:02:06:36 +0000] \"GET /api/products?isFeatured=true&limit=4 HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-09-07T02:06:36.604Z"}
+{"level":"info","message":"::1 - - [07/Sep/2025:02:07:15 +0000] \"POST /api/auth/login HTTP/1.1\" 201 383 \"-\" \"node\"","timestamp":"2025-09-07T02:07:15.378Z"}
+{"level":"info","message":"::1 - - [07/Sep/2025:02:07:24 +0000] \"GET /api/products?page=1&size=12&category=gents&sort=createdAt_desc HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-09-07T02:07:24.584Z"}
+{"isOperational":true,"level":"error","message":"Route /.well-known/appspecific/com.chrome.devtools.json not found Route /.well-known/appspecific/com.chrome.devtools.json not found","status":"fail","statusCode":404,"timestamp":"2025-09-07T02:07:27.769Z"}
+{"level":"info","message":"::1 - - [07/Sep/2025:02:07:27 +0000] \"GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1\" 404 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\"","timestamp":"2025-09-07T02:07:27.820Z"}
+{"isOperational":true,"level":"error","message":"Route /.well-known/appspecific/com.chrome.devtools.json not found Route /.well-known/appspecific/com.chrome.devtools.json not found","status":"fail","statusCode":404,"timestamp":"2025-09-07T02:11:12.711Z"}
+{"level":"info","message":"::1 - - [07/Sep/2025:02:11:12 +0000] \"GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1\" 404 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\"","timestamp":"2025-09-07T02:11:12.721Z"}
+{"level":"info","message":"::1 - - [07/Sep/2025:02:11:22 +0000] \"GET / HTTP/1.1\" 200 27 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\"","timestamp":"2025-09-07T02:11:22.858Z"}
+{"isOperational":true,"level":"error","message":"Route /.well-known/appspecific/com.chrome.devtools.json not found Route /.well-known/appspecific/com.chrome.devtools.json not found","status":"fail","statusCode":404,"timestamp":"2025-09-07T02:11:22.942Z"}
+{"level":"info","message":"::1 - - [07/Sep/2025:02:11:22 +0000] \"GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1\" 404 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\"","timestamp":"2025-09-07T02:11:22.955Z"}
+{"level":"info","message":"::1 - - [07/Sep/2025:02:15:09 +0000] \"GET / HTTP/1.1\" 200 27 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\"","timestamp":"2025-09-07T02:15:09.375Z"}
+{"isOperational":true,"level":"error","message":"Route /.well-known/appspecific/com.chrome.devtools.json not found Route /.well-known/appspecific/com.chrome.devtools.json not found","status":"fail","statusCode":404,"timestamp":"2025-09-07T02:15:09.472Z"}
+{"level":"info","message":"::1 - - [07/Sep/2025:02:15:09 +0000] \"GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1\" 404 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\"","timestamp":"2025-09-07T02:15:09.492Z"}
+{"level":"info","message":"::1 - - [07/Sep/2025:02:15:09 +0000] \"GET / HTTP/1.1\" 200 27 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\"","timestamp":"2025-09-07T02:15:09.695Z"}
+{"isOperational":true,"level":"error","message":"Route /.well-known/appspecific/com.chrome.devtools.json not found Route /.well-known/appspecific/com.chrome.devtools.json not found","status":"fail","statusCode":404,"timestamp":"2025-09-07T02:15:09.781Z"}
+{"level":"info","message":"::1 - - [07/Sep/2025:02:15:09 +0000] \"GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1\" 404 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\"","timestamp":"2025-09-07T02:15:09.790Z"}
+{"level":"info","message":"::1 - - [07/Sep/2025:02:15:33 +0000] \"GET /api/news HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-09-07T02:15:33.984Z"}
+{"level":"info","message":"::1 - - [07/Sep/2025:02:15:33 +0000] \"GET /api/reviews HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-09-07T02:15:33.989Z"}
+{"level":"info","message":"::1 - - [07/Sep/2025:02:15:33 +0000] \"GET /api/products?isFeatured=true&limit=4 HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-09-07T02:15:33.997Z"}
+{"level":"info","message":"::1 - - [07/Sep/2025:02:15:34 +0000] \"GET /api/products?sort=createdAt_desc&limit=4 HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-09-07T02:15:34.284Z"}
+{"level":"info","message":"::1 - - [07/Sep/2025:02:15:51 +0000] \"POST /api/auth/login HTTP/1.1\" 201 383 \"-\" \"node\"","timestamp":"2025-09-07T02:15:51.521Z"}
+{"level":"info","message":"::1 - - [07/Sep/2025:02:15:52 +0000] \"GET /api/products?page=1&size=12&category=gents&sort=createdAt_desc HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-09-07T02:15:52.139Z"}
+{"level":"info","message":"::1 - - [07/Sep/2025:02:18:27 +0000] \"GET /api/reviews HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-09-07T02:18:27.042Z"}
+{"level":"info","message":"::1 - - [07/Sep/2025:02:18:40 +0000] \"POST /api/auth/login HTTP/1.1\" 201 383 \"-\" \"node\"","timestamp":"2025-09-07T02:18:40.969Z"}
+{"level":"info","message":"::1 - - [07/Sep/2025:02:18:41 +0000] \"GET /api/products?page=1&size=12&category=gents&sort=createdAt_desc HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-09-07T02:18:41.672Z"}
+{"level":"info","message":"::1 - - [07/Sep/2025:02:22:07 +0000] \"GET /api/reviews HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-09-07T02:22:07.067Z"}
+{"level":"info","message":"::1 - - [07/Sep/2025:02:22:07 +0000] \"GET /api/products?isFeatured=true&limit=4 HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-09-07T02:22:07.090Z"}
+{"level":"info","message":"::1 - - [07/Sep/2025:02:22:07 +0000] \"GET /api/products?sort=createdAt_desc&limit=4 HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-09-07T02:22:07.099Z"}
+{"level":"info","message":"::1 - - [07/Sep/2025:02:22:13 +0000] \"POST /api/auth/login HTTP/1.1\" 201 383 \"-\" \"node\"","timestamp":"2025-09-07T02:22:13.938Z"}
+{"level":"info","message":"::1 - - [07/Sep/2025:02:22:14 +0000] \"GET /api/products?page=1&size=12&category=gents&sort=createdAt_desc HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-09-07T02:22:14.472Z"}
+{"level":"info","message":"::1 - - [07/Sep/2025:02:22:21 +0000] \"GET / HTTP/1.1\" 200 27 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\"","timestamp":"2025-09-07T02:22:21.457Z"}
+{"isOperational":true,"level":"error","message":"Route /.well-known/appspecific/com.chrome.devtools.json not found Route /.well-known/appspecific/com.chrome.devtools.json not found","status":"fail","statusCode":404,"timestamp":"2025-09-07T02:22:21.526Z"}
+{"level":"info","message":"::1 - - [07/Sep/2025:02:22:21 +0000] \"GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1\" 404 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\"","timestamp":"2025-09-07T02:22:21.536Z"}
+{"level":"info","message":"::1 - - [07/Sep/2025:02:23:30 +0000] \"POST /api/auth/login HTTP/1.1\" 201 383 \"-\" \"node\"","timestamp":"2025-09-07T02:23:30.867Z"}
+{"level":"info","message":"::1 - - [07/Sep/2025:02:23:31 +0000] \"GET /api/products?page=1&size=12&category=gents&sort=createdAt_desc HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-09-07T02:23:31.846Z"}
+{"level":"info","message":"::1 - - [07/Sep/2025:02:29:09 +0000] \"GET /api/products?page=1&size=12&category=gents&sort=createdAt_desc HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-09-07T02:29:09.777Z"}
+{"level":"info","message":"::1 - - [07/Sep/2025:02:29:20 +0000] \"GET /api/reviews HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-09-07T02:29:20.002Z"}
+{"level":"info","message":"::1 - - [07/Sep/2025:02:29:20 +0000] \"GET /api/products?isFeatured=true&limit=4 HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-09-07T02:29:20.026Z"}
+{"level":"info","message":"::1 - - [07/Sep/2025:02:29:20 +0000] \"GET /api/products?sort=createdAt_desc&limit=4 HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-09-07T02:29:20.069Z"}
+{"level":"info","message":"::1 - - [07/Sep/2025:02:29:20 +0000] \"GET /api/news HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-09-07T02:29:20.839Z"}
+{"level":"info","message":"::1 - - [07/Sep/2025:02:29:20 +0000] \"GET /api/reviews HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-09-07T02:29:20.909Z"}
+{"level":"info","message":"::1 - - [07/Sep/2025:02:29:21 +0000] \"GET /api/products?isFeatured=true&limit=4 HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-09-07T02:29:21.075Z"}
+{"level":"info","message":"::1 - - [07/Sep/2025:02:29:21 +0000] \"GET /api/products?sort=createdAt_desc&limit=4 HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-09-07T02:29:21.082Z"}
+{"level":"info","message":"::1 - - [07/Sep/2025:02:29:22 +0000] \"GET /api/news HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-09-07T02:29:22.040Z"}
+{"level":"info","message":"::1 - - [07/Sep/2025:02:29:22 +0000] \"GET /api/reviews HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-09-07T02:29:22.138Z"}
+{"level":"info","message":"::1 - - [07/Sep/2025:02:29:22 +0000] \"GET /api/products?isFeatured=true&limit=4 HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-09-07T02:29:22.298Z"}
+{"level":"info","message":"::1 - - [07/Sep/2025:02:29:22 +0000] \"GET /api/products?sort=createdAt_desc&limit=4 HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-09-07T02:29:22.306Z"}
+{"level":"info","message":"::1 - - [07/Sep/2025:02:29:44 +0000] \"POST /api/auth/login HTTP/1.1\" 201 383 \"-\" \"node\"","timestamp":"2025-09-07T02:29:44.236Z"}
+{"level":"info","message":"::1 - - [07/Sep/2025:02:29:44 +0000] \"GET /api/products?page=1&size=12&category=gents&sort=createdAt_desc HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-09-07T02:29:44.785Z"}
+{"level":"info","message":"::1 - - [07/Sep/2025:02:29:45 +0000] \"GET /api/products?page=1&size=12&category=gents&sort=createdAt_desc HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-09-07T02:29:45.941Z"}
+{"isOperational":true,"level":"error","message":"Route /.well-known/appspecific/com.chrome.devtools.json not found Route /.well-known/appspecific/com.chrome.devtools.json not found","status":"fail","statusCode":404,"timestamp":"2025-09-07T02:30:01.823Z"}
+{"level":"info","message":"::1 - - [07/Sep/2025:02:30:01 +0000] \"GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1\" 404 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\"","timestamp":"2025-09-07T02:30:01.829Z"}
+{"level":"info","message":"::1 - - [07/Sep/2025:02:35:32 +0000] \"GET /api/reviews HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-09-07T02:35:32.706Z"}
+{"level":"info","message":"::1 - - [07/Sep/2025:02:35:32 +0000] \"GET /api/products?isFeatured=true&limit=4 HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-09-07T02:35:32.806Z"}
+{"level":"info","message":"::1 - - [07/Sep/2025:02:35:32 +0000] \"GET /api/products?sort=createdAt_desc&limit=4 HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-09-07T02:35:32.890Z"}
+{"level":"info","message":"::1 - - [07/Sep/2025:02:35:34 +0000] \"GET /api/news HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-09-07T02:35:34.133Z"}
+{"level":"info","message":"::1 - - [07/Sep/2025:02:35:34 +0000] \"GET /api/reviews HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-09-07T02:35:34.228Z"}
+{"level":"info","message":"::1 - - [07/Sep/2025:02:35:34 +0000] \"GET /api/products?isFeatured=true&limit=4 HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-09-07T02:35:34.435Z"}
+{"level":"info","message":"::1 - - [07/Sep/2025:02:35:34 +0000] \"GET /api/products?sort=createdAt_desc&limit=4 HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-09-07T02:35:34.459Z"}
+{"level":"info","message":"::1 - - [07/Sep/2025:02:35:35 +0000] \"GET /api/news HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-09-07T02:35:35.452Z"}
+{"level":"info","message":"::1 - - [07/Sep/2025:02:35:35 +0000] \"GET /api/reviews HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-09-07T02:35:35.540Z"}
+{"level":"info","message":"::1 - - [07/Sep/2025:02:35:35 +0000] \"GET /api/products?isFeatured=true&limit=4 HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-09-07T02:35:35.691Z"}
+{"level":"info","message":"::1 - - [07/Sep/2025:02:35:35 +0000] \"GET /api/products?sort=createdAt_desc&limit=4 HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-09-07T02:35:35.706Z"}
+{"level":"info","message":"::1 - - [07/Sep/2025:02:35:44 +0000] \"POST /api/auth/login HTTP/1.1\" 201 383 \"-\" \"node\"","timestamp":"2025-09-07T02:35:44.354Z"}
+{"level":"info","message":"::1 - - [07/Sep/2025:02:35:45 +0000] \"GET /api/products?page=1&size=12&category=gents&sort=createdAt_desc HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-09-07T02:35:45.036Z"}
+{"level":"info","message":"::1 - - [07/Sep/2025:02:35:46 +0000] \"GET /api/products?page=1&size=12&category=gents&sort=createdAt_desc HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-09-07T02:35:46.092Z"}
+{"isOperational":true,"level":"error","message":"Route /auth/login not found Route /auth/login not found","status":"fail","statusCode":404,"timestamp":"2025-09-07T02:38:41.334Z"}
+{"level":"info","message":"::1 - - [07/Sep/2025:02:38:41 +0000] \"GET /auth/login HTTP/1.1\" 404 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\"","timestamp":"2025-09-07T02:38:41.342Z"}
+{"isOperational":true,"level":"error","message":"Route /.well-known/appspecific/com.chrome.devtools.json not found Route /.well-known/appspecific/com.chrome.devtools.json not found","status":"fail","statusCode":404,"timestamp":"2025-09-07T02:38:41.448Z"}
+{"level":"info","message":"::1 - - [07/Sep/2025:02:38:41 +0000] \"GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1\" 404 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\"","timestamp":"2025-09-07T02:38:41.452Z"}
+{"isOperational":true,"level":"error","message":"Route /.well-known/appspecific/com.chrome.devtools.json not found Route /.well-known/appspecific/com.chrome.devtools.json not found","status":"fail","statusCode":404,"timestamp":"2025-09-07T02:38:52.485Z"}
+{"level":"info","message":"::1 - - [07/Sep/2025:02:38:52 +0000] \"GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1\" 404 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\"","timestamp":"2025-09-07T02:38:52.509Z"}
+{"level":"info","message":"::1 - - [07/Sep/2025:02:38:57 +0000] \"GET /api/reviews HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-09-07T02:38:57.752Z"}
+{"level":"info","message":"::1 - - [07/Sep/2025:02:38:57 +0000] \"GET /api/products?isFeatured=true&limit=4 HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-09-07T02:38:57.787Z"}
+{"level":"info","message":"::1 - - [07/Sep/2025:02:38:57 +0000] \"GET /api/products?sort=createdAt_desc&limit=4 HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-09-07T02:38:57.797Z"}
+{"level":"info","message":"::1 - - [07/Sep/2025:02:38:58 +0000] \"GET /api/news HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-09-07T02:38:58.863Z"}
+{"level":"info","message":"::1 - - [07/Sep/2025:02:38:59 +0000] \"GET /api/reviews HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-09-07T02:38:59.168Z"}
+{"level":"info","message":"::1 - - [07/Sep/2025:02:38:59 +0000] \"GET /api/products?isFeatured=true&limit=4 HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-09-07T02:38:59.383Z"}
+{"level":"info","message":"::1 - - [07/Sep/2025:02:38:59 +0000] \"GET /api/products?sort=createdAt_desc&limit=4 HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-09-07T02:38:59.398Z"}
+{"level":"info","message":"::1 - - [07/Sep/2025:02:39:02 +0000] \"GET /api/news HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-09-07T02:39:02.108Z"}
+{"level":"info","message":"::1 - - [07/Sep/2025:02:39:02 +0000] \"GET /api/reviews HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-09-07T02:39:02.269Z"}
+{"level":"info","message":"::1 - - [07/Sep/2025:02:39:02 +0000] \"GET /api/products?isFeatured=true&limit=4 HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-09-07T02:39:02.504Z"}
+{"level":"info","message":"::1 - - [07/Sep/2025:02:39:02 +0000] \"GET /api/products?sort=createdAt_desc&limit=4 HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-09-07T02:39:02.505Z"}
+{"isOperational":true,"level":"error","message":"Route /auth/login not found Route /auth/login not found","status":"fail","statusCode":404,"timestamp":"2025-09-07T02:39:04.498Z"}
+{"level":"info","message":"::1 - - [07/Sep/2025:02:39:04 +0000] \"GET /auth/login HTTP/1.1\" 404 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\"","timestamp":"2025-09-07T02:39:04.503Z"}
+{"isOperational":true,"level":"error","message":"Route /.well-known/appspecific/com.chrome.devtools.json not found Route /.well-known/appspecific/com.chrome.devtools.json not found","status":"fail","statusCode":404,"timestamp":"2025-09-07T02:39:04.556Z"}
+{"level":"info","message":"::1 - - [07/Sep/2025:02:39:04 +0000] \"GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1\" 404 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\"","timestamp":"2025-09-07T02:39:04.568Z"}
+{"level":"info","message":"::1 - - [07/Sep/2025:02:39:14 +0000] \"POST /api/auth/login HTTP/1.1\" 201 383 \"-\" \"node\"","timestamp":"2025-09-07T02:39:14.259Z"}
+{"level":"info","message":"::1 - - [07/Sep/2025:02:39:14 +0000] \"GET /api/products?page=1&size=12&category=gents&sort=createdAt_desc HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-09-07T02:39:14.828Z"}
+{"level":"info","message":"::1 - - [07/Sep/2025:02:39:15 +0000] \"GET /api/products?page=1&size=12&category=gents&sort=createdAt_desc HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-09-07T02:39:15.734Z"}
+{"level":"info","message":"::1 - - [07/Sep/2025:02:41:19 +0000] \"GET / HTTP/1.1\" 200 27 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\"","timestamp":"2025-09-07T02:41:19.930Z"}
+{"isOperational":true,"level":"error","message":"Route /.well-known/appspecific/com.chrome.devtools.json not found Route /.well-known/appspecific/com.chrome.devtools.json not found","status":"fail","statusCode":404,"timestamp":"2025-09-07T02:41:20.001Z"}
+{"level":"info","message":"::1 - - [07/Sep/2025:02:41:20 +0000] \"GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1\" 404 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\"","timestamp":"2025-09-07T02:41:20.007Z"}
+{"level":"info","message":"::1 - - [07/Sep/2025:02:42:03 +0000] \"GET /api/reviews HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-09-07T02:42:03.707Z"}
+{"level":"info","message":"::1 - - [07/Sep/2025:02:42:03 +0000] \"GET /api/products?isFeatured=true&limit=4 HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-09-07T02:42:03.721Z"}
+{"level":"info","message":"::1 - - [07/Sep/2025:02:42:03 +0000] \"GET /api/products?sort=createdAt_desc&limit=4 HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-09-07T02:42:03.729Z"}
+{"level":"info","message":"::1 - - [07/Sep/2025:02:42:04 +0000] \"GET /api/news HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-09-07T02:42:04.413Z"}
+{"level":"info","message":"::1 - - [07/Sep/2025:02:42:04 +0000] \"GET /api/reviews HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-09-07T02:42:04.475Z"}
+{"level":"info","message":"::1 - - [07/Sep/2025:02:42:04 +0000] \"GET /api/products?isFeatured=true&limit=4 HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-09-07T02:42:04.624Z"}
+{"level":"info","message":"::1 - - [07/Sep/2025:02:42:04 +0000] \"GET /api/products?sort=createdAt_desc&limit=4 HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-09-07T02:42:04.626Z"}
+{"level":"info","message":"::1 - - [07/Sep/2025:02:42:06 +0000] \"GET /api/news HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-09-07T02:42:06.177Z"}
+{"level":"info","message":"::1 - - [07/Sep/2025:02:42:06 +0000] \"GET /api/reviews HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-09-07T02:42:06.261Z"}
+{"level":"info","message":"::1 - - [07/Sep/2025:02:42:06 +0000] \"GET /api/products?isFeatured=true&limit=4 HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-09-07T02:42:06.413Z"}
+{"level":"info","message":"::1 - - [07/Sep/2025:02:42:06 +0000] \"GET /api/products?sort=createdAt_desc&limit=4 HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-09-07T02:42:06.425Z"}
+{"level":"info","message":"::1 - - [07/Sep/2025:02:42:31 +0000] \"GET / HTTP/1.1\" 200 27 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\"","timestamp":"2025-09-07T02:42:31.361Z"}
+{"isOperational":true,"level":"error","message":"Route /.well-known/appspecific/com.chrome.devtools.json not found Route /.well-known/appspecific/com.chrome.devtools.json not found","status":"fail","statusCode":404,"timestamp":"2025-09-07T02:42:31.391Z"}
+{"level":"info","message":"::1 - - [07/Sep/2025:02:42:31 +0000] \"GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1\" 404 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\"","timestamp":"2025-09-07T02:42:31.411Z"}
+{"level":"info","message":"::1 - - [07/Sep/2025:02:42:43 +0000] \"POST /api/auth/login HTTP/1.1\" 201 383 \"-\" \"node\"","timestamp":"2025-09-07T02:42:43.680Z"}
+{"level":"info","message":"::1 - - [07/Sep/2025:02:42:44 +0000] \"GET /api/products?page=1&size=12&category=gents&sort=createdAt_desc HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-09-07T02:42:44.240Z"}
+{"level":"info","message":"::1 - - [07/Sep/2025:02:42:45 +0000] \"GET /api/products?page=1&size=12&category=gents&sort=createdAt_desc HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-09-07T02:42:45.106Z"}
+{"level":"info","message":"::1 - - [07/Sep/2025:02:50:38 +0000] \"GET /api/reviews HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-09-07T02:50:38.420Z"}
+{"level":"info","message":"::1 - - [07/Sep/2025:02:50:38 +0000] \"GET /api/products?isFeatured=true&limit=4 HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-09-07T02:50:38.456Z"}
+{"level":"info","message":"::1 - - [07/Sep/2025:02:50:38 +0000] \"GET /api/products?sort=createdAt_desc&limit=4 HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-09-07T02:50:38.475Z"}
+{"level":"info","message":"::1 - - [07/Sep/2025:02:50:39 +0000] \"GET /api/news HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-09-07T02:50:39.070Z"}
+{"level":"info","message":"::1 - - [07/Sep/2025:02:50:39 +0000] \"GET /api/reviews HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-09-07T02:50:39.287Z"}
+{"level":"info","message":"::1 - - [07/Sep/2025:02:50:39 +0000] \"GET /api/products?isFeatured=true&limit=4 HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-09-07T02:50:39.493Z"}
+{"level":"info","message":"::1 - - [07/Sep/2025:02:50:39 +0000] \"GET /api/products?sort=createdAt_desc&limit=4 HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-09-07T02:50:39.500Z"}
+{"level":"info","message":"::1 - - [07/Sep/2025:02:50:40 +0000] \"GET /api/news HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-09-07T02:50:40.321Z"}
+{"level":"info","message":"::1 - - [07/Sep/2025:02:50:40 +0000] \"GET /api/reviews HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-09-07T02:50:40.400Z"}
+{"level":"info","message":"::1 - - [07/Sep/2025:02:50:40 +0000] \"GET /api/products?isFeatured=true&limit=4 HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-09-07T02:50:40.558Z"}
+{"level":"info","message":"::1 - - [07/Sep/2025:02:50:40 +0000] \"GET /api/products?sort=createdAt_desc&limit=4 HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-09-07T02:50:40.564Z"}
+{"level":"info","message":"::1 - - [07/Sep/2025:02:50:50 +0000] \"POST /api/auth/login HTTP/1.1\" 201 383 \"-\" \"node\"","timestamp":"2025-09-07T02:50:50.016Z"}
+{"level":"info","message":"::1 - - [07/Sep/2025:02:50:50 +0000] \"GET /api/products?page=1&size=12&category=gents&sort=createdAt_desc HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-09-07T02:50:50.638Z"}
+{"level":"info","message":"::1 - - [07/Sep/2025:02:50:51 +0000] \"GET /api/products?page=1&size=12&category=gents&sort=createdAt_desc HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-09-07T02:50:51.846Z"}
+{"level":"info","message":"::1 - - [07/Sep/2025:02:51:24 +0000] \"GET /api/news HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-09-07T02:51:24.325Z"}
+{"level":"info","message":"::1 - - [07/Sep/2025:02:51:24 +0000] \"GET /api/reviews HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-09-07T02:51:24.419Z"}
+{"level":"info","message":"::1 - - [07/Sep/2025:02:51:24 +0000] \"GET /api/products?isFeatured=true&limit=4 HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-09-07T02:51:24.596Z"}
+{"level":"info","message":"::1 - - [07/Sep/2025:02:51:24 +0000] \"GET /api/products?sort=createdAt_desc&limit=4 HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-09-07T02:51:24.657Z"}
+{"level":"info","message":"::1 - - [07/Sep/2025:02:51:25 +0000] \"GET /api/news HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-09-07T02:51:25.728Z"}
+{"level":"info","message":"::1 - - [07/Sep/2025:02:51:25 +0000] \"GET /api/reviews HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-09-07T02:51:25.810Z"}
+{"level":"info","message":"::1 - - [07/Sep/2025:02:51:26 +0000] \"GET /api/products?isFeatured=true&limit=4 HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-09-07T02:51:26.010Z"}
+{"level":"info","message":"::1 - - [07/Sep/2025:02:51:26 +0000] \"GET /api/products?sort=createdAt_desc&limit=4 HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-09-07T02:51:26.015Z"}
+{"level":"info","message":"::1 - - [07/Sep/2025:02:51:41 +0000] \"POST /api/auth/login HTTP/1.1\" 201 383 \"-\" \"node\"","timestamp":"2025-09-07T02:51:41.616Z"}
+{"level":"info","message":"::1 - - [07/Sep/2025:02:51:42 +0000] \"GET /api/products?page=1&size=12&category=gents&sort=createdAt_desc HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-09-07T02:51:42.199Z"}
+{"level":"info","message":"::1 - - [07/Sep/2025:02:51:43 +0000] \"GET /api/products?page=1&size=12&category=gents&sort=createdAt_desc HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-09-07T02:51:43.596Z"}
+{"level":"info","message":"::1 - - [07/Sep/2025:02:56:27 +0000] \"GET /api/reviews HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-09-07T02:56:27.635Z"}
+{"level":"info","message":"::1 - - [07/Sep/2025:02:56:27 +0000] \"GET /api/products?isFeatured=true&limit=4 HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-09-07T02:56:27.681Z"}
+{"level":"info","message":"::1 - - [07/Sep/2025:02:56:27 +0000] \"GET /api/products?sort=createdAt_desc&limit=4 HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-09-07T02:56:27.683Z"}
+{"level":"info","message":"::1 - - [07/Sep/2025:02:56:36 +0000] \"GET / HTTP/1.1\" 200 27 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0\"","timestamp":"2025-09-07T02:56:36.270Z"}
+{"isOperational":true,"level":"error","message":"Route /favicon.ico not found Route /favicon.ico not found","status":"fail","statusCode":404,"timestamp":"2025-09-07T02:56:36.511Z"}
+{"level":"info","message":"::1 - - [07/Sep/2025:02:56:36 +0000] \"GET /favicon.ico HTTP/1.1\" 404 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0\"","timestamp":"2025-09-07T02:56:36.525Z"}
+{"level":"info","message":"::1 - - [07/Sep/2025:02:58:26 +0000] \"POST /api/auth/login HTTP/1.1\" 201 383 \"-\" \"node\"","timestamp":"2025-09-07T02:58:26.177Z"}
+{"level":"info","message":"::1 - - [07/Sep/2025:02:58:26 +0000] \"GET /api/products?page=1&size=12&category=gents&sort=createdAt_desc HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-09-07T02:58:26.526Z"}

@@ -8,22 +8,18 @@ const signUp = async (req: Request, res: Response) => {
   const maxAge = process.env.REFRESH_TOKEN_EXPIRES
     ? ms(process.env.REFRESH_TOKEN_EXPIRES as ms.StringValue)
     : 7 * 24 * 60 * 60 * 1000;
-  res.cookie('refreshToken', payload.refreshToken, {
-    httpOnly: true,
-    secure: process.env.NODE_ENV === 'production',
-    sameSite: 'lax',
-    maxAge: maxAge,
-  });
+
   res.status(httpStatus.CREATED).json({
     success: true,
     message: 'User created successfully',
     payload: {
       accessToken: payload.accessToken,
+      refreshToken: payload.refreshToken,
+      maxAge: maxAge,
       user: {
         name: payload.user.name,
         email: payload.user.email,
         role: payload.user.role,
-        userId: payload.user._id,
       },
     },
   });
@@ -31,28 +27,26 @@ const signUp = async (req: Request, res: Response) => {
 
 const logIn = async (req: Request, res: Response) => {
   const payload = await UserServices.logIn(req.body);
+
   const maxAge = process.env.REFRESH_TOKEN_EXPIRES
     ? ms(process.env.REFRESH_TOKEN_EXPIRES as ms.StringValue)
     : 7 * 24 * 60 * 60 * 1000;
-  res.cookie('refreshToken', payload.refreshToken, {
-    httpOnly: true,
-    secure: process.env.NODE_ENV === 'production',
-    sameSite: 'lax',
-    maxAge: maxAge,
-  });
+
   res.status(httpStatus.CREATED).json({
     success: true,
     message: 'User logged in successfully',
     payload: {
       accessToken: payload.accessToken,
+      refreshToken: payload.refreshToken,
+      maxAge: maxAge,
       user: {
         name: payload.user.name,
         email: payload.user.email,
         role: payload.user.role,
-        userId: payload.user._id,
       },
     },
   });
+  console.log('checkRes===', res);
 };
 
 const resetPassword = async (req: Request, res: Response) => {
@@ -82,13 +76,38 @@ const logout = async (req: Request, res: Response) => {
   });
 };
 
-const refresh = async (req: Request, res: Response) => {
-  const payload = await UserServices.refresh(req.body);
-  res.status(httpStatus.CREATED).json({
-    success: true,
-    message: 'User logged out successfully',
-    payload: payload,
-  });
+const refresh = async (req: Request, res: Response): Promise<void> => {
+  try {
+    const refreshToken = req.cookies?.refreshToken;
+    console.log('refreshToken===', req);
+    if (!refreshToken) {
+      res.status(401).json({ success: false, message: 'No refresh token' });
+      return;
+    }
+
+    const payload = await UserServices.refresh(refreshToken);
+
+    // If refresh token was rotated, re-set cookie
+    if (payload.refreshToken) {
+      res.cookie('refreshToken', payload.refreshToken, {
+        httpOnly: true,
+        secure: process.env.NODE_ENV === 'production',
+        sameSite: 'lax',
+        maxAge: ms(
+          (process.env.REFRESH_TOKEN_EXPIRES as ms.StringValue) ?? '7d',
+        ),
+      });
+    }
+
+    res.status(200).json({
+      success: true,
+      message: 'Token refreshed successfully',
+      payload,
+    });
+  } catch (err) {
+    console.error('refresh error:', err);
+    res.status(403).json({ success: false, message: 'Invalid refresh token' });
+  }
 };
 
 export const userController = {

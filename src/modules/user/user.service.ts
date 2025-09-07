@@ -29,7 +29,7 @@ async function createRefreshToken(
 
 const refresh = async (rawToken: string) => {
   if (!rawToken) throw new Error('No token');
-
+console.log('rawToken===', rawToken);
   const tokenHash = hashToken(rawToken);
   const existing = await RefreshToken.findOne({ tokenHash });
   if (!existing || existing.revoked || existing.expiresAt < new Date()) {
