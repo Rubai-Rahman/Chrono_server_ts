@@ -123,6 +123,52 @@ const refresh = async (req: Request, res: Response): Promise<void> => {
   }
 };
 
+const googleSignIn = async (req: Request, res: Response) => {
+  try {
+    const { idToken, rememberMe } = req.body;
+    if (!idToken) {
+      return res
+        .status(400)
+        .json({ success: false, message: 'Missing idToken' });
+    }
+
+    const payload = await UserServices.googleSignIn({
+      idToken,
+      rememberMe,
+      ip: req.ip,
+      ua: req.get('user-agent') ?? undefined,
+    });
+
+    // set refresh token cookie (HttpOnly)
+    res.cookie('refreshToken', payload.refreshToken, {
+      httpOnly: true,
+      secure: process.env.NODE_ENV === 'production',
+      sameSite: 'lax', // or 'none' if cross-site (see notes)
+      maxAge: payload.refreshTtl,
+    });
+
+    res.status(httpStatus.OK).json({
+      success: true,
+      message: 'User logged in with Google',
+      payload: {
+        accessToken: payload.accessToken,
+        user: {
+          name: payload.user.name,
+          email: payload.user.email,
+          role: payload.user.role,
+          avatar: payload.user.avatar,
+        },
+      },
+    });
+  } catch (err: any) {
+    console.error('googleSignIn error', err);
+    res.status(400).json({
+      success: false,
+      message: err.message || 'Google sign-in failed',
+    });
+  }
+};
+
 export const userController = {
   signUp,
   logIn,
@@ -131,4 +177,5 @@ export const userController = {
   forgotPassword,
   logout,
   refresh,
+  googleSignIn,
 };

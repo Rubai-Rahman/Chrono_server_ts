@@ -23,6 +23,9 @@ const userSchema = new Schema<TUser, userModel, UserDocument>(
     role: { type: String, enum: ['admin', 'user'], default: 'user' },
     resetToken: { type: String, default: null },
     resetTokenExpiry: { type: Date, default: null },
+    googleId: { type: String, default: null },
+    emailVerified: { type: Boolean, default: false },
+    avatar: { type: String, default: null },
   },
   {
     timestamps: true,

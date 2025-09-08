@@ -6,6 +6,7 @@ import crypto from 'crypto';
 import { TUser } from './user.interface';
 import mongoose from 'mongoose';
 import { transporter } from '@utils/email';
+import { OAuth2Client } from 'google-auth-library';
 
 async function createRefreshToken(
   userId: string,
@@ -172,6 +173,77 @@ const resetPassword = async (data: { token: string; password: string }) => {
   return { message: 'Password reset successfully' };
 };
 
+// user.service.ts (add imports at top)
+
+const googleClient = new OAuth2Client(process.env.GOOGLE_CLIENT_ID);
+
+// add this function to exports
+const googleSignIn = async (opts: {
+  idToken: string;
+  rememberMe?: boolean;
+  ip?: string;
+  ua?: string;
+}) => {
+  const { idToken, rememberMe, ip, ua } = opts;
+  if (!idToken) throw new Error('No id token');
+
+  // verify with Google
+  const ticket = await googleClient.verifyIdToken({
+    idToken,
+    audience: process.env.GOOGLE_CLIENT_ID,
+  });
+  const payload = ticket.getPayload();
+  if (!payload || !payload.email) throw new Error('Invalid Google token');
+
+  const email = payload.email;
+  const googleSub = payload.sub; // unique Google user id
+  const name = payload.name;
+  const avatar = payload.picture;
+  const emailVerified = payload.email_verified ?? false;
+
+  // Try to find existing user
+  let user = await User.findOne({ email });
+
+  if (!user) {
+    // Create a new user record (mark as emailVerified)
+    user = await User.create({
+      name,
+      email,
+      googleId: googleSub,
+      avatar,
+      emailVerified,
+      // create a random password so local login isn't available without reset
+      password: crypto.randomBytes(32).toString('hex'),
+    });
+  } else {
+    // if user exists but doesn't have googleId, attach it (account linking)
+    if (!user.googleId) {
+      user.googleId = googleSub;
+      user.emailVerified = user.emailVerified || emailVerified;
+      await user.save();
+    }
+  }
+
+  // issue our own tokens (same pattern as your login)
+  const accessToken = signAccessToken({
+    userId: user._id.toString(),
+    role: user.role,
+  });
+  const { raw, ttl } = await createRefreshToken(
+    user._id.toString(),
+    !!rememberMe,
+    ip,
+    ua,
+  );
+
+  return {
+    user,
+    accessToken,
+    refreshToken: raw,
+    refreshTtl: ttl,
+  };
+};
+
 export const UserServices = {
   signUp,
   createRefreshToken,
@@ -181,4 +253,5 @@ export const UserServices = {
   forgotPassword,
   resetPassword,
   changePassword,
+  googleSignIn,
 };

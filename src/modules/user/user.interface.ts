@@ -12,6 +12,9 @@ export type TUser = {
   resetToken?: string | null;
   resetTokenExpiry?: Date | null;
   rememberMe?: boolean;
+  googleId?: string | null;
+  emailVerified?: boolean;
+  avatar?: string | null;
 };
 
 interface UserMethods {

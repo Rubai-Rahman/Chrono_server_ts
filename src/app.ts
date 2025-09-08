@@ -14,11 +14,14 @@ import { notFound } from '@middleware/notFound.middleware';
 import { ProductRoutes } from '@modules/product/product.route';
 import { ReviewRoutes } from '@modules/reviews/reviews.route';
 import { CommentRoutes } from '@modules/comments/comments.route';
+import cookieParser from 'cookie-parser';
 
 const app = express();
 
 // Security middleware
 app.use(helmet());
+//
+app.use(cookieParser());
 
 // CORS configuration
 app.use(
