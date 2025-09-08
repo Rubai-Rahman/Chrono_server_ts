@@ -5,6 +5,7 @@ import { RefreshToken } from './refreshToken';
 import crypto from 'crypto';
 import { TUser } from './user.interface';
 import mongoose from 'mongoose';
+import { transporter } from '@utils/email';
 
 async function createRefreshToken(
   userId: string,
@@ -120,12 +121,12 @@ const forgotPassword = async (email: string) => {
   const message = `<p>Click <a href="${resetUrl}">here</a> to reset your password</p>`;
 
   // Ensure transporter is configured elsewhere and imported
-  // await transporter.sendMail({
-  //   from: process.env.EMAIL_USER,
-  //   to: user.email,
-  //   subject: 'Reset Password',
-  //   html: message,
-  // });
+  await transporter.sendMail({
+    from: process.env.EMAIL_USER,
+    to: user.email,
+    subject: 'Reset Password',
+    html: message,
+  });
 };
 
 const changePassword = async (data: {
