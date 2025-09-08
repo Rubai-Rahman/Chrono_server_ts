@@ -2377,3 +2377,6 @@
 {"level":"info","message":"::1 - - [07/Sep/2025:10:18:54 +0000] \"GET /api/reviews HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-09-07T10:18:54.174Z"}
 {"level":"info","message":"::1 - - [07/Sep/2025:10:18:54 +0000] \"GET /api/products?isFeatured=true&limit=4 HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-09-07T10:18:54.444Z"}
 {"level":"info","message":"::1 - - [07/Sep/2025:10:18:54 +0000] \"GET /api/products?sort=createdAt_desc&limit=4 HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-09-07T10:18:54.455Z"}
+{"isOperational":true,"level":"error","message":"Route /api/auth/google not found Route /api/auth/google not found","status":"fail","statusCode":404,"timestamp":"2025-09-08T16:32:22.484Z"}
+{"level":"info","message":"::1 - - [08/Sep/2025:16:32:22 +0000] \"POST /api/auth/google HTTP/1.1\" 404 - \"-\" \"node\"","timestamp":"2025-09-08T16:32:22.500Z"}
+{"level":"info","message":"::1 - - [08/Sep/2025:16:33:59 +0000] \"POST /api/auth/google HTTP/1.1\" 400 131 \"-\" \"node\"","timestamp":"2025-09-08T16:33:59.864Z"}

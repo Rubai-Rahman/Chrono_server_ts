@@ -411,3 +411,4 @@
 {"isOperational":true,"level":"error","message":"Route /.well-known/appspecific/com.chrome.devtools.json not found Route /.well-known/appspecific/com.chrome.devtools.json not found","status":"fail","statusCode":404,"timestamp":"2025-09-07T02:42:31.391Z"}
 {"isOperational":true,"level":"error","message":"Route /favicon.ico not found Route /favicon.ico not found","status":"fail","statusCode":404,"timestamp":"2025-09-07T02:56:36.511Z"}
 {"isOperational":true,"level":"error","message":"Route /favicon.ico not found Route /favicon.ico not found","status":"fail","statusCode":404,"timestamp":"2025-09-07T10:14:44.088Z"}
+{"isOperational":true,"level":"error","message":"Route /api/auth/google not found Route /api/auth/google not found","status":"fail","statusCode":404,"timestamp":"2025-09-08T16:32:22.484Z"}

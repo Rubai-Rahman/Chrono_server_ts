@@ -11,6 +11,6 @@ router.post('/logout', userController.logout);
 router.post('/forgot-password', userController.forgotPassword);
 router.post('/reset-password', userController.resetPassword);
 router.post('/change-password', userController.changePassword);
-router.post('google', userController.googleSignIn);
+router.post('/google', userController.googleSignIn);
 
 export const UserRoutes = router;

@@ -173,11 +173,8 @@ const resetPassword = async (data: { token: string; password: string }) => {
   return { message: 'Password reset successfully' };
 };
 
-// user.service.ts (add imports at top)
-
 const googleClient = new OAuth2Client(process.env.GOOGLE_CLIENT_ID);
 
-// add this function to exports
 const googleSignIn = async (opts: {
   idToken: string;
   rememberMe?: boolean;
@@ -193,6 +190,7 @@ const googleSignIn = async (opts: {
     audience: process.env.GOOGLE_CLIENT_ID,
   });
   const payload = ticket.getPayload();
+  console.log('Google payload', payload);
   if (!payload || !payload.email) throw new Error('Invalid Google token');
 
   const email = payload.email;

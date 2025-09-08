@@ -139,19 +139,12 @@ const googleSignIn = async (req: Request, res: Response) => {
       ua: req.get('user-agent') ?? undefined,
     });
 
-    // set refresh token cookie (HttpOnly)
-    res.cookie('refreshToken', payload.refreshToken, {
-      httpOnly: true,
-      secure: process.env.NODE_ENV === 'production',
-      sameSite: 'lax', // or 'none' if cross-site (see notes)
-      maxAge: payload.refreshTtl,
-    });
-
     res.status(httpStatus.OK).json({
       success: true,
       message: 'User logged in with Google',
       payload: {
         accessToken: payload.accessToken,
+        refreshToken: payload.refreshToken,
         user: {
           name: payload.user.name,
           email: payload.user.email,
