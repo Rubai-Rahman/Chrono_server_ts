@@ -46,7 +46,6 @@ const logIn = async (req: Request, res: Response) => {
       },
     },
   });
-  console.log('checkRes===', res);
 };
 
 const changePassword = async (req: Request, res: Response) => {
@@ -92,7 +91,6 @@ const logout = async (req: Request, res: Response) => {
 const refresh = async (req: Request, res: Response): Promise<void> => {
   try {
     const refreshToken = req.cookies?.refreshToken;
-    console.log('refreshToken===', req);
     if (!refreshToken) {
       res.status(401).json({ success: false, message: 'No refresh token' });
       return;

@@ -2380,3 +2380,6 @@
 {"isOperational":true,"level":"error","message":"Route /api/auth/google not found Route /api/auth/google not found","status":"fail","statusCode":404,"timestamp":"2025-09-08T16:32:22.484Z"}
 {"level":"info","message":"::1 - - [08/Sep/2025:16:32:22 +0000] \"POST /api/auth/google HTTP/1.1\" 404 - \"-\" \"node\"","timestamp":"2025-09-08T16:32:22.500Z"}
 {"level":"info","message":"::1 - - [08/Sep/2025:16:33:59 +0000] \"POST /api/auth/google HTTP/1.1\" 400 131 \"-\" \"node\"","timestamp":"2025-09-08T16:33:59.864Z"}
+{"level":"info","message":"::1 - - [08/Sep/2025:16:37:19 +0000] \"POST /api/auth/google HTTP/1.1\" 400 131 \"-\" \"node\"","timestamp":"2025-09-08T16:37:19.718Z"}
+{"level":"info","message":"::1 - - [08/Sep/2025:16:42:47 +0000] \"POST /api/auth/google HTTP/1.1\" 200 613 \"-\" \"node\"","timestamp":"2025-09-08T16:42:47.383Z"}
+{"level":"info","message":"::1 - - [08/Sep/2025:16:42:54 +0000] \"GET /api/products?page=1&size=12&category=gents&sort=createdAt_desc HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-09-08T16:42:54.190Z"}

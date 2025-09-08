@@ -31,7 +31,6 @@ async function createRefreshToken(
 
 const refresh = async (rawToken: string) => {
   if (!rawToken) throw new Error('No token');
-  console.log('rawToken===', rawToken);
   const tokenHash = hashToken(rawToken);
   const existing = await RefreshToken.findOne({ tokenHash });
   if (!existing || existing.revoked || existing.expiresAt < new Date()) {
@@ -63,7 +62,6 @@ const signUp = async (userData: TUser) => {
   if (await User.isEmailUserNameExists(name, email)) {
     throw new Error('User already exists');
   }
-  console.log('userData', userData);
   const user = await User.create(userData);
   const accessToken = signAccessToken({ userId: user._id.toString() });
   const { raw, ttl } = await createRefreshToken(
@@ -190,7 +188,6 @@ const googleSignIn = async (opts: {
     audience: process.env.GOOGLE_CLIENT_ID,
   });
   const payload = ticket.getPayload();
-  console.log('Google payload', payload);
   if (!payload || !payload.email) throw new Error('Invalid Google token');
 
   const email = payload.email;
