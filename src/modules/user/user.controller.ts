@@ -49,8 +49,8 @@ const logIn = async (req: Request, res: Response) => {
   console.log('checkRes===', res);
 };
 
-const resetPassword = async (req: Request, res: Response) => {
-  const payload = await UserServices.resetPassword(req.body);
+const changePassword = async (req: Request, res: Response) => {
+  const payload = await UserServices.changePassword(req.body);
   res.status(httpStatus.CREATED).json({
     success: true,
     message: 'Password reset successfully',
@@ -67,6 +67,14 @@ const forgotPassword = async (req: Request, res: Response) => {
   });
 };
 
+const resetPassword = async (req: Request, res: Response) => {
+  const payload = await UserServices.resetPassword(req.body);
+  res.status(httpStatus.CREATED).json({
+    success: true,
+    message: 'Password reset successfully',
+    payload: payload,
+  });
+};
 const logout = async (req: Request, res: Response) => {
   const refreshToken = req.cookies?.refreshToken;
   if (!refreshToken) {
@@ -119,6 +127,7 @@ export const userController = {
   signUp,
   logIn,
   resetPassword,
+  changePassword,
   forgotPassword,
   logout,
   refresh,

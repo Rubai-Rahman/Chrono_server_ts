@@ -10,5 +10,6 @@ router.post('/refresh', userController.refresh);
 router.post('/logout', userController.logout);
 router.post('/forgot-password', userController.forgotPassword);
 router.post('/reset-password', userController.resetPassword);
+router.post('/change-password', userController.changePassword);
 
 export const UserRoutes = router;

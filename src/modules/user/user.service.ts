@@ -29,7 +29,7 @@ async function createRefreshToken(
 
 const refresh = async (rawToken: string) => {
   if (!rawToken) throw new Error('No token');
-console.log('rawToken===', rawToken);
+  console.log('rawToken===', rawToken);
   const tokenHash = hashToken(rawToken);
   const existing = await RefreshToken.findOne({ tokenHash });
   if (!existing || existing.revoked || existing.expiresAt < new Date()) {
@@ -128,28 +128,47 @@ const forgotPassword = async (email: string) => {
   // });
 };
 
-const resetPassword = async (data: {
+const changePassword = async (data: {
   id: string;
-  token: string;
-  password: string;
+  currentPassword: string;
+  newPassword: string;
 }) => {
-  const { id, token, password } = data;
-  const hashedToken = hashToken(token); // hash the provided token to compare
+  const { id, currentPassword, newPassword } = data;
+  const user = await User.findById(id);
+  if (!user || !(await user.comparePassword(currentPassword))) {
+    throw new Error('Current password is incorrect');
+  }
 
-  const found = await User.findOne({
-    _id: id,
+  // Hash the new password
+  user.password = newPassword;
+  user.resetToken = undefined;
+  user.resetTokenExpiry = undefined;
+  await user.save();
+
+  // Revoke all refresh tokens for this user
+  await RefreshToken.updateMany({ user: id }, { revoked: true });
+
+  return { message: 'Password changed successfully' };
+};
+
+const resetPassword = async (data: { token: string; password: string }) => {
+  const { token, password } = data;
+  const hashedToken = hashToken(token);
+  const user = await User.findOne({
     resetToken: hashedToken,
     resetTokenExpiry: { $gt: new Date() },
   });
-  if (!found) throw new Error('Invalid or expired token');
 
-  found.password = password;
-  found.resetToken = undefined;
-  found.resetTokenExpiry = undefined;
-  await found.save();
+  if (!user) throw new Error('Invalid or expired token');
 
-  // Invalidate all refresh tokens for this user
-  await RefreshToken.updateMany({ user: id }, { revoked: true });
+  user.password = password; // hashed automatically by pre-save hook
+  user.resetToken = undefined;
+  user.resetTokenExpiry = undefined;
+  await user.save();
+
+  await RefreshToken.updateMany({ user: user._id }, { revoked: true });
+
+  return { message: 'Password reset successfully' };
 };
 
 export const UserServices = {
@@ -160,4 +179,5 @@ export const UserServices = {
   refresh,
   forgotPassword,
   resetPassword,
+  changePassword,
 };
