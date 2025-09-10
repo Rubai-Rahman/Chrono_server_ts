@@ -12,11 +12,8 @@ router.post(
   validateRequest(AddressSchema) as express.RequestHandler,
   AddressController.postAddress,
 );
-router.get(
-  '/all',
-  authMiddleware,
-
-  AddressController.getAllAddresses,
-);
+router.get('/all', authMiddleware, AddressController.getAllAddresses);
+router.put('/update/:id', authMiddleware, AddressController.updateAddress);
+router.delete('/delete/:id', authMiddleware, AddressController.deleteAddress);
 
 export const AddressRoutes = router;

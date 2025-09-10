@@ -2516,3 +2516,40 @@
 {"level":"info","message":"::1 - - [10/Sep/2025:05:45:51 +0000] \"POST /api/address/create HTTP/1.1\" 201 302 \"-\" \"node\"","timestamp":"2025-09-10T05:45:51.273Z"}
 {"level":"info","message":"::1 - - [10/Sep/2025:05:45:58 +0000] \"POST /api/address/create HTTP/1.1\" 201 295 \"-\" \"node\"","timestamp":"2025-09-10T05:45:58.897Z"}
 {"level":"info","message":"::1 - - [10/Sep/2025:05:47:03 +0000] \"GET /api/address/all HTTP/1.1\" 200 600 \"-\" \"node\"","timestamp":"2025-09-10T05:47:03.307Z"}
+{"level":"info","message":"::1 - - [10/Sep/2025:05:48:50 +0000] \"POST /api/address/create HTTP/1.1\" 201 295 \"-\" \"node\"","timestamp":"2025-09-10T05:48:50.435Z"}
+{"level":"info","message":"::1 - - [10/Sep/2025:05:49:01 +0000] \"GET /api/address/all HTTP/1.1\" 200 896 \"-\" \"node\"","timestamp":"2025-09-10T05:49:01.606Z"}
+{"level":"info","message":"::1 - - [10/Sep/2025:05:50:27 +0000] \"POST /api/address/create HTTP/1.1\" 201 308 \"-\" \"node\"","timestamp":"2025-09-10T05:50:27.175Z"}
+{"level":"info","message":"::1 - - [10/Sep/2025:08:43:36 +0000] \"POST /api/auth/refresh HTTP/1.1\" 200 427 \"-\" \"Next.js Middleware\"","timestamp":"2025-09-10T08:43:36.981Z"}
+{"level":"info","message":"::1 - - [10/Sep/2025:08:43:38 +0000] \"GET /api/address/all HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-09-10T08:43:38.956Z"}
+{"level":"info","message":"::1 - - [10/Sep/2025:10:35:10 +0000] \"POST /api/auth/refresh HTTP/1.1\" 200 427 \"-\" \"Next.js Middleware\"","timestamp":"2025-09-10T10:35:10.037Z"}
+{"level":"info","message":"::1 - - [10/Sep/2025:10:35:11 +0000] \"GET /api/address/all HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-09-10T10:35:11.231Z"}
+{"level":"info","message":"::1 - - [10/Sep/2025:10:44:01 +0000] \"POST /api/address/create HTTP/1.1\" 201 313 \"-\" \"node\"","timestamp":"2025-09-10T10:44:01.690Z"}
+{"level":"info","message":"::1 - - [10/Sep/2025:10:44:51 +0000] \"GET /api/address/all HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-09-10T10:44:51.589Z"}
+{"level":"info","message":"::1 - - [10/Sep/2025:10:45:41 +0000] \"GET /api/address/all HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-09-10T10:45:41.850Z"}
+{"level":"info","message":"::1 - - [10/Sep/2025:10:50:22 +0000] \"POST /api/auth/refresh HTTP/1.1\" 200 427 \"-\" \"Next.js Middleware\"","timestamp":"2025-09-10T10:50:22.334Z"}
+{"level":"info","message":"::1 - - [10/Sep/2025:10:50:25 +0000] \"GET /api/address/all HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-09-10T10:50:25.654Z"}
+{"level":"info","message":"::1 - - [10/Sep/2025:15:37:20 +0000] \"POST /api/auth/refresh HTTP/1.1\" 200 427 \"-\" \"Next.js Middleware\"","timestamp":"2025-09-10T15:37:20.047Z"}
+{"level":"info","message":"::1 - - [10/Sep/2025:15:37:22 +0000] \"GET /api/address/all HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-09-10T15:37:22.067Z"}
+{"level":"info","message":"::1 - - [10/Sep/2025:15:39:50 +0000] \"GET /api/address/all HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-09-10T15:39:50.419Z"}
+{"level":"info","message":"::1 - - [10/Sep/2025:15:49:39 +0000] \"GET /api/address/all HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-09-10T15:49:39.723Z"}
+{"level":"info","message":"::1 - - [10/Sep/2025:15:51:26 +0000] \"DELETE /api/address/delete/68c1108fb64d366c15e01b19 HTTP/1.1\" 200 302 \"-\" \"node\"","timestamp":"2025-09-10T15:51:26.087Z"}
+{"level":"info","message":"::1 - - [10/Sep/2025:15:51:41 +0000] \"DELETE /api/address/delete/68c15671c2ebd6d601fe0dc6 HTTP/1.1\" 200 313 \"-\" \"node\"","timestamp":"2025-09-10T15:51:41.139Z"}
+{"level":"info","message":"::1 - - [10/Sep/2025:15:51:47 +0000] \"GET /api/address/all HTTP/1.1\" 200 902 \"-\" \"node\"","timestamp":"2025-09-10T15:51:47.123Z"}
+{"level":"info","message":"::1 - - [10/Sep/2025:15:52:17 +0000] \"GET /api/address/all HTTP/1.1\" 200 902 \"-\" \"node\"","timestamp":"2025-09-10T15:52:17.384Z"}
+{"level":"info","message":"::1 - - [10/Sep/2025:16:21:41 +0000] \"POST /api/auth/refresh HTTP/1.1\" 200 427 \"-\" \"Next.js Middleware\"","timestamp":"2025-09-10T16:21:41.932Z"}
+{"level":"info","message":"::1 - - [10/Sep/2025:16:21:42 +0000] \"DELETE /api/address/delete/68c111a3c2ebd6d601fe0db8 HTTP/1.1\" 200 308 \"-\" \"node\"","timestamp":"2025-09-10T16:21:42.373Z"}
+{"level":"info","message":"::1 - - [10/Sep/2025:16:21:42 +0000] \"GET /api/address/all HTTP/1.1\" 200 593 \"-\" \"node\"","timestamp":"2025-09-10T16:21:42.534Z"}
+{"level":"info","message":"::1 - - [10/Sep/2025:16:21:50 +0000] \"DELETE /api/address/delete/68c11096b64d366c15e01b1b HTTP/1.1\" 200 295 \"-\" \"node\"","timestamp":"2025-09-10T16:21:50.184Z"}
+{"level":"info","message":"::1 - - [10/Sep/2025:16:21:59 +0000] \"GET /api/address/all HTTP/1.1\" 200 297 \"-\" \"node\"","timestamp":"2025-09-10T16:21:59.905Z"}
+{"level":"info","message":"::1 - - [10/Sep/2025:16:22:24 +0000] \"POST /api/address/create HTTP/1.1\" 201 348 \"-\" \"node\"","timestamp":"2025-09-10T16:22:24.572Z"}
+{"level":"info","message":"::1 - - [10/Sep/2025:16:22:33 +0000] \"GET /api/address/all HTTP/1.1\" 200 646 \"-\" \"node\"","timestamp":"2025-09-10T16:22:33.565Z"}
+{"level":"info","message":"::1 - - [10/Sep/2025:16:23:04 +0000] \"POST /api/address/create HTTP/1.1\" 201 310 \"-\" \"node\"","timestamp":"2025-09-10T16:23:04.627Z"}
+{"level":"info","message":"::1 - - [10/Sep/2025:16:23:12 +0000] \"GET /api/address/all HTTP/1.1\" 200 957 \"-\" \"node\"","timestamp":"2025-09-10T16:23:12.456Z"}
+{"level":"info","message":"::1 - - [10/Sep/2025:16:23:38 +0000] \"PUT /api/address/update/68c11142c2ebd6d601fe0db5 HTTP/1.1\" 200 305 \"-\" \"node\"","timestamp":"2025-09-10T16:23:38.018Z"}
+{"level":"info","message":"::1 - - [10/Sep/2025:16:23:44 +0000] \"GET /api/address/all HTTP/1.1\" 200 967 \"-\" \"node\"","timestamp":"2025-09-10T16:23:44.611Z"}
+{"level":"info","message":"::1 - - [10/Sep/2025:16:29:45 +0000] \"GET /api/address/all HTTP/1.1\" 200 967 \"-\" \"node\"","timestamp":"2025-09-10T16:29:45.870Z"}
+{"level":"info","message":"::1 - - [10/Sep/2025:16:30:08 +0000] \"PUT /api/address/update/68c1a5c00ab22549a1731a38 HTTP/1.1\" 200 347 \"-\" \"node\"","timestamp":"2025-09-10T16:30:08.604Z"}
+{"level":"info","message":"::1 - - [10/Sep/2025:16:30:16 +0000] \"GET /api/address/all HTTP/1.1\" 200 966 \"-\" \"node\"","timestamp":"2025-09-10T16:30:16.913Z"}
+{"isOperational":true,"level":"error","message":"Route /favicon.ico not found Route /favicon.ico not found","status":"fail","statusCode":404,"timestamp":"2025-09-10T16:31:22.660Z"}
+{"level":"info","message":"::1 - - [10/Sep/2025:16:31:22 +0000] \"GET /favicon.ico HTTP/1.1\" 404 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\"","timestamp":"2025-09-10T16:31:22.681Z"}
+{"level":"info","message":"::1 - - [10/Sep/2025:16:31:31 +0000] \"GET /api/address/all HTTP/1.1\" 200 966 \"-\" \"node\"","timestamp":"2025-09-10T16:31:31.724Z"}
