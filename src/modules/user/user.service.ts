@@ -1,7 +1,7 @@
 import { generateRandomToken, hashToken, signAccessToken } from '@utils/token';
 import { User } from './user.model';
 import ms from 'ms';
-import { RefreshToken } from './refreshToken';
+import { IUser, RefreshToken } from './refreshToken';
 import crypto from 'crypto';
 import { TUser } from './user.interface';
 import mongoose from 'mongoose';
@@ -32,8 +32,16 @@ async function createRefreshToken(
 const refresh = async (rawToken: string) => {
   if (!rawToken) throw new Error('No token');
   const tokenHash = hashToken(rawToken);
-  const existing = await RefreshToken.findOne({ tokenHash });
-  if (!existing || existing.revoked || existing.expiresAt < new Date()) {
+  const existing = await RefreshToken.findOne({ tokenHash })
+    .populate<{ user: IUser & Document }>('user')
+    .exec();
+
+  if (
+    !existing ||
+    !existing.user ||
+    existing.revoked ||
+    existing.expiresAt < new Date()
+  ) {
     if (existing) {
       existing.revoked = true;
       await existing.save();
@@ -41,8 +49,13 @@ const refresh = async (rawToken: string) => {
     throw new Error('Invalid refresh token');
   }
 
+  const user = existing.user; // TypeScript now knows this is defined
+  if (!user._id) {
+    throw new Error('User ID is missing');
+  }
+
   const { raw, ttl, doc } = await createRefreshToken(
-    existing.user.toString(),
+    existing.user._id.toString(),
     false,
     undefined,
     undefined,
@@ -52,7 +65,10 @@ const refresh = async (rawToken: string) => {
   existing.replacedBy = doc._id as mongoose.Types.ObjectId;
   await existing.save();
 
-  const accessToken = signAccessToken({ userId: existing.user.toString() });
+  const accessToken = signAccessToken({
+    userId: user._id.toString(),
+    role: user.role,
+  });
   return { accessToken, refreshToken: raw, refreshTtl: ttl };
 };
 

@@ -1,34 +1,37 @@
-import { NextFunction, Request, Response } from 'express';
+import { NextFunction, Response } from 'express';
 import httpStatus from 'http-status';
 
 import { AddressServices } from './address.service';
+import { AuthRequest } from '@middleware/auth.middleware';
 
 export const postAddress = async (
-  req: Request,
+  req: AuthRequest,
   res: Response,
   next: NextFunction,
 ) => {
+  const { user } = req;
+  console.log('User===:', user);
+  const addressData = req.body;
   try {
-      if (!req.user?._id) {
-      res
-        .status(httpStatus.UNAUTHORIZED)
-        .json({ error: 'User not authenticated' });
-      return;
-    }
-    const { name, line1, line2, city, state, postalCode, country, isDefault } =
-      req.body;
-    const result = await AddressServices.postAddress(req.user._id, {
-      name,
-      line1,
-      line2,
-      city,
-      state,
-      postalCode,
-      country,
-      isDefault,
-    });
+    const newAddress = await AddressServices.createAddress(
+      user!.userId,
+      addressData,
+    );
+    res.status(httpStatus.CREATED).json(newAddress);
+  } catch (error) {
+    next(error);
+  }
+};
 
-    res.status(httpStatus.CREATED).json(result);
+export const getAllAddresses = async (
+  req: AuthRequest,
+  res: Response,
+  next: NextFunction,
+) => {
+  const { user } = req;
+  try {
+    const addresses = await AddressServices.getAllAddresses(user!.userId);
+    res.status(httpStatus.OK).json(addresses);
   } catch (error) {
     next(error);
   }
@@ -36,4 +39,5 @@ export const postAddress = async (
 
 export const AddressController = {
   postAddress,
+  getAllAddresses,
 };

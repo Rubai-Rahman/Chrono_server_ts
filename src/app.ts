@@ -15,6 +15,7 @@ import { ProductRoutes } from '@modules/product/product.route';
 import { ReviewRoutes } from '@modules/reviews/reviews.route';
 import { CommentRoutes } from '@modules/comments/comments.route';
 import cookieParser from 'cookie-parser';
+import { AddressRoutes } from '@modules/adresses/address.route';
 
 const app = express();
 
@@ -74,6 +75,7 @@ app.use('/api/orders', OrderRoutes);
 app.use('/api/products', ProductRoutes);
 app.use('/api/reviews', ReviewRoutes);
 app.use('/api/comments', CommentRoutes);
+app.use('/api/address', AddressRoutes);
 
 // Error handling middleware
 app.use(notFound);

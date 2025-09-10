@@ -3,6 +3,7 @@ import { AddressModel, TAddress } from './address.interface';
 
 const AddressSchema = new Schema<TAddress>(
   {
+    userId: { type: String, required: true },
     name: { type: String, required: true },
     line1: { type: String, required: true },
     line2: { type: String },

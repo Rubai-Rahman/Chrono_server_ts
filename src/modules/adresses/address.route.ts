@@ -7,10 +7,16 @@ import { authMiddleware } from '@middleware/auth.middleware';
 const router = express.Router();
 
 router.post(
-  '/',
+  '/create',
   authMiddleware,
   validateRequest(AddressSchema) as express.RequestHandler,
   AddressController.postAddress,
+);
+router.get(
+  '/all',
+  authMiddleware,
+
+  AddressController.getAllAddresses,
 );
 
 export const AddressRoutes = router;

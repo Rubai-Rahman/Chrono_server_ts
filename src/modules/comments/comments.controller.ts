@@ -2,6 +2,28 @@ import { NextFunction, Request, Response } from 'express';
 import httpStatus from 'http-status';
 import { CommentServices } from './comments.service';
 
+interface AuthenticatedRequest extends Request {
+  user?: {
+    _id: string;
+    username?: string;
+    [key: string]: any;
+  };
+  body: {
+    message: string;
+    parentId?: string;
+  };
+}
+
+interface reactAuthenticatedRequest extends Request {
+  user?: {
+    _id: string;
+    [key: string]: any;
+  };
+  body: {
+    reaction: 'like' | 'dislike' | 'remove';
+  };
+}
+
 export const getCommentsByNewsId = async (
   req: Request,
   res: Response,
@@ -16,27 +38,6 @@ export const getCommentsByNewsId = async (
     next(error);
   }
 };
-
-interface AuthenticatedRequest extends Request {
-  user?: {
-    _id: string;
-    username?: string;
-    [key: string]: any;
-  };
-  body: {
-    message: string;
-    parentId?: string;
-  };
-}
-interface reactAuthenticatedRequest extends Request {
-  user?: {
-    _id: string;
-    [key: string]: any;
-  };
-  body: {
-    reaction: 'like' | 'dislike' | 'remove';
-  };
-}
 
 export const postComment = async (
   req: AuthenticatedRequest,
@@ -113,15 +114,17 @@ export const commentReaction = async (
   try {
     const { commentId } = req.params;
     const { reaction } = req.body;
-    
+
     if (!req.user?._id) {
-      res.status(httpStatus.UNAUTHORIZED).json({ error: 'User not authenticated' });
+      res
+        .status(httpStatus.UNAUTHORIZED)
+        .json({ error: 'User not authenticated' });
       return;
     }
 
     const result = await CommentServices.commentReaction(commentId, {
       reaction,
-      userId: req.user._id
+      userId: req.user._id,
     });
 
     res.status(httpStatus.OK).json(result);

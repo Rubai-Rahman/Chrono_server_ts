@@ -97,23 +97,15 @@ const refresh = async (req: Request, res: Response): Promise<void> => {
     }
 
     const payload = await UserServices.refresh(refreshToken);
-
-    // If refresh token was rotated, re-set cookie
-    if (payload.refreshToken) {
-      res.cookie('refreshToken', payload.refreshToken, {
-        httpOnly: true,
-        secure: process.env.NODE_ENV === 'production',
-        sameSite: 'lax',
-        maxAge: ms(
-          (process.env.REFRESH_TOKEN_EXPIRES as ms.StringValue) ?? '7d',
-        ),
-      });
-    }
+    console.log('Refresh payload:', payload);
 
     res.status(200).json({
       success: true,
       message: 'Token refreshed successfully',
-      payload,
+      payload: {
+        accessToken: payload.accessToken,
+        refreshToken: payload.refreshToken,
+      },
     });
   } catch (err) {
     console.error('refresh error:', err);

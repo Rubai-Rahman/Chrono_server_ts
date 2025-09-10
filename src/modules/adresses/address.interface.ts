@@ -1,7 +1,8 @@
 import mongoose from 'mongoose';
 
 export type TAddress = {
-  _id: string;
+  userId?: string;
+  _id?: string;
   name: string;
   line1: string;
   line2?: string;
