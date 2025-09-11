@@ -2553,3 +2553,229 @@
 {"isOperational":true,"level":"error","message":"Route /favicon.ico not found Route /favicon.ico not found","status":"fail","statusCode":404,"timestamp":"2025-09-10T16:31:22.660Z"}
 {"level":"info","message":"::1 - - [10/Sep/2025:16:31:22 +0000] \"GET /favicon.ico HTTP/1.1\" 404 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\"","timestamp":"2025-09-10T16:31:22.681Z"}
 {"level":"info","message":"::1 - - [10/Sep/2025:16:31:31 +0000] \"GET /api/address/all HTTP/1.1\" 200 966 \"-\" \"node\"","timestamp":"2025-09-10T16:31:31.724Z"}
+{"level":"info","message":"::1 - - [10/Sep/2025:16:38:16 +0000] \"POST /api/auth/refresh HTTP/1.1\" 200 427 \"-\" \"Next.js Middleware\"","timestamp":"2025-09-10T16:38:16.537Z"}
+{"level":"info","message":"::1 - - [10/Sep/2025:16:38:19 +0000] \"GET /api/address/all HTTP/1.1\" 200 966 \"-\" \"node\"","timestamp":"2025-09-10T16:38:19.877Z"}
+{"level":"info","message":"::1 - - [10/Sep/2025:16:38:33 +0000] \"PUT /api/address/update/68c1a5c00ab22549a1731a38 HTTP/1.1\" 200 347 \"-\" \"node\"","timestamp":"2025-09-10T16:38:33.225Z"}
+{"level":"info","message":"::1 - - [10/Sep/2025:16:38:44 +0000] \"GET /api/address/all HTTP/1.1\" 200 968 \"-\" \"node\"","timestamp":"2025-09-10T16:38:44.156Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [10/Sep/2025:16:49:26 +0000] \"GET /api/address/all HTTP/1.1\" 200 968 \"-\" \"node\"","timestamp":"2025-09-10T16:49:26.806Z"}
+{"level":"info","message":"::1 - - [10/Sep/2025:16:50:43 +0000] \"GET /api/address/all HTTP/1.1\" 200 968 \"-\" \"node\"","timestamp":"2025-09-10T16:50:43.168Z"}
+{"level":"info","message":"::1 - - [10/Sep/2025:16:53:54 +0000] \"POST /api/auth/refresh HTTP/1.1\" 200 427 \"-\" \"Next.js Middleware\"","timestamp":"2025-09-10T16:53:54.322Z"}
+{"level":"info","message":"::1 - - [10/Sep/2025:16:53:55 +0000] \"GET /api/address/all HTTP/1.1\" 200 968 \"-\" \"node\"","timestamp":"2025-09-10T16:53:55.311Z"}
+{"level":"info","message":"::1 - - [10/Sep/2025:16:56:16 +0000] \"DELETE /api/address/delete/68c11142c2ebd6d601fe0db5 HTTP/1.1\" 200 306 \"-\" \"node\"","timestamp":"2025-09-10T16:56:16.764Z"}
+{"level":"info","message":"::1 - - [10/Sep/2025:16:56:23 +0000] \"GET /api/address/all HTTP/1.1\" 200 661 \"-\" \"node\"","timestamp":"2025-09-10T16:56:23.207Z"}
+{"level":"info","message":"::1 - - [10/Sep/2025:16:57:45 +0000] \"GET /api/address/all HTTP/1.1\" 200 661 \"-\" \"node\"","timestamp":"2025-09-10T16:57:45.927Z"}
+{"level":"info","message":"::1 - - [10/Sep/2025:16:58:23 +0000] \"POST /api/address/create HTTP/1.1\" 201 357 \"-\" \"node\"","timestamp":"2025-09-10T16:58:23.962Z"}
+{"level":"info","message":"::1 - - [10/Sep/2025:16:59:38 +0000] \"GET /api/address/all HTTP/1.1\" 200 1019 \"-\" \"node\"","timestamp":"2025-09-10T16:59:38.659Z"}
+{"level":"info","message":"::1 - - [10/Sep/2025:17:09:48 +0000] \"POST /api/auth/refresh HTTP/1.1\" 200 427 \"-\" \"Next.js Middleware\"","timestamp":"2025-09-10T17:09:48.728Z"}
+{"level":"info","message":"::1 - - [10/Sep/2025:17:09:53 +0000] \"GET /api/address/all HTTP/1.1\" 200 1019 \"-\" \"node\"","timestamp":"2025-09-10T17:09:53.628Z"}
+{"level":"info","message":"::1 - - [10/Sep/2025:17:16:35 +0000] \"GET /api/address/all HTTP/1.1\" 200 1019 \"-\" \"node\"","timestamp":"2025-09-10T17:16:35.937Z"}
+{"level":"info","message":"::1 - - [10/Sep/2025:21:04:16 +0000] \"POST /api/auth/refresh HTTP/1.1\" 200 427 \"-\" \"Next.js Middleware\"","timestamp":"2025-09-10T21:04:16.086Z"}
+{"level":"info","message":"::1 - - [10/Sep/2025:21:05:01 +0000] \"GET /api/address/all HTTP/1.1\" 200 1019 \"-\" \"node\"","timestamp":"2025-09-10T21:05:01.010Z"}
+{"level":"info","message":"::1 - - [10/Sep/2025:21:05:55 +0000] \"DELETE /api/address/delete/68c1a5c00ab22549a1731a38 HTTP/1.1\" 200 347 \"-\" \"node\"","timestamp":"2025-09-10T21:05:55.609Z"}
+{"level":"info","message":"::1 - - [10/Sep/2025:21:06:05 +0000] \"GET /api/address/all HTTP/1.1\" 200 671 \"-\" \"node\"","timestamp":"2025-09-10T21:06:05.785Z"}
+{"level":"info","message":"::1 - - [10/Sep/2025:21:07:17 +0000] \"GET /api/address/all HTTP/1.1\" 200 671 \"-\" \"node\"","timestamp":"2025-09-10T21:07:17.898Z"}
+{"level":"info","message":"::1 - - [10/Sep/2025:21:07:41 +0000] \"POST /api/address/create HTTP/1.1\" 201 349 \"-\" \"node\"","timestamp":"2025-09-10T21:07:41.969Z"}
+{"level":"info","message":"::1 - - [10/Sep/2025:21:07:51 +0000] \"GET /api/address/all HTTP/1.1\" 200 1021 \"-\" \"node\"","timestamp":"2025-09-10T21:07:51.252Z"}
+{"level":"info","message":"::1 - - [10/Sep/2025:21:08:01 +0000] \"DELETE /api/address/delete/68c1e89dcc2bf30e2bed8abc HTTP/1.1\" 200 349 \"-\" \"node\"","timestamp":"2025-09-10T21:08:01.634Z"}
+{"level":"info","message":"::1 - - [10/Sep/2025:21:08:12 +0000] \"GET /api/address/all HTTP/1.1\" 200 671 \"-\" \"node\"","timestamp":"2025-09-10T21:08:12.158Z"}
+{"level":"info","message":"::1 - - [10/Sep/2025:21:32:15 +0000] \"POST /api/auth/refresh HTTP/1.1\" 200 427 \"-\" \"Next.js Middleware\"","timestamp":"2025-09-10T21:32:15.777Z"}
+{"level":"info","message":"::1 - - [10/Sep/2025:21:32:17 +0000] \"GET /api/address/all HTTP/1.1\" 200 671 \"-\" \"node\"","timestamp":"2025-09-10T21:32:17.087Z"}
+{"level":"info","message":"::1 - - [10/Sep/2025:21:32:38 +0000] \"GET /api/address/all HTTP/1.1\" 200 671 \"-\" \"node\"","timestamp":"2025-09-10T21:32:38.736Z"}
+{"level":"info","message":"::1 - - [10/Sep/2025:21:33:26 +0000] \"POST /api/address/create HTTP/1.1\" 201 357 \"-\" \"node\"","timestamp":"2025-09-10T21:33:26.591Z"}
+{"level":"info","message":"::1 - - [10/Sep/2025:21:33:27 +0000] \"GET /api/address/all HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-09-10T21:33:27.430Z"}
+{"level":"info","message":"::1 - - [10/Sep/2025:21:33:36 +0000] \"DELETE /api/address/delete/68c1eea6cc2bf30e2bed8ac8 HTTP/1.1\" 200 357 \"-\" \"node\"","timestamp":"2025-09-10T21:33:36.616Z"}
+{"level":"info","message":"::1 - - [10/Sep/2025:21:33:37 +0000] \"GET /api/address/all HTTP/1.1\" 200 671 \"-\" \"node\"","timestamp":"2025-09-10T21:33:37.054Z"}
+{"level":"info","message":"::1 - - [10/Sep/2025:21:35:44 +0000] \"DELETE /api/address/delete/68c1a5e80ab22549a1731a3b HTTP/1.1\" 200 311 \"-\" \"node\"","timestamp":"2025-09-10T21:35:44.883Z"}
+{"level":"info","message":"::1 - - [10/Sep/2025:21:35:45 +0000] \"GET /api/address/all HTTP/1.1\" 200 359 \"-\" \"node\"","timestamp":"2025-09-10T21:35:45.490Z"}
+{"level":"info","message":"::1 - - [10/Sep/2025:21:35:54 +0000] \"POST /api/address/create HTTP/1.1\" 201 357 \"-\" \"node\"","timestamp":"2025-09-10T21:35:54.945Z"}
+{"level":"info","message":"::1 - - [10/Sep/2025:21:35:55 +0000] \"GET /api/address/all HTTP/1.1\" 200 717 \"-\" \"node\"","timestamp":"2025-09-10T21:35:55.630Z"}
+{"level":"info","message":"::1 - - [10/Sep/2025:21:36:04 +0000] \"POST /api/address/create HTTP/1.1\" 201 357 \"-\" \"node\"","timestamp":"2025-09-10T21:36:04.679Z"}
+{"level":"info","message":"::1 - - [10/Sep/2025:21:36:05 +0000] \"GET /api/address/all HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-09-10T21:36:05.459Z"}
+{"level":"info","message":"::1 - - [10/Sep/2025:21:41:07 +0000] \"DELETE /api/address/delete/68c1ae2fcc2bf30e2bed8aa9 HTTP/1.1\" 200 357 \"-\" \"node\"","timestamp":"2025-09-10T21:41:07.127Z"}
+{"level":"info","message":"::1 - - [10/Sep/2025:21:41:07 +0000] \"GET /api/address/all HTTP/1.1\" 200 717 \"-\" \"node\"","timestamp":"2025-09-10T21:41:07.989Z"}
+{"level":"info","message":"::1 - - [10/Sep/2025:21:41:14 +0000] \"POST /api/address/create HTTP/1.1\" 201 352 \"-\" \"node\"","timestamp":"2025-09-10T21:41:14.977Z"}
+{"level":"info","message":"::1 - - [10/Sep/2025:21:41:15 +0000] \"GET /api/address/all HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-09-10T21:41:15.644Z"}
+{"level":"info","message":"::1 - - [10/Sep/2025:21:45:55 +0000] \"DELETE /api/address/delete/68c1f07acc2bf30e2bed8ad7 HTTP/1.1\" 200 352 \"-\" \"node\"","timestamp":"2025-09-10T21:45:55.101Z"}
+{"level":"info","message":"::1 - - [10/Sep/2025:21:45:56 +0000] \"GET /api/address/all HTTP/1.1\" 200 717 \"-\" \"node\"","timestamp":"2025-09-10T21:45:56.536Z"}
+{"level":"info","message":"::1 - - [10/Sep/2025:21:46:14 +0000] \"POST /api/address/create HTTP/1.1\" 201 357 \"-\" \"node\"","timestamp":"2025-09-10T21:46:14.975Z"}
+{"level":"info","message":"::1 - - [10/Sep/2025:21:46:15 +0000] \"GET /api/address/all HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-09-10T21:46:15.663Z"}
+{"level":"info","message":"::1 - - [10/Sep/2025:21:46:56 +0000] \"PUT /api/address/update/68c1ef3acc2bf30e2bed8acf HTTP/1.1\" 200 317 \"-\" \"node\"","timestamp":"2025-09-10T21:46:56.106Z"}
+{"level":"info","message":"::1 - - [10/Sep/2025:21:46:56 +0000] \"GET /api/address/all HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-09-10T21:46:56.844Z"}
+{"level":"info","message":"::1 - - [10/Sep/2025:21:47:23 +0000] \"POST /api/auth/refresh HTTP/1.1\" 200 427 \"-\" \"Next.js Middleware\"","timestamp":"2025-09-10T21:47:23.230Z"}
+{"level":"info","message":"::1 - - [10/Sep/2025:21:47:25 +0000] \"PUT /api/address/update/68c1ef44cc2bf30e2bed8ad2 HTTP/1.1\" 200 319 \"-\" \"node\"","timestamp":"2025-09-10T21:47:25.276Z"}
+{"level":"info","message":"::1 - - [10/Sep/2025:21:47:26 +0000] \"GET /api/address/all HTTP/1.1\" 200 997 \"-\" \"node\"","timestamp":"2025-09-10T21:47:26.112Z"}
+{"level":"info","message":"::1 - - [10/Sep/2025:21:47:56 +0000] \"PUT /api/address/update/68c1f1a6cc2bf30e2bed8adc HTTP/1.1\" 200 321 \"-\" \"node\"","timestamp":"2025-09-10T21:47:56.721Z"}
+{"level":"info","message":"::1 - - [10/Sep/2025:21:47:57 +0000] \"GET /api/address/all HTTP/1.1\" 200 961 \"-\" \"node\"","timestamp":"2025-09-10T21:47:57.726Z"}
+{"level":"info","message":"::1 - - [10/Sep/2025:21:52:21 +0000] \"PUT /api/address/update/68c1f1a6cc2bf30e2bed8adc HTTP/1.1\" 200 321 \"-\" \"node\"","timestamp":"2025-09-10T21:52:21.826Z"}
+{"level":"info","message":"::1 - - [10/Sep/2025:21:52:23 +0000] \"GET /api/address/all HTTP/1.1\" 200 961 \"-\" \"node\"","timestamp":"2025-09-10T21:52:23.477Z"}
+{"level":"info","message":"::1 - - [10/Sep/2025:21:53:10 +0000] \"PUT /api/address/update/68c1f1a6cc2bf30e2bed8adc HTTP/1.1\" 200 322 \"-\" \"node\"","timestamp":"2025-09-10T21:53:10.733Z"}
+{"level":"info","message":"::1 - - [10/Sep/2025:21:53:11 +0000] \"GET /api/address/all HTTP/1.1\" 200 962 \"-\" \"node\"","timestamp":"2025-09-10T21:53:11.554Z"}
+{"level":"info","message":"::1 - - [10/Sep/2025:21:53:51 +0000] \"DELETE /api/address/delete/68c1f1a6cc2bf30e2bed8adc HTTP/1.1\" 200 322 \"-\" \"node\"","timestamp":"2025-09-10T21:53:51.380Z"}
+{"level":"info","message":"::1 - - [10/Sep/2025:21:53:51 +0000] \"GET /api/address/all HTTP/1.1\" 200 639 \"-\" \"node\"","timestamp":"2025-09-10T21:53:51.782Z"}
+{"level":"info","message":"::1 - - [10/Sep/2025:21:54:10 +0000] \"POST /api/address/create HTTP/1.1\" 201 357 \"-\" \"node\"","timestamp":"2025-09-10T21:54:10.498Z"}
+{"level":"info","message":"::1 - - [10/Sep/2025:21:54:11 +0000] \"GET /api/address/all HTTP/1.1\" 200 997 \"-\" \"node\"","timestamp":"2025-09-10T21:54:11.344Z"}
+{"level":"info","message":"::1 - - [10/Sep/2025:22:02:16 +0000] \"PUT /api/address/update/68c1f382cc2bf30e2bed8af0 HTTP/1.1\" 200 322 \"-\" \"node\"","timestamp":"2025-09-10T22:02:16.511Z"}
+{"level":"info","message":"::1 - - [10/Sep/2025:22:02:17 +0000] \"GET /api/address/all HTTP/1.1\" 200 962 \"-\" \"node\"","timestamp":"2025-09-10T22:02:17.577Z"}
+{"level":"info","message":"::1 - - [10/Sep/2025:22:02:31 +0000] \"POST /api/auth/refresh HTTP/1.1\" 200 427 \"-\" \"Next.js Middleware\"","timestamp":"2025-09-10T22:02:31.776Z"}
+{"level":"info","message":"::1 - - [10/Sep/2025:22:02:32 +0000] \"DELETE /api/address/delete/68c1ef44cc2bf30e2bed8ad2 HTTP/1.1\" 200 319 \"-\" \"node\"","timestamp":"2025-09-10T22:02:32.456Z"}
+{"level":"info","message":"::1 - - [10/Sep/2025:22:02:32 +0000] \"GET /api/address/all HTTP/1.1\" 200 642 \"-\" \"node\"","timestamp":"2025-09-10T22:02:32.916Z"}
+{"level":"info","message":"::1 - - [10/Sep/2025:22:02:50 +0000] \"POST /api/address/create HTTP/1.1\" 201 349 \"-\" \"node\"","timestamp":"2025-09-10T22:02:50.570Z"}
+{"level":"info","message":"::1 - - [10/Sep/2025:22:02:51 +0000] \"GET /api/address/all HTTP/1.1\" 200 992 \"-\" \"node\"","timestamp":"2025-09-10T22:02:51.417Z"}
+{"level":"info","message":"::1 - - [11/Sep/2025:05:48:01 +0000] \"GET / HTTP/1.1\" 200 27 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\"","timestamp":"2025-09-11T05:48:01.824Z"}
+{"isOperational":true,"level":"error","message":"Route /favicon.ico not found Route /favicon.ico not found","status":"fail","statusCode":404,"timestamp":"2025-09-11T05:48:01.983Z"}
+{"level":"info","message":"::1 - - [11/Sep/2025:05:48:01 +0000] \"GET /favicon.ico HTTP/1.1\" 404 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\"","timestamp":"2025-09-11T05:48:01.996Z"}
+{"level":"info","message":"::1 - - [11/Sep/2025:05:48:27 +0000] \"GET /api/news HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-09-11T05:48:27.469Z"}
+{"level":"info","message":"::1 - - [11/Sep/2025:05:48:27 +0000] \"GET /api/reviews HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-09-11T05:48:27.471Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [11/Sep/2025:05:48:27 +0000] \"GET /api/products?isFeatured=true&limit=4 HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-09-11T05:48:27.954Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [11/Sep/2025:05:48:27 +0000] \"GET /api/products?sort=createdAt_desc&limit=4 HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-09-11T05:48:27.958Z"}
+{"level":"info","message":"::1 - - [11/Sep/2025:06:30:03 +0000] \"POST /api/auth/login HTTP/1.1\" 201 512 \"-\" \"node\"","timestamp":"2025-09-11T06:30:03.886Z"}
+{"level":"info","message":"::1 - - [11/Sep/2025:06:30:10 +0000] \"GET /api/products?page=1&size=12&category=gents&sort=createdAt_desc HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-09-11T06:30:10.143Z"}
+{"level":"info","message":"::1 - - [11/Sep/2025:06:30:16 +0000] \"GET /api/address/all HTTP/1.1\" 200 992 \"-\" \"node\"","timestamp":"2025-09-11T06:30:16.793Z"}
+{"level":"info","message":"::1 - - [11/Sep/2025:06:42:21 +0000] \"GET /api/address/all HTTP/1.1\" 200 992 \"-\" \"node\"","timestamp":"2025-09-11T06:42:21.166Z"}
+{"level":"info","message":"::1 - - [11/Sep/2025:06:44:47 +0000] \"GET /api/address/all HTTP/1.1\" 200 992 \"-\" \"node\"","timestamp":"2025-09-11T06:44:47.779Z"}
+{"level":"info","message":"::1 - - [11/Sep/2025:06:44:58 +0000] \"PUT /api/address/update/68c1ef3acc2bf30e2bed8acf HTTP/1.1\" 200 316 \"-\" \"node\"","timestamp":"2025-09-11T06:44:58.038Z"}
+{"level":"info","message":"::1 - - [11/Sep/2025:06:44:58 +0000] \"GET /api/address/all HTTP/1.1\" 200 991 \"-\" \"node\"","timestamp":"2025-09-11T06:44:58.239Z"}
+{"level":"info","message":"::1 - - [11/Sep/2025:06:45:05 +0000] \"POST /api/auth/refresh HTTP/1.1\" 200 427 \"-\" \"Next.js Middleware\"","timestamp":"2025-09-11T06:45:05.573Z"}
+{"level":"info","message":"::1 - - [11/Sep/2025:06:45:20 +0000] \"GET /api/address/all HTTP/1.1\" 200 991 \"-\" \"node\"","timestamp":"2025-09-11T06:45:20.441Z"}
+{"level":"info","message":"::1 - - [11/Sep/2025:06:59:00 +0000] \"GET /api/address/all HTTP/1.1\" 200 991 \"-\" \"node\"","timestamp":"2025-09-11T06:59:00.025Z"}
+{"level":"info","message":"::1 - - [11/Sep/2025:07:01:27 +0000] \"POST /api/auth/refresh HTTP/1.1\" 200 427 \"-\" \"Next.js Middleware\"","timestamp":"2025-09-11T07:01:27.507Z"}
+{"level":"info","message":"::1 - - [11/Sep/2025:07:02:44 +0000] \"GET /api/address/all HTTP/1.1\" 200 991 \"-\" \"node\"","timestamp":"2025-09-11T07:02:44.084Z"}
+{"level":"info","message":"::1 - - [11/Sep/2025:08:58:29 +0000] \"POST /api/auth/refresh HTTP/1.1\" 200 427 \"-\" \"Next.js Middleware\"","timestamp":"2025-09-11T08:58:29.262Z"}
+{"level":"info","message":"::1 - - [11/Sep/2025:08:58:30 +0000] \"POST /api/auth/refresh HTTP/1.1\" 403 51 \"-\" \"Next.js Middleware\"","timestamp":"2025-09-11T08:58:30.973Z"}
+{"level":"info","message":"::1 - - [11/Sep/2025:09:52:18 +0000] \"POST /api/auth/refresh HTTP/1.1\" 200 427 \"-\" \"Next.js Middleware\"","timestamp":"2025-09-11T09:52:18.595Z"}
+{"level":"info","message":"::1 - - [11/Sep/2025:09:52:38 +0000] \"POST /api/auth/login HTTP/1.1\" 201 512 \"-\" \"node\"","timestamp":"2025-09-11T09:52:38.301Z"}
+{"level":"info","message":"::1 - - [11/Sep/2025:09:52:39 +0000] \"GET /api/products?page=1&size=12&category=gents&sort=createdAt_desc HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-09-11T09:52:39.315Z"}
+{"level":"info","message":"::1 - - [11/Sep/2025:09:52:48 +0000] \"GET /api/address/all HTTP/1.1\" 200 991 \"-\" \"node\"","timestamp":"2025-09-11T09:52:48.665Z"}
+{"level":"info","message":"::1 - - [11/Sep/2025:09:57:02 +0000] \"GET /api/address/all HTTP/1.1\" 200 991 \"-\" \"node\"","timestamp":"2025-09-11T09:57:02.176Z"}
+{"level":"info","message":"::1 - - [11/Sep/2025:10:04:05 +0000] \"GET /api/address/all HTTP/1.1\" 200 991 \"-\" \"node\"","timestamp":"2025-09-11T10:04:05.487Z"}
+{"level":"info","message":"::1 - - [11/Sep/2025:10:12:52 +0000] \"POST /api/auth/refresh HTTP/1.1\" 200 427 \"-\" \"Next.js Middleware\"","timestamp":"2025-09-11T10:12:52.970Z"}
+{"level":"info","message":"::1 - - [11/Sep/2025:10:13:14 +0000] \"GET /api/address/all HTTP/1.1\" 200 991 \"-\" \"node\"","timestamp":"2025-09-11T10:13:14.879Z"}
+{"level":"info","message":"::1 - - [11/Sep/2025:10:17:18 +0000] \"GET /api/address/all HTTP/1.1\" 200 991 \"-\" \"node\"","timestamp":"2025-09-11T10:17:18.412Z"}
+{"level":"info","message":"::1 - - [11/Sep/2025:10:33:35 +0000] \"POST /api/auth/refresh HTTP/1.1\" 200 427 \"-\" \"Next.js Middleware\"","timestamp":"2025-09-11T10:33:35.293Z"}
+{"level":"info","message":"::1 - - [11/Sep/2025:10:33:36 +0000] \"POST /api/auth/refresh HTTP/1.1\" 403 51 \"-\" \"Next.js Middleware\"","timestamp":"2025-09-11T10:33:36.176Z"}
+{"level":"info","message":"::1 - - [11/Sep/2025:10:36:32 +0000] \"GET /api/news HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-09-11T10:36:32.563Z"}
+{"level":"info","message":"::1 - - [11/Sep/2025:10:36:33 +0000] \"GET /api/reviews HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-09-11T10:36:33.564Z"}
+{"level":"info","message":"::1 - - [11/Sep/2025:10:36:34 +0000] \"GET /api/products?isFeatured=true&limit=4 HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-09-11T10:36:34.276Z"}
+{"level":"info","message":"::1 - - [11/Sep/2025:10:36:34 +0000] \"GET /api/products?sort=createdAt_desc&limit=4 HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-09-11T10:36:34.343Z"}
+{"level":"info","message":"::1 - - [11/Sep/2025:12:44:25 +0000] \"GET /api/reviews HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-09-11T12:44:25.400Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [11/Sep/2025:12:44:26 +0000] \"GET /api/products?isFeatured=true&limit=4 HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-09-11T12:44:26.477Z"}
+{"level":"info","message":"::1 - - [11/Sep/2025:12:44:26 +0000] \"GET /api/products?sort=createdAt_desc&limit=4 HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-09-11T12:44:26.526Z"}
+{"level":"info","message":"::1 - - [11/Sep/2025:14:03:08 +0000] \"GET /api/products?page=1&size=12&category=gents&sort=createdAt_desc HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-09-11T14:03:08.348Z"}
+{"level":"info","message":"::1 - - [11/Sep/2025:14:03:37 +0000] \"POST /api/auth/login HTTP/1.1\" 201 512 \"-\" \"node\"","timestamp":"2025-09-11T14:03:37.336Z"}
+{"level":"info","message":"::1 - - [11/Sep/2025:14:03:37 +0000] \"GET /api/products?page=1&size=12&category=gents&sort=createdAt_desc HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-09-11T14:03:37.929Z"}
+{"level":"info","message":"::1 - - [11/Sep/2025:14:03:42 +0000] \"GET /api/address/all HTTP/1.1\" 200 991 \"-\" \"node\"","timestamp":"2025-09-11T14:03:42.307Z"}
+{"level":"info","message":"::1 - - [11/Sep/2025:14:19:02 +0000] \"POST /api/orders/create HTTP/1.1\" - - \"-\" \"node\"","timestamp":"2025-09-11T14:19:02.736Z"}
+{"level":"info","message":"::1 - - [11/Sep/2025:14:59:26 +0000] \"POST /api/auth/refresh HTTP/1.1\" 200 427 \"-\" \"Next.js Middleware\"","timestamp":"2025-09-11T14:59:26.490Z"}
+{"level":"info","message":"::1 - - [11/Sep/2025:14:59:46 +0000] \"POST /api/auth/refresh HTTP/1.1\" 403 51 \"-\" \"Next.js Middleware\"","timestamp":"2025-09-11T14:59:46.820Z"}
+{"level":"info","message":"::1 - - [11/Sep/2025:14:59:46 +0000] \"POST /api/auth/refresh HTTP/1.1\" 403 51 \"-\" \"Next.js Middleware\"","timestamp":"2025-09-11T14:59:46.983Z"}
+{"level":"info","message":"::1 - - [11/Sep/2025:14:59:47 +0000] \"POST /api/auth/refresh HTTP/1.1\" 403 51 \"-\" \"Next.js Middleware\"","timestamp":"2025-09-11T14:59:47.141Z"}
+{"level":"info","message":"::1 - - [11/Sep/2025:14:59:47 +0000] \"POST /api/auth/refresh HTTP/1.1\" 403 51 \"-\" \"Next.js Middleware\"","timestamp":"2025-09-11T14:59:47.295Z"}
+{"level":"info","message":"::1 - - [11/Sep/2025:14:59:47 +0000] \"POST /api/auth/refresh HTTP/1.1\" 403 51 \"-\" \"Next.js Middleware\"","timestamp":"2025-09-11T14:59:47.449Z"}
+{"level":"info","message":"::1 - - [11/Sep/2025:14:59:47 +0000] \"POST /api/auth/refresh HTTP/1.1\" 403 51 \"-\" \"Next.js Middleware\"","timestamp":"2025-09-11T14:59:47.602Z"}
+{"level":"info","message":"::1 - - [11/Sep/2025:14:59:48 +0000] \"POST /api/auth/refresh HTTP/1.1\" 403 51 \"-\" \"Next.js Middleware\"","timestamp":"2025-09-11T14:59:48.038Z"}
+{"level":"info","message":"::1 - - [11/Sep/2025:14:59:48 +0000] \"POST /api/auth/refresh HTTP/1.1\" 403 51 \"-\" \"Next.js Middleware\"","timestamp":"2025-09-11T14:59:48.224Z"}
+{"level":"info","message":"::1 - - [11/Sep/2025:14:59:48 +0000] \"POST /api/auth/refresh HTTP/1.1\" 403 51 \"-\" \"Next.js Middleware\"","timestamp":"2025-09-11T14:59:48.373Z"}
+{"level":"info","message":"::1 - - [11/Sep/2025:14:59:48 +0000] \"POST /api/auth/refresh HTTP/1.1\" 403 51 \"-\" \"Next.js Middleware\"","timestamp":"2025-09-11T14:59:48.517Z"}
+{"level":"info","message":"::1 - - [11/Sep/2025:14:59:48 +0000] \"POST /api/auth/refresh HTTP/1.1\" 403 51 \"-\" \"Next.js Middleware\"","timestamp":"2025-09-11T14:59:48.680Z"}
+{"level":"info","message":"::1 - - [11/Sep/2025:14:59:49 +0000] \"POST /api/auth/refresh HTTP/1.1\" 403 51 \"-\" \"Next.js Middleware\"","timestamp":"2025-09-11T14:59:49.099Z"}
+{"level":"info","message":"::1 - - [11/Sep/2025:14:59:49 +0000] \"POST /api/auth/refresh HTTP/1.1\" 403 51 \"-\" \"Next.js Middleware\"","timestamp":"2025-09-11T14:59:49.247Z"}
+{"level":"info","message":"::1 - - [11/Sep/2025:14:59:49 +0000] \"POST /api/auth/refresh HTTP/1.1\" 403 51 \"-\" \"Next.js Middleware\"","timestamp":"2025-09-11T14:59:49.395Z"}
+{"level":"info","message":"::1 - - [11/Sep/2025:14:59:49 +0000] \"POST /api/auth/refresh HTTP/1.1\" 403 51 \"-\" \"Next.js Middleware\"","timestamp":"2025-09-11T14:59:49.815Z"}
+{"level":"info","message":"::1 - - [11/Sep/2025:14:59:49 +0000] \"POST /api/auth/refresh HTTP/1.1\" 403 51 \"-\" \"Next.js Middleware\"","timestamp":"2025-09-11T14:59:49.974Z"}
+{"level":"info","message":"::1 - - [11/Sep/2025:14:59:50 +0000] \"POST /api/auth/refresh HTTP/1.1\" 403 51 \"-\" \"Next.js Middleware\"","timestamp":"2025-09-11T14:59:50.416Z"}
+{"level":"info","message":"::1 - - [11/Sep/2025:14:59:50 +0000] \"POST /api/auth/refresh HTTP/1.1\" 403 51 \"-\" \"Next.js Middleware\"","timestamp":"2025-09-11T14:59:50.565Z"}
+{"level":"info","message":"::1 - - [11/Sep/2025:14:59:50 +0000] \"POST /api/auth/refresh HTTP/1.1\" 403 51 \"-\" \"Next.js Middleware\"","timestamp":"2025-09-11T14:59:50.742Z"}
+{"level":"info","message":"::1 - - [11/Sep/2025:14:59:50 +0000] \"POST /api/auth/refresh HTTP/1.1\" 403 51 \"-\" \"Next.js Middleware\"","timestamp":"2025-09-11T14:59:50.906Z"}
+{"level":"info","message":"::1 - - [11/Sep/2025:14:59:51 +0000] \"POST /api/auth/refresh HTTP/1.1\" 403 51 \"-\" \"Next.js Middleware\"","timestamp":"2025-09-11T14:59:51.084Z"}
+{"level":"info","message":"::1 - - [11/Sep/2025:15:00:00 +0000] \"POST /api/auth/refresh HTTP/1.1\" 403 51 \"-\" \"Next.js Middleware\"","timestamp":"2025-09-11T15:00:00.390Z"}
+{"level":"info","message":"::1 - - [11/Sep/2025:15:00:00 +0000] \"POST /api/auth/refresh HTTP/1.1\" 403 51 \"-\" \"Next.js Middleware\"","timestamp":"2025-09-11T15:00:00.553Z"}
+{"level":"info","message":"::1 - - [11/Sep/2025:15:00:00 +0000] \"POST /api/auth/refresh HTTP/1.1\" 403 51 \"-\" \"Next.js Middleware\"","timestamp":"2025-09-11T15:00:00.702Z"}
+{"level":"info","message":"::1 - - [11/Sep/2025:15:00:00 +0000] \"POST /api/auth/refresh HTTP/1.1\" 403 51 \"-\" \"Next.js Middleware\"","timestamp":"2025-09-11T15:00:00.873Z"}
+{"level":"info","message":"::1 - - [11/Sep/2025:15:00:01 +0000] \"POST /api/auth/refresh HTTP/1.1\" 403 51 \"-\" \"Next.js Middleware\"","timestamp":"2025-09-11T15:00:01.324Z"}
+{"level":"info","message":"::1 - - [11/Sep/2025:15:00:01 +0000] \"POST /api/auth/refresh HTTP/1.1\" 403 51 \"-\" \"Next.js Middleware\"","timestamp":"2025-09-11T15:00:01.737Z"}
+{"level":"info","message":"::1 - - [11/Sep/2025:15:00:01 +0000] \"POST /api/auth/refresh HTTP/1.1\" 403 51 \"-\" \"Next.js Middleware\"","timestamp":"2025-09-11T15:00:01.893Z"}
+{"level":"info","message":"::1 - - [11/Sep/2025:15:00:02 +0000] \"POST /api/auth/refresh HTTP/1.1\" 403 51 \"-\" \"Next.js Middleware\"","timestamp":"2025-09-11T15:00:02.066Z"}
+{"level":"info","message":"::1 - - [11/Sep/2025:15:00:02 +0000] \"POST /api/auth/refresh HTTP/1.1\" 403 51 \"-\" \"Next.js Middleware\"","timestamp":"2025-09-11T15:00:02.216Z"}
+{"level":"info","message":"::1 - - [11/Sep/2025:15:00:02 +0000] \"POST /api/auth/refresh HTTP/1.1\" 403 51 \"-\" \"Next.js Middleware\"","timestamp":"2025-09-11T15:00:02.384Z"}
+{"level":"info","message":"::1 - - [11/Sep/2025:15:00:03 +0000] \"POST /api/auth/refresh HTTP/1.1\" 403 51 \"-\" \"Next.js Middleware\"","timestamp":"2025-09-11T15:00:03.073Z"}
+{"level":"info","message":"::1 - - [11/Sep/2025:15:00:03 +0000] \"POST /api/auth/refresh HTTP/1.1\" 403 51 \"-\" \"Next.js Middleware\"","timestamp":"2025-09-11T15:00:03.219Z"}
+{"level":"info","message":"::1 - - [11/Sep/2025:15:00:03 +0000] \"POST /api/auth/refresh HTTP/1.1\" 403 51 \"-\" \"Next.js Middleware\"","timestamp":"2025-09-11T15:00:03.362Z"}
+{"level":"info","message":"::1 - - [11/Sep/2025:15:00:03 +0000] \"POST /api/auth/refresh HTTP/1.1\" 403 51 \"-\" \"Next.js Middleware\"","timestamp":"2025-09-11T15:00:03.498Z"}
+{"level":"info","message":"::1 - - [11/Sep/2025:15:00:03 +0000] \"POST /api/auth/refresh HTTP/1.1\" 403 51 \"-\" \"Next.js Middleware\"","timestamp":"2025-09-11T15:00:03.650Z"}
+{"level":"info","message":"::1 - - [11/Sep/2025:15:00:03 +0000] \"POST /api/auth/refresh HTTP/1.1\" 403 51 \"-\" \"Next.js Middleware\"","timestamp":"2025-09-11T15:00:03.917Z"}
+{"level":"info","message":"::1 - - [11/Sep/2025:15:00:04 +0000] \"POST /api/auth/refresh HTTP/1.1\" 403 51 \"-\" \"Next.js Middleware\"","timestamp":"2025-09-11T15:00:04.099Z"}
+{"level":"info","message":"::1 - - [11/Sep/2025:15:00:04 +0000] \"POST /api/auth/refresh HTTP/1.1\" 403 51 \"-\" \"Next.js Middleware\"","timestamp":"2025-09-11T15:00:04.552Z"}
+{"level":"info","message":"::1 - - [11/Sep/2025:15:00:04 +0000] \"POST /api/auth/refresh HTTP/1.1\" 403 51 \"-\" \"Next.js Middleware\"","timestamp":"2025-09-11T15:00:04.718Z"}
+{"level":"info","message":"::1 - - [11/Sep/2025:15:00:04 +0000] \"POST /api/auth/refresh HTTP/1.1\" 403 51 \"-\" \"Next.js Middleware\"","timestamp":"2025-09-11T15:00:04.874Z"}
+{"level":"info","message":"::1 - - [11/Sep/2025:15:00:06 +0000] \"POST /api/auth/refresh HTTP/1.1\" 403 51 \"-\" \"Next.js Middleware\"","timestamp":"2025-09-11T15:00:06.104Z"}
+{"level":"info","message":"::1 - - [11/Sep/2025:15:00:06 +0000] \"POST /api/auth/refresh HTTP/1.1\" 403 51 \"-\" \"Next.js Middleware\"","timestamp":"2025-09-11T15:00:06.246Z"}
+{"level":"info","message":"::1 - - [11/Sep/2025:15:00:06 +0000] \"POST /api/auth/refresh HTTP/1.1\" 403 51 \"-\" \"Next.js Middleware\"","timestamp":"2025-09-11T15:00:06.416Z"}
+{"level":"info","message":"::1 - - [11/Sep/2025:15:00:06 +0000] \"POST /api/auth/refresh HTTP/1.1\" 403 51 \"-\" \"Next.js Middleware\"","timestamp":"2025-09-11T15:00:06.580Z"}
+{"level":"info","message":"::1 - - [11/Sep/2025:15:00:06 +0000] \"POST /api/auth/refresh HTTP/1.1\" 403 51 \"-\" \"Next.js Middleware\"","timestamp":"2025-09-11T15:00:06.738Z"}
+{"level":"info","message":"::1 - - [11/Sep/2025:15:00:06 +0000] \"POST /api/auth/refresh HTTP/1.1\" 403 51 \"-\" \"Next.js Middleware\"","timestamp":"2025-09-11T15:00:06.901Z"}
+{"level":"info","message":"::1 - - [11/Sep/2025:15:00:07 +0000] \"POST /api/auth/refresh HTTP/1.1\" 403 51 \"-\" \"Next.js Middleware\"","timestamp":"2025-09-11T15:00:07.051Z"}
+{"level":"info","message":"::1 - - [11/Sep/2025:15:00:07 +0000] \"POST /api/auth/refresh HTTP/1.1\" 403 51 \"-\" \"Next.js Middleware\"","timestamp":"2025-09-11T15:00:07.463Z"}
+{"level":"info","message":"::1 - - [11/Sep/2025:15:00:07 +0000] \"POST /api/auth/refresh HTTP/1.1\" 403 51 \"-\" \"Next.js Middleware\"","timestamp":"2025-09-11T15:00:07.897Z"}
+{"level":"info","message":"::1 - - [11/Sep/2025:15:00:08 +0000] \"POST /api/auth/refresh HTTP/1.1\" 403 51 \"-\" \"Next.js Middleware\"","timestamp":"2025-09-11T15:00:08.044Z"}
+{"level":"info","message":"::1 - - [11/Sep/2025:15:00:08 +0000] \"POST /api/auth/refresh HTTP/1.1\" 403 51 \"-\" \"Next.js Middleware\"","timestamp":"2025-09-11T15:00:08.188Z"}
+{"level":"info","message":"::1 - - [11/Sep/2025:15:00:08 +0000] \"POST /api/auth/refresh HTTP/1.1\" 403 51 \"-\" \"Next.js Middleware\"","timestamp":"2025-09-11T15:00:08.602Z"}
+{"level":"info","message":"::1 - - [11/Sep/2025:15:00:09 +0000] \"POST /api/auth/refresh HTTP/1.1\" 403 51 \"-\" \"Next.js Middleware\"","timestamp":"2025-09-11T15:00:09.051Z"}
+{"level":"info","message":"::1 - - [11/Sep/2025:15:00:09 +0000] \"POST /api/auth/refresh HTTP/1.1\" 403 51 \"-\" \"Next.js Middleware\"","timestamp":"2025-09-11T15:00:09.483Z"}
+{"level":"info","message":"::1 - - [11/Sep/2025:15:00:09 +0000] \"POST /api/auth/refresh HTTP/1.1\" 403 51 \"-\" \"Next.js Middleware\"","timestamp":"2025-09-11T15:00:09.635Z"}
+{"level":"info","message":"::1 - - [11/Sep/2025:15:00:09 +0000] \"POST /api/auth/refresh HTTP/1.1\" 403 51 \"-\" \"Next.js Middleware\"","timestamp":"2025-09-11T15:00:09.796Z"}
+{"level":"info","message":"::1 - - [11/Sep/2025:15:00:09 +0000] \"POST /api/auth/refresh HTTP/1.1\" 403 51 \"-\" \"Next.js Middleware\"","timestamp":"2025-09-11T15:00:09.952Z"}
+{"level":"info","message":"::1 - - [11/Sep/2025:15:00:10 +0000] \"POST /api/auth/refresh HTTP/1.1\" 403 51 \"-\" \"Next.js Middleware\"","timestamp":"2025-09-11T15:00:10.129Z"}
+{"level":"info","message":"::1 - - [11/Sep/2025:15:00:10 +0000] \"POST /api/auth/refresh HTTP/1.1\" 403 51 \"-\" \"Next.js Middleware\"","timestamp":"2025-09-11T15:00:10.332Z"}
+{"level":"info","message":"::1 - - [11/Sep/2025:15:00:10 +0000] \"POST /api/auth/refresh HTTP/1.1\" 403 51 \"-\" \"Next.js Middleware\"","timestamp":"2025-09-11T15:00:10.498Z"}
+{"level":"info","message":"::1 - - [11/Sep/2025:15:00:15 +0000] \"POST /api/auth/refresh HTTP/1.1\" 403 51 \"-\" \"Next.js Middleware\"","timestamp":"2025-09-11T15:00:15.753Z"}
+{"level":"info","message":"::1 - - [11/Sep/2025:15:00:16 +0000] \"POST /api/auth/refresh HTTP/1.1\" 403 51 \"-\" \"Next.js Middleware\"","timestamp":"2025-09-11T15:00:16.219Z"}
+{"level":"info","message":"::1 - - [11/Sep/2025:15:00:16 +0000] \"POST /api/auth/refresh HTTP/1.1\" 403 51 \"-\" \"Next.js Middleware\"","timestamp":"2025-09-11T15:00:16.404Z"}
+{"level":"info","message":"::1 - - [11/Sep/2025:15:00:16 +0000] \"POST /api/auth/refresh HTTP/1.1\" 403 51 \"-\" \"Next.js Middleware\"","timestamp":"2025-09-11T15:00:16.626Z"}
+{"level":"info","message":"::1 - - [11/Sep/2025:15:00:17 +0000] \"POST /api/auth/refresh HTTP/1.1\" 403 51 \"-\" \"Next.js Middleware\"","timestamp":"2025-09-11T15:00:17.066Z"}
+{"level":"info","message":"::1 - - [11/Sep/2025:15:00:17 +0000] \"POST /api/auth/refresh HTTP/1.1\" 403 51 \"-\" \"Next.js Middleware\"","timestamp":"2025-09-11T15:00:17.206Z"}
+{"level":"info","message":"::1 - - [11/Sep/2025:15:00:17 +0000] \"POST /api/auth/refresh HTTP/1.1\" 403 51 \"-\" \"Next.js Middleware\"","timestamp":"2025-09-11T15:00:17.359Z"}
+{"level":"info","message":"::1 - - [11/Sep/2025:15:00:17 +0000] \"POST /api/auth/refresh HTTP/1.1\" 403 51 \"-\" \"Next.js Middleware\"","timestamp":"2025-09-11T15:00:17.504Z"}
+{"level":"info","message":"::1 - - [11/Sep/2025:15:00:17 +0000] \"POST /api/auth/refresh HTTP/1.1\" 403 51 \"-\" \"Next.js Middleware\"","timestamp":"2025-09-11T15:00:17.643Z"}
+{"level":"info","message":"::1 - - [11/Sep/2025:15:00:17 +0000] \"POST /api/auth/refresh HTTP/1.1\" 403 51 \"-\" \"Next.js Middleware\"","timestamp":"2025-09-11T15:00:17.777Z"}
+{"level":"info","message":"::1 - - [11/Sep/2025:15:00:17 +0000] \"POST /api/auth/refresh HTTP/1.1\" 403 51 \"-\" \"Next.js Middleware\"","timestamp":"2025-09-11T15:00:17.913Z"}
+{"level":"info","message":"::1 - - [11/Sep/2025:15:00:18 +0000] \"POST /api/auth/refresh HTTP/1.1\" 403 51 \"-\" \"Next.js Middleware\"","timestamp":"2025-09-11T15:00:18.052Z"}
+{"level":"info","message":"::1 - - [11/Sep/2025:15:00:18 +0000] \"POST /api/auth/refresh HTTP/1.1\" 403 51 \"-\" \"Next.js Middleware\"","timestamp":"2025-09-11T15:00:18.191Z"}
+{"level":"info","message":"::1 - - [11/Sep/2025:15:00:18 +0000] \"POST /api/auth/refresh HTTP/1.1\" 403 51 \"-\" \"Next.js Middleware\"","timestamp":"2025-09-11T15:00:18.586Z"}
+{"level":"info","message":"::1 - - [11/Sep/2025:15:00:18 +0000] \"POST /api/auth/refresh HTTP/1.1\" 403 51 \"-\" \"Next.js Middleware\"","timestamp":"2025-09-11T15:00:18.726Z"}
+{"level":"info","message":"::1 - - [11/Sep/2025:15:00:18 +0000] \"POST /api/auth/refresh HTTP/1.1\" 403 51 \"-\" \"Next.js Middleware\"","timestamp":"2025-09-11T15:00:18.864Z"}
+{"level":"info","message":"::1 - - [11/Sep/2025:15:00:19 +0000] \"POST /api/auth/refresh HTTP/1.1\" 403 51 \"-\" \"Next.js Middleware\"","timestamp":"2025-09-11T15:00:19.010Z"}
+{"level":"info","message":"::1 - - [11/Sep/2025:15:00:19 +0000] \"POST /api/auth/refresh HTTP/1.1\" 403 51 \"-\" \"Next.js Middleware\"","timestamp":"2025-09-11T15:00:19.421Z"}
+{"level":"info","message":"::1 - - [11/Sep/2025:15:00:19 +0000] \"POST /api/auth/refresh HTTP/1.1\" 403 51 \"-\" \"Next.js Middleware\"","timestamp":"2025-09-11T15:00:19.884Z"}
+{"level":"info","message":"::1 - - [11/Sep/2025:15:00:20 +0000] \"POST /api/auth/refresh HTTP/1.1\" 403 51 \"-\" \"Next.js Middleware\"","timestamp":"2025-09-11T15:00:20.061Z"}
+{"level":"info","message":"::1 - - [11/Sep/2025:15:00:46 +0000] \"GET /api/news HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-09-11T15:00:46.815Z"}
+{"level":"info","message":"::1 - - [11/Sep/2025:15:00:46 +0000] \"GET /api/reviews HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-09-11T15:00:46.868Z"}
+{"level":"info","message":"::1 - - [11/Sep/2025:15:00:47 +0000] \"GET /api/products?isFeatured=true&limit=4 HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-09-11T15:00:47.003Z"}
+{"level":"info","message":"::1 - - [11/Sep/2025:15:00:47 +0000] \"GET /api/products?sort=createdAt_desc&limit=4 HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-09-11T15:00:47.953Z"}
+{"level":"info","message":"::1 - - [11/Sep/2025:15:00:54 +0000] \"POST /api/auth/logout HTTP/1.1\" 400 46 \"-\" \"node\"","timestamp":"2025-09-11T15:00:54.941Z"}
+{"level":"info","message":"::1 - - [11/Sep/2025:15:00:55 +0000] \"POST /api/auth/logout HTTP/1.1\" 400 46 \"-\" \"node\"","timestamp":"2025-09-11T15:00:55.264Z"}
+{"level":"info","message":"::1 - - [11/Sep/2025:15:01:00 +0000] \"POST /api/auth/refresh HTTP/1.1\" 403 51 \"-\" \"Next.js Middleware\"","timestamp":"2025-09-11T15:01:00.073Z"}
+{"level":"info","message":"::1 - - [11/Sep/2025:15:01:00 +0000] \"POST /api/auth/refresh HTTP/1.1\" 403 51 \"-\" \"Next.js Middleware\"","timestamp":"2025-09-11T15:01:00.249Z"}
+{"level":"info","message":"::1 - - [11/Sep/2025:15:01:00 +0000] \"POST /api/auth/refresh HTTP/1.1\" 403 51 \"-\" \"Next.js Middleware\"","timestamp":"2025-09-11T15:01:00.398Z"}
+{"level":"info","message":"::1 - - [11/Sep/2025:15:01:00 +0000] \"POST /api/auth/refresh HTTP/1.1\" 403 51 \"-\" \"Next.js Middleware\"","timestamp":"2025-09-11T15:01:00.536Z"}
+{"level":"info","message":"::1 - - [11/Sep/2025:15:01:01 +0000] \"POST /api/auth/refresh HTTP/1.1\" 403 51 \"-\" \"Next.js Middleware\"","timestamp":"2025-09-11T15:01:01.234Z"}
+{"level":"info","message":"::1 - - [11/Sep/2025:15:01:01 +0000] \"POST /api/auth/refresh HTTP/1.1\" 403 51 \"-\" \"Next.js Middleware\"","timestamp":"2025-09-11T15:01:01.369Z"}
+{"level":"info","message":"::1 - - [11/Sep/2025:15:01:01 +0000] \"POST /api/auth/refresh HTTP/1.1\" 403 51 \"-\" \"Next.js Middleware\"","timestamp":"2025-09-11T15:01:01.540Z"}
+{"level":"info","message":"::1 - - [11/Sep/2025:15:01:01 +0000] \"POST /api/auth/refresh HTTP/1.1\" 403 51 \"-\" \"Next.js Middleware\"","timestamp":"2025-09-11T15:01:01.699Z"}
+{"level":"info","message":"::1 - - [11/Sep/2025:15:01:01 +0000] \"POST /api/auth/refresh HTTP/1.1\" 403 51 \"-\" \"Next.js Middleware\"","timestamp":"2025-09-11T15:01:01.851Z"}
+{"level":"info","message":"::1 - - [11/Sep/2025:15:01:01 +0000] \"POST /api/auth/refresh HTTP/1.1\" 403 51 \"-\" \"Next.js Middleware\"","timestamp":"2025-09-11T15:01:01.994Z"}
+{"level":"info","message":"::1 - - [11/Sep/2025:15:01:02 +0000] \"POST /api/auth/refresh HTTP/1.1\" 403 51 \"-\" \"Next.js Middleware\"","timestamp":"2025-09-11T15:01:02.161Z"}
+{"level":"info","message":"::1 - - [11/Sep/2025:15:01:02 +0000] \"POST /api/auth/refresh HTTP/1.1\" 403 51 \"-\" \"Next.js Middleware\"","timestamp":"2025-09-11T15:01:02.315Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [11/Sep/2025:15:02:48 +0000] \"GET /api/products?isFeatured=true&limit=4 HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-09-11T15:02:48.934Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [11/Sep/2025:15:02:49 +0000] \"GET /api/products?sort=createdAt_desc&limit=4 HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-09-11T15:02:49.532Z"}
+{"level":"info","message":"::1 - - [11/Sep/2025:15:15:52 +0000] \"GET / HTTP/1.1\" 200 27 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\"","timestamp":"2025-09-11T15:15:52.383Z"}
+{"isOperational":true,"level":"error","message":"Route /favicon.ico not found Route /favicon.ico not found","status":"fail","statusCode":404,"timestamp":"2025-09-11T15:15:54.469Z"}
+{"level":"info","message":"::1 - - [11/Sep/2025:15:15:54 +0000] \"GET /favicon.ico HTTP/1.1\" 404 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\"","timestamp":"2025-09-11T15:15:54.541Z"}
+{"level":"info","message":"::1 - - [11/Sep/2025:15:16:49 +0000] \"GET /api/news HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-09-11T15:16:49.370Z"}
+{"level":"info","message":"::1 - - [11/Sep/2025:15:16:49 +0000] \"GET /api/reviews HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-09-11T15:16:49.561Z"}
+{"level":"info","message":"::1 - - [11/Sep/2025:15:16:51 +0000] \"GET /api/products?isFeatured=true&limit=4 HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-09-11T15:16:51.293Z"}
+{"level":"info","message":"::1 - - [11/Sep/2025:15:16:51 +0000] \"GET /api/products?sort=createdAt_desc&limit=4 HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-09-11T15:16:51.389Z"}
+{"level":"info","message":"::1 - - [11/Sep/2025:15:20:07 +0000] \"POST /api/auth/login HTTP/1.1\" 201 512 \"-\" \"node\"","timestamp":"2025-09-11T15:20:07.151Z"}
+{"level":"info","message":"::1 - - [11/Sep/2025:15:20:15 +0000] \"GET /api/products?page=1&size=12&category=gents&sort=createdAt_desc HTTP/1.1\" 200 - \"-\" \"node\"","timestamp":"2025-09-11T15:20:15.324Z"}
+{"level":"info","message":"::1 - - [11/Sep/2025:15:20:32 +0000] \"GET /api/address/all HTTP/1.1\" 200 991 \"-\" \"node\"","timestamp":"2025-09-11T15:20:32.292Z"}
+{"level":"info","message":"::1 - - [11/Sep/2025:15:21:02 +0000] \"POST /api/orders/create HTTP/1.1\" 400 101 \"-\" \"node\"","timestamp":"2025-09-11T15:21:02.019Z"}
+{"level":"info","message":"::1 - - [11/Sep/2025:15:22:09 +0000] \"POST /api/orders/create HTTP/1.1\" 400 101 \"-\" \"node\"","timestamp":"2025-09-11T15:22:09.195Z"}

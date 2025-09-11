@@ -1,6 +1,9 @@
 import { Order } from './order.model';
-import { IOrder } from './order.interface';
+import { IOrder, OrderStatus, PaymentStatus } from './order.interface';
 import { orderSchema } from './order.validation';
+import { Address } from '@modules/adresses/address.model';
+import { Product } from '@modules/product/product.model';
+import { Types } from 'mongoose';
 
 interface FrontendOrderData {
   orderInfo: {
@@ -9,83 +12,65 @@ interface FrontendOrderData {
     email: string;
     phone: string;
     address: string;
-    city: string;
-    postalCode: string;
-    country: string;
     paymentMethod: string;
     shippingMethod: string;
   };
   orderItems: Array<{
     productId: string;
     quantity: number;
-    price: string | number;
   }>;
-  orderSummary: {
-    subtotal: number;
-    shipping: number;
-    tax: number;
-    total: number;
-  };
 }
 
-export const createOrderIntoDB = async (data: FrontendOrderData): Promise<IOrder> => {
-  try {
-    // Normalize payment method to match expected format
-    const normalizePaymentMethod = (method: string): string => {
-      const methodMap: Record<string, string> = {
-        'cashondelivery': 'cash_on_delivery',
-        'cashOnDelivery': 'cash_on_delivery',
-        'creditcard': 'credit_card',
-        'creditCard': 'credit_card',
-        'paypal': 'paypal'
-      };
-      
-      const normalized = method.toLowerCase().replace(/[ -]/g, '');
-      return methodMap[normalized] || method;
-    };
+export const createOrderIntoDB = async (
+  data: FrontendOrderData,
+  userId: string,
+): Promise<IOrder> => {
+  const { orderItems, orderInfo } = data;
 
-    const normalizedPaymentMethod = normalizePaymentMethod(data.orderInfo.paymentMethod);
-
-    // Transform the data to match the expected format
-    const orderData = {
-      orderItems: data.orderItems.map(item => ({
-        productId: item.productId,
-        quantity: item.quantity,
-        price: Number(item.price)
-      })),
-      shippingAddress: {
-        firstName: data.orderInfo.firstName,
-        lastName: data.orderInfo.lastName,
-        email: data.orderInfo.email,
-        phone: data.orderInfo.phone,
-        address: data.orderInfo.address,
-        city: data.orderInfo.city,
-        postalCode: data.orderInfo.postalCode,
-        country: data.orderInfo.country,
-        paymentMethod: normalizedPaymentMethod,
-        shippingMethod: data.orderInfo.shippingMethod
-      },
-      orderSummary: {
-        subtotal: data.orderSummary.subtotal,
-        shipping: data.orderSummary.shipping,
-        tax: data.orderSummary.tax,
-        total: data.orderSummary.total
-      },
-      paymentMethod: normalizedPaymentMethod,
-      status: 'pending',
-      paymentStatus: normalizedPaymentMethod === 'cash_on_delivery' ? 'pending' : 'completed'
-    };
-
-    // Validate the transformed data against the schema
-    const validatedData = orderSchema.parse(orderData);
-    
-    // Create the order
-    const order = await Order.create(validatedData);
-    return order;
-  } catch (error) {
-    console.error('Error creating order:', error);
-    throw new Error(error instanceof Error ? error.message : 'Failed to create order');
+  const addressExists = await Address.findById(orderInfo.address);
+  if (!addressExists) {
+    throw new Error('Invalid address ID');
   }
+
+  const productIds = orderItems.map((item) => item.productId);
+  const products = await Product.find({ _id: { $in: productIds } });
+  if (products.length !== orderItems.length) {
+    throw new Error('One or more products not found');
+  }
+  // ✅ Calculate subtotal
+  const subtotal = orderItems.reduce((sum, item) => {
+    const product = products.find((p) => p._id.toString() === item.productId);
+
+    if (!product) throw new Error(`Product ${item.productId} not found`);
+    return sum + product.price * item.quantity;
+  }, 0);
+
+  // ✅ Calculate shipping & tax
+  const shipping = orderInfo.shippingMethod === 'express' ? 15.99 : 0;
+  const tax = subtotal * 0.08;
+  const total = subtotal + shipping + tax;
+  // ✅ Set default statuses
+  const paymentStatus: PaymentStatus =
+    orderInfo.paymentMethod === 'cash_on_delivery' ? 'pending' : 'pending';
+
+  const orderStatus: OrderStatus = 'pending';
+  // ✅ Create order
+  const newOrder = await Order.create({
+    orderItems,
+    orderInfo: {
+      ...orderInfo,
+      address: new Types.ObjectId(orderInfo.address),
+    },
+    user: new Types.ObjectId(userId),
+    paymentMethod: orderInfo.paymentMethod,
+    paymentStatus,
+    status: orderStatus,
+    subtotal,
+    shipping,
+    tax,
+    total,
+  });
+  return newOrder;
 };
 
 export const OrderServices = {

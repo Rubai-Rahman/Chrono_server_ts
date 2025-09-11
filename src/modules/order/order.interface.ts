@@ -4,19 +4,15 @@ import { Model, Document } from 'mongoose';
 export interface IOrderItem {
   productId: string;
   quantity: number;
-  price: number;
 }
 
 // Define the shipping address interface
-export interface IShippingAddress {
+export interface IOrderInfo {
   firstName: string;
   lastName: string;
   email: string;
   phone: string;
   address: string;
-  city: string;
-  postalCode: string;
-  country: string;
   paymentMethod: string;
   shippingMethod: string;
 }
@@ -37,18 +33,12 @@ export type OrderStatus =
   | 'delivered'
   | 'cancelled';
 export type PaymentStatus = 'pending' | 'completed' | 'failed' | 'refunded';
-export type PaymentMethod = 'credit_card' | 'paypal' | 'cash_on_delivery';
+export type PaymentMethod = 'sslcommerz' | 'cash_on_delivery';
 
 // Define the main order interface
 export interface IOrder {
   orderItems: IOrderItem[];
-  shippingAddress: IShippingAddress;
-  orderSummary: {
-    subtotal: number;
-    shipping: number;
-    tax: number;
-    total: number;
-  };
+  orderInfo: IOrderInfo;
   paymentMethod: PaymentMethod;
   paymentResult?: IPaymentResult;
   status: OrderStatus;

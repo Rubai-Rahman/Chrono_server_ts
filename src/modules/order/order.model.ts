@@ -2,35 +2,28 @@ import { Schema, model } from 'mongoose';
 import {
   IOrder,
   IOrderItem,
-  IShippingAddress,
   IPaymentResult,
   IOrderModel,
   OrderStatus,
   PaymentStatus,
   PaymentMethod,
+  IOrderInfo,
 } from './order.interface'; // adjust the path if needed
 
 // Schema for individual order items
-const orderItemSchema = new Schema<IOrderItem>(
-  {
-    productId: { type: String, required: true },
-    quantity: { type: Number, required: true },
-    price: { type: Number, required: true },
-  },
-  { _id: false }, 
-);
+const orderItemSchema = new Schema<IOrderItem>({
+  productId: { type: String, required: true },
+  quantity: { type: Number, required: true },
+});
 
 // Schema for shipping address
-const shippingAddressSchema = new Schema<IShippingAddress>(
+const orderInfoSchema = new Schema<IOrderInfo>(
   {
     firstName: { type: String, required: true },
     lastName: { type: String, required: true },
     email: { type: String, required: true },
     phone: { type: String, required: true },
     address: { type: String, required: true },
-    city: { type: String, required: true },
-    postalCode: { type: String, required: true },
-    country: { type: String, required: true },
     paymentMethod: { type: String, required: true },
     shippingMethod: { type: String, required: true },
   },
@@ -52,16 +45,10 @@ const paymentResultSchema = new Schema<IPaymentResult>(
 const orderSchema = new Schema<IOrder>(
   {
     orderItems: { type: [orderItemSchema], required: true },
-    shippingAddress: { type: shippingAddressSchema, required: true },
-    orderSummary: {
-      subtotal: { type: Number, required: true },
-      shipping: { type: Number, required: true },
-      tax: { type: Number, required: true },
-      total: { type: Number, required: true },
-    },
+    orderInfo: { type: orderInfoSchema, required: true },
     paymentMethod: {
       type: String,
-      enum: ['credit_card', 'paypal', 'cash_on_delivery'],
+      enum: ['sslcommerz', 'cash_on_delivery'],
       required: true,
     } as unknown as PaymentMethod,
     paymentResult: { type: paymentResultSchema, required: false },
