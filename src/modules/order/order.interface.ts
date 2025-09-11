@@ -43,6 +43,7 @@ export interface IOrder {
   paymentResult?: IPaymentResult;
   status: OrderStatus;
   paymentStatus: PaymentStatus;
+  orderCode: string;
   createdAt?: Date;
   updatedAt?: Date;
 }
