@@ -8,7 +8,6 @@ export const postOrder = async (
   next: NextFunction,
 ) => {
   try {
-    console.log('Request Body:', req.body);
     const orderData = req.body;
     const { userId } = req.user!;
 
@@ -22,6 +21,26 @@ export const postOrder = async (
     res.status(201).json({
       success: true,
       message: 'Order created successfully',
+      data: newOrder,
+    });
+  } catch (err: any) {
+    next(err);
+  }
+};
+
+export const getOrders = async (
+  req: AuthRequest,
+  res: Response,
+  next: NextFunction,
+) => {
+  try {
+    const { userId } = req.user!;
+
+    const orders = await OrderServices.getOrderFromDB(userId);
+
+    res.status(200).json({
+      success: true,
+      data: orders,
     });
   } catch (err: any) {
     next(err);
@@ -30,4 +49,5 @@ export const postOrder = async (
 
 export const OrderController = {
   postOrder,
+  getOrders,
 };

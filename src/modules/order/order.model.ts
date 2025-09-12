@@ -12,7 +12,7 @@ import {
 
 // Schema for individual order items
 const orderItemSchema = new Schema<IOrderItem>({
-  productId: { type: String, required: true },
+  productId: { type: Schema.Types.ObjectId, ref: 'products', required: true },
   quantity: { type: Number, required: true },
 });
 
@@ -23,7 +23,7 @@ const orderInfoSchema = new Schema<IOrderInfo>(
     lastName: { type: String, required: true },
     email: { type: String, required: true },
     phone: { type: String, required: true },
-    address: { type: String, required: true },
+    address: { type: Schema.Types.ObjectId, ref: 'Address', required: true },
     paymentMethod: { type: String, required: true },
     shippingMethod: { type: String, required: true },
   },
@@ -47,6 +47,7 @@ const orderSchema = new Schema<IOrder>(
     orderItems: { type: [orderItemSchema], required: true },
     orderInfo: { type: orderInfoSchema, required: true },
     orderCode: { type: String, required: true, unique: true },
+
     paymentMethod: {
       type: String,
       enum: ['sslcommerz', 'cash_on_delivery'],
@@ -63,6 +64,10 @@ const orderSchema = new Schema<IOrder>(
       enum: ['pending', 'completed', 'failed', 'refunded'],
       default: 'pending',
     } as unknown as PaymentStatus,
+    subtotal: { type: Number, required: true },
+    shipping: { type: Number, required: true },
+    tax: { type: Number, required: true },
+    total: { type: Number, required: true },
   },
   { timestamps: true },
 );

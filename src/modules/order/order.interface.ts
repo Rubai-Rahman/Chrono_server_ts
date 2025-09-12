@@ -1,8 +1,8 @@
-import { Model, Document } from 'mongoose';
+import { Model, Document, Types } from 'mongoose';
 
 // Define the order item interface
 export interface IOrderItem {
-  productId: string;
+  productId: Types.ObjectId;
   quantity: number;
 }
 
@@ -12,7 +12,7 @@ export interface IOrderInfo {
   lastName: string;
   email: string;
   phone: string;
-  address: string;
+  address: Types.ObjectId;
   paymentMethod: string;
   shippingMethod: string;
 }
@@ -46,6 +46,10 @@ export interface IOrder {
   orderCode: string;
   createdAt?: Date;
   updatedAt?: Date;
+  subtotal: Number;
+  shipping: Number;
+  tax: Number;
+  total: Number;
 }
 
 // Extend Mongoose Document
