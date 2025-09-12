@@ -39,6 +39,7 @@ export type PaymentMethod = 'sslcommerz' | 'cash_on_delivery';
 export interface IOrder {
   orderItems: IOrderItem[];
   orderInfo: IOrderInfo;
+  userId: Types.ObjectId;
   paymentMethod: PaymentMethod;
   paymentResult?: IPaymentResult;
   status: OrderStatus;

@@ -47,7 +47,7 @@ const orderSchema = new Schema<IOrder>(
     orderItems: { type: [orderItemSchema], required: true },
     orderInfo: { type: orderInfoSchema, required: true },
     orderCode: { type: String, required: true, unique: true },
-
+    userId: { type: Schema.Types.ObjectId, ref: 'users', required: true },
     paymentMethod: {
       type: String,
       enum: ['sslcommerz', 'cash_on_delivery'],

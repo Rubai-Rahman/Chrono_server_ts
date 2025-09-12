@@ -97,7 +97,6 @@ const refresh = async (req: Request, res: Response): Promise<void> => {
     }
 
     const payload = await UserServices.refresh(refreshToken);
-    console.log('Refresh payload:', payload);
 
     res.status(200).json({
       success: true,

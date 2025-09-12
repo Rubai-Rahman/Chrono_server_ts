@@ -13,6 +13,6 @@ router.post(
   OrderController.postOrder,
 );
 
-router.get('/all', authMiddleware, OrderController.getOrders);
+router.get('/userOrder', authMiddleware, OrderController.getOrders);
 
 export const OrderRoutes = router;

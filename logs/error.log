@@ -428,3 +428,5 @@
 {"level":"error","message":"Cannot read properties of undefined (reading 'toString') Cannot read properties of undefined (reading 'toString')","timestamp":"2025-09-12T04:52:07.369Z"}
 {"level":"error","message":"Cannot read properties of undefined (reading 'toString') Cannot read properties of undefined (reading 'toString')","timestamp":"2025-09-12T04:56:42.334Z"}
 {"level":"error","message":"Schema hasn't been registered for model \"addresses\".\nUse mongoose.model(name, schema) Schema hasn't been registered for model \"addresses\".\nUse mongoose.model(name, schema)","timestamp":"2025-09-12T05:38:53.600Z"}
+{"isOperational":true,"level":"error","message":"Route /favicon.ico not found Route /favicon.ico not found","status":"fail","statusCode":404,"timestamp":"2025-09-12T11:27:18.971Z"}
+{"isOperational":true,"level":"error","message":"Route /favicon.ico not found Route /favicon.ico not found","status":"fail","statusCode":404,"timestamp":"2025-09-12T17:00:51.192Z"}

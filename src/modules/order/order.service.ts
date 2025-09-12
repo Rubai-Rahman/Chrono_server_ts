@@ -97,7 +97,7 @@ export const createOrderIntoDB = async (
       address: new Types.ObjectId(orderInfo.address),
     },
     orderCode: generateOrderCode(),
-    user: new Types.ObjectId(userId),
+    userId: new Types.ObjectId(userId),
     paymentMethod: orderInfo.paymentMethod,
     paymentStatus: 'pending',
     status: 'pending',
@@ -146,14 +146,11 @@ export const createOrderIntoDB = async (
     updatedAt: new Date(populatedOrder.updatedAt as string | number | Date),
   };
 
-  console.log('✅ Populated Order:', populatedOrder);
-  console.log('✅ Transformed Order Items:', frontendOrder.orderItems);
-
   return frontendOrder;
 };
 
 export const getOrderFromDB = async (userId: string): Promise<IOrder[]> => {
-  const orders = await Order.find({ user: userId })
+  const orders = await Order.find({ userId: userId })
     .populate('orderItems.productId')
     .populate('orderInfo.address');
   return orders;
