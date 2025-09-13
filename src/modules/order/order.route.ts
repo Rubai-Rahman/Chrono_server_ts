@@ -14,5 +14,6 @@ router.post(
 );
 
 router.get('/userOrder', authMiddleware, OrderController.getOrders);
+router.get('/:id', authMiddleware, OrderController.getOrderById);
 
 export const OrderRoutes = router;

@@ -1,6 +1,5 @@
 import { Order } from './order.model';
 import { IOrder, OrderStatus, PaymentStatus } from './order.interface';
-import { orderSchema } from './order.validation';
 import { Address } from '@modules/adresses/address.model';
 import { Product } from '@modules/product/product.model';
 import { Types } from 'mongoose';
@@ -156,7 +155,18 @@ export const getOrderFromDB = async (userId: string): Promise<IOrder[]> => {
   return orders;
 };
 
+export const getOrderByIdFromDB = async (
+  userId: string,
+  id: string,
+): Promise<IOrder[]> => {
+  const orders = await Order.find({ userId: userId, _id: id })
+    .populate('orderItems.productId')
+    .populate('orderInfo.address');
+  return orders;
+};
+
 export const OrderServices = {
   createOrderIntoDB,
   getOrderFromDB,
+  getOrderByIdFromDB,
 };

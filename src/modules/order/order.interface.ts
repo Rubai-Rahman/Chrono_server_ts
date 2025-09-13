@@ -31,7 +31,9 @@ export type OrderStatus =
   | 'processing'
   | 'shipped'
   | 'delivered'
-  | 'cancelled';
+  | 'cancelled'
+  | 'returned';
+
 export type PaymentStatus = 'pending' | 'completed' | 'failed' | 'refunded';
 export type PaymentMethod = 'sslcommerz' | 'cash_on_delivery';
 

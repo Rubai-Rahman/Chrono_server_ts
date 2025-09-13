@@ -1,4 +1,5 @@
-import { NextFunction, Request, Response } from 'express';
+import httpStatus from 'http-status';
+import { NextFunction, Response } from 'express';
 import { OrderServices } from './order.service';
 import { AuthRequest } from '@middleware/auth.middleware';
 
@@ -38,10 +39,28 @@ export const getOrders = async (
 
     const orders = await OrderServices.getOrderFromDB(userId);
 
-    res.status(200).json({
-      success: true,
-      data: orders,
-    });
+    res.status(httpStatus.OK).json(orders);
+  } catch (err: any) {
+    next(err);
+  }
+};
+
+// New controller method to get order by ID
+export const getOrderById = async (
+  req: AuthRequest,
+  res: Response,
+  next: NextFunction,
+) => {
+  try {
+    const { userId } = req.user!;
+    const { id } = req.params;
+    if (!userId) {
+      return res
+        .status(403)
+        .json({ success: false, message: 'Forbidden access' });
+    }
+    const orders = await OrderServices.getOrderByIdFromDB(userId, id);
+    res.status(httpStatus.OK).json(orders);
   } catch (err: any) {
     next(err);
   }
@@ -50,4 +69,5 @@ export const getOrders = async (
 export const OrderController = {
   postOrder,
   getOrders,
+  getOrderById,
 };

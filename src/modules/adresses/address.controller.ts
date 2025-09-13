@@ -14,7 +14,6 @@ export const postAddress = async (
   next: NextFunction,
 ) => {
   const { user } = req;
-  console.log('User===:', user);
   const addressData = req.body;
   try {
     const newAddress = await AddressServices.createAddress(

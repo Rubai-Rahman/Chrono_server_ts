@@ -430,3 +430,11 @@
 {"level":"error","message":"Schema hasn't been registered for model \"addresses\".\nUse mongoose.model(name, schema) Schema hasn't been registered for model \"addresses\".\nUse mongoose.model(name, schema)","timestamp":"2025-09-12T05:38:53.600Z"}
 {"isOperational":true,"level":"error","message":"Route /favicon.ico not found Route /favicon.ico not found","status":"fail","statusCode":404,"timestamp":"2025-09-12T11:27:18.971Z"}
 {"isOperational":true,"level":"error","message":"Route /favicon.ico not found Route /favicon.ico not found","status":"fail","statusCode":404,"timestamp":"2025-09-12T17:00:51.192Z"}
+{"isOperational":true,"level":"error","message":"Route /favicon.ico not found Route /favicon.ico not found","status":"fail","statusCode":404,"timestamp":"2025-09-13T01:34:27.837Z"}
+{"level":"error","message":"Cannot read properties of undefined (reading 'OK') Cannot read properties of undefined (reading 'OK')","timestamp":"2025-09-13T02:08:21.551Z"}
+{"level":"error","message":"Cannot read properties of undefined (reading 'OK') Cannot read properties of undefined (reading 'OK')","timestamp":"2025-09-13T02:08:34.747Z"}
+{"level":"error","message":"Cannot read properties of undefined (reading 'OK') Cannot read properties of undefined (reading 'OK')","timestamp":"2025-09-13T02:10:06.497Z"}
+{"level":"error","message":"Cannot read properties of undefined (reading 'OK') Cannot read properties of undefined (reading 'OK')","timestamp":"2025-09-13T02:10:35.867Z"}
+{"level":"error","message":"Cannot read properties of undefined (reading 'OK') Cannot read properties of undefined (reading 'OK')","timestamp":"2025-09-13T02:10:53.482Z"}
+{"isOperational":true,"level":"error","message":"Route /api/orders/68c3bb560967159792891ad7 not found Route /api/orders/68c3bb560967159792891ad7 not found","status":"fail","statusCode":404,"timestamp":"2025-09-13T04:15:50.923Z"}
+{"isOperational":true,"level":"error","message":"Route /api/orders/68c3bb560967159792891ad7 not found Route /api/orders/68c3bb560967159792891ad7 not found","status":"fail","statusCode":404,"timestamp":"2025-09-13T04:18:13.755Z"}
