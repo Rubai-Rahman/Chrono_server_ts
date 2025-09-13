@@ -1,7 +1,7 @@
 {
   "name": "Chrono_server_ts",
   "version": "1.0.0",
-  "main": "server.js",
+  "main": "dist/server.js",
   "license": "MIT",
   "scripts": {
     "build": "tsc",
