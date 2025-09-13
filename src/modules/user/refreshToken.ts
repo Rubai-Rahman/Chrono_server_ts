@@ -1,12 +1,12 @@
-import mongoose, { Schema, Document, Types, PopulatedDoc } from 'mongoose';
+import mongoose, { Schema, Document, PopulatedDoc } from 'mongoose';
 
 export interface IUser {
-  _id?: string;
+  _id?: mongoose.Types.ObjectId;
   role: string;
 }
 
 export interface IRefreshToken extends Document {
-  user: PopulatedDoc<IUser & Document>;
+  user: PopulatedDoc<IUser>;
   tokenHash: string;
   expiresAt: Date;
   createdAt: Date;

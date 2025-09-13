@@ -50,12 +50,12 @@ const refresh = async (rawToken: string) => {
   }
 
   const user = existing.user; // TypeScript now knows this is defined
-  if (!user._id) {
+  if (!user || !user._id) {
     throw new Error('User ID is missing');
   }
 
   const { raw, ttl, doc } = await createRefreshToken(
-    existing.user._id.toString(),
+    user._id.toString(),
     false,
     undefined,
     undefined,

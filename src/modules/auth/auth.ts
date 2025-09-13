@@ -2,6 +2,7 @@ import { RefreshToken } from '@modules/user/refreshToken';
 import { User } from '@modules/user/user.model';
 import { generateRandomToken, hashToken, signAccessToken } from '@utils/token';
 import { Request, Response } from 'express';
+import mongoose from 'mongoose';
 
 import ms from 'ms'; // optional for readable time parsing
 
@@ -13,8 +14,8 @@ async function createRefreshToken(
   const raw = generateRandomToken(64);
   const tokenHash = hashToken(raw);
   const expiresMs = opts.expiresIn
-    ? ms(opts.expiresIn)
-    : ms(process.env.REFRESH_TOKEN_EXPIRES || '7d');
+    ? ms(opts.expiresIn as ms.StringValue)
+    : ms((process.env.REFRESH_TOKEN_EXPIRES || '7d') as ms.StringValue);
 
   const doc = await RefreshToken.create({
     user: userId,
@@ -58,9 +59,7 @@ export async function login(req: Request, res: Response) {
     secure: process.env.NODE_ENV === 'production',
     sameSite: 'lax',
     maxAge: rememberMe
-      ? parseInt(
-          ms(process.env.REMEMBER_ME_REFRESH_EXPIRES || '30d').toString(),
-        )
+      ? ms((process.env.REMEMBER_ME_REFRESH_EXPIRES || '30d') as ms.StringValue)
       : undefined,
   });
 
@@ -85,7 +84,10 @@ export async function refresh(req: Request, res: Response) {
     return res.status(403).json({ message: 'Invalid refresh token' });
   }
 
-  // rotate: create new refresh token and mark the old one replaced
+  if (!tokenDoc.user) {
+    res.clearCookie('refreshToken');
+    return res.status(403).json({ message: 'Invalid refresh token' });
+  }
   const { raw: newRaw, doc: newDoc } = await createRefreshToken(
     tokenDoc.user.toString(),
     {
@@ -95,7 +97,7 @@ export async function refresh(req: Request, res: Response) {
     },
   );
   tokenDoc.revoked = true;
-  tokenDoc.replacedBy = newDoc._id;
+  tokenDoc.replacedBy = newDoc._id as mongoose.Types.ObjectId;
   await tokenDoc.save();
 
   // issue new access token
@@ -107,7 +109,7 @@ export async function refresh(req: Request, res: Response) {
     secure: process.env.NODE_ENV === 'production',
     sameSite: 'lax',
     maxAge: process.env.REFRESH_TOKEN_EXPIRES
-      ? parseInt(ms(process.env.REFRESH_TOKEN_EXPIRES).toString())
+      ? ms(process.env.REFRESH_TOKEN_EXPIRES as ms.StringValue)
       : undefined,
   });
 
