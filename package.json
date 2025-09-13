@@ -14,7 +14,10 @@
     "test:coverage": "jest --coverage"
   },
   "_moduleAliases": {
-    "@config": "dist/config"
+    "@utils": "dist/utils",
+    "@config": "dist/config",
+    "@middleware": "dist/middleware",
+    "@modules": "dist/modules"
   },
   "dependencies": {
     "@types/http-status": "^1.1.2",
